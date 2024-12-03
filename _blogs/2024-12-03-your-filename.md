@@ -1,7 +1,17 @@
 ---
 published: false
 date: '2024-12-03 14:22 +0530'
-title: ''
+title: Cisco 8000 QOS Archetecture
+author: Ram Mohan A M
+excerpt: Cisco 8000 QOS archetecture
+tags:
+  - iosxr
+  - cisco
+  - Cisco 8000
+  - SiOne
+  - Cisco 8000 QOS
+  - cisco 8000 policer
+  - Cisco 8000 qos on bundle ports
 ---
 ## Cisco 8000 QOS Archetecture
 
