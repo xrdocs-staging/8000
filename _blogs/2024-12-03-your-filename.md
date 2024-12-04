@@ -72,7 +72,8 @@ VOQ (Virtual Output Queue) is a virtual representation of the output queues of a
 Every port has 8 hardwired Output Queues (OQ) on Cisco 8000. VOQs facilitate receiving traffic from any of the ingress ports hosted on any of the slices on the SiOne and transfer packets to the corresponding egress OQs of the respective egress port which is resolved by the forwarding lookup.
 
 
-![Screenshot 2024-12-04 at 5.52.23 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-04 at 5.52.23 PM.png){: .align-center}
+![voq-arch.png]({{site.baseurl}}/images/voq-arch.png)
+{: .align-center}
 
 
 Above figure depicts the VOQ replication aspects, set of 8 VOQs is programmed on every slices of the SiOne NPU for a given port . And same way, this replication happens on all slices on all SiOne NPUs across all line card modules in a distributed system. These VOQs uniquely identifies output queues of a port . This empowers the system to resolve most of the system information needed to forward out the packets at ingress processing stage. Thus optimises over all processing latency, read/write operations etc. which make the system more efficient in packet processing and power consumption. 
@@ -110,7 +111,10 @@ How to enqueue incoming packets into the right VOQs and enforce differentiated Q
 - Queueing policy application on egress interface decides the type of scheduling (strict priority, shaping, BWRR etc..) to be applied for each class of traffic and buffer management methods like, flat queueing threshold, curved queueing (RED) threshold, dual queueing thresholds.
 
 ### Default scheduling on main-interface
-![Screenshot 2024-12-04 at 6.09.39 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-04 at 6.09.39 PM.png)
+
+![default-sch-main.png]({{site.baseurl}}/images/default-sch-main.png)
+{: .align-center}
+
 
 Without any qos policy application at ingress and at egress,
 - All classes of incoming traffic get mapped to default VOQ ie, VOQ0 (class-default) at ingress slice and hence mapped to OQ0 at egress side
