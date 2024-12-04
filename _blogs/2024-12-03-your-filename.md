@@ -119,6 +119,126 @@ How to enqueue incoming packets into the right VOQs and enforce differentiated Q
 Without any qos policy application at ingress and at egress,
 - All classes of incoming traffic get mapped to default VOQ ie, VOQ0 (class-default) at ingress slice and hence mapped to OQ0 at egress side
 
+### Default scheduling on sub-interface
+
+System creates unique set of VOQs for sub-interfaces only if there is queueing policy attached to the sub-interface otherwise traffic destined out of sub-interface takes main-interface VOQs only.
+
+
+![default-sch-subint.png]({{site.baseurl}}/images/default-sch-subint.png)
+{: .align-center}
+
+In this example, egress interface is a sub-interface for the traffic flow
+
+- There is no qos policy application at ingress as well as at egress (sub-intf)
+- All classes of incoming traffic get mapped to default VOQ ie, VOQ0 (class-default) of the main-interface
+
+### Scheduling on main-interface with ingress traffic-class marking
+
+Ingress classification and traffic-class marking policy is applied on ingress interfaces
+###### Ex:-
+
+![ing.png]({{site.baseurl}}/images/ing.png)
+{: .align-center}
+
+
+
+
+![sch-with-policy.png]({{site.baseurl}}/images/sch-with-policy.png)
+{: .align-center}
+
+
+
+- Incoming traffic get classified and mapped into respective VOQs
+- If there is no egress queueing policy application on the egress interface then default scheduling is based on the profile: P1, P2 + 6 PNs
+- This default scheduling profile can be overridden by user defined policy application at egress.
+
+![eg.png]({{site.baseurl}}/images/eg.png)
+
+- User-defined policy must have ‘traffic-class 7’ set with ‘priority level 1’
+ - This is because the protocol control packets which are locally originated from the system are internally set with ‘traffic-class 7 and those packets has to be treated with highest priority. This is to make sure control packets are not compromised by data traffic in congestion situations
+ - So its recommended not to use ‘traffic-class 7’ for usual data traffic just to avoid meddling of control traffic with data traffic in congestion scenarios
+ 
+
+Lets look with another policy example as below, 
+![full-pol.png]({{site.baseurl}}/images/full-pol.png)
+
+
+- 4 classes of traffic coming at ingress side: PQ-1, PQ-2, INTERNET & Default-class
+- Ingress policy classify each of the categories and mark the ‘traffic-class’ accordingly
+- PQ-1 -> ‘traffic-class 6’, PQ-2 -> ‘traffic-class 5’, INTERNET -> ‘traffic-class 4’. And traffic which is not matching these 3 categories fall into class-default bucket
+- As seen above, each classes get enqueued into corresponding VOQs: PQ-1 -> VOQ6, PQ2 -> VOQ5, INTERNET -> VOQ4 and rest to class-default (VOQ0). And rest of the VOQs are not being used in this case as seen above
+- There is 2 level (HQOS) policy applied at egress side with a parent shaper of 10Gbps
+- Child classes has 2 priority classes PQ-1 (TC6) & PQ-2 (TC5) and 2 normal priority classes (TC4 & default-class). There is TC7 also mentioned there which is a mandatory class to be mentioned in any user defined policies. TC7 carries all control plane traffic originated from the system
+
+
+### What is default fairness in scheduling
+
+Scope of VOQ replication on Cisco 8000 is at slice level as briefed in above sections. So  fairness is also at slice level.  What that means is, packet get scheduled out of VOQs across multiple ingress slices towards corresponding egress port OQs  in round robin fashion for a given traffic class. So bandwidth is scheduled equally for all slices for that given queue in congestion scenario keeping fair queueing at slice level.
+
+As shown below figure, 
+
+![Picture 1.png]({{site.baseurl}}/images/Picture 1.png)
+
+
+egress port-7 is getting same class of traffic which is marked at ingress as ‘traffic-class 4’ from 3 ingress ports Port-1, 2 & 3. Ports 1 & 2 are in slice-0 and port-3 is on different slice. And all 3 ports are receiving traffic at 50% egress port bandwidth rate. So total ingress traffic which is resolved to go out of port-7 is 150% of port bandwidth and leads to port level congestion. Egress scheduler abide to slice level fair queueing and gives 50% worth credit of egress port bandwidth to both ingress slices. Thus, keeping fairness at slice level. So here, ports on slice-0 (port 1 & 2) shares the credit and consumes based on FCFS.
+
+Another example as given in below figure ,
+
+![Picture2.png]({{site.baseurl}}/images/Picture2.png)
+
+all ingress ports are on different slices and egress scheduler grants 33.33% port bandwidth for each ingress slices.
+
+Cisco 8000 supports fair queueing at port level on some fixed form factor systems based on Q200 ASIC (Second generation SiOne ASIC) to cater to some specific use cases of customers. VOQs have to be replicated at source port level to achieve port level fairness and hence more number of VOQ replications which in turn bring down over all VOQ scale.
+
+## Traffic manager (TM)  & Packet Memory
+
+Traffic Manager (TM) block in SiOne chip facilitate the overall packet management within the ASIC which includes, packet enqueuing into input buffer which is managed as VOQs which are programmed per destination/output port at slice level, dequeuing packets out of input buffer which is controlled by ingress & egress scheduling entities and streamlining over all congestion management & congestion avoidance with a set of well-defined rules.  
+
+There are multiple memory modules associated with TM functions and major one is the packet memory. Fundamentally there are two types of packet memory in SiOne based Cisco 8000 routers,
+
+Shared Memory System (SMS):
+- SMS is on-chip memory
+- Primary packet memory
+- Fully shared memory
+
+SMS memory is a shallow memory, usually in some 10s or 100s of MBs which varies between different SiOne ASIC variants. SMS is not meant to facilitate additional buffer room for packets while congestion and it is primarily to provide temporary stop while waiting for each processing engines to complete respective actions on the packets. So SMS provides shallow pit stop for packets while it is processed through different forwarding blocks in ingress processing stage.
+
+High Bandwidth Memory (HBM): 
+- Off-chip memory
+- Secondary packet memory
+- Fully shared memory
+
+Cisco 8000 is designed with 8GB of HBM memory co-packaged with SiOne ASIC which is primarily used for deep buffering. So when we talk about queue-limit, RED etc. it is associated with HBM memory.
+
+### Packet flow in non-congestion & congestion scenarios:
+In non-congestion scenario packet get switched though SMS and HBM does not come into picture for such flows: packet gets enqueued into VOQs and dequeued out without any contention and associated latency. So packet movement out of VOQs towards egress OQs will happen at system designed switching speed.
+
+![noncong.png]({{site.baseurl}}/images/noncong.png)
+
+
+How about congestion scenario? Lets look into some of the criteria upon which system declares a VOQ residing in SMS memory as congested,
+
+- Life of packet in packet buffer
+ - Systems declares a VOQ  as congested when packets residing in it exceeds the time threshold set by the system
+- Amount of buffers consumed
+ - System declares a VOQ as congested when the number of buffers consumed by that VOQ goes beyond the maximum number of buffers set by the system
+ 
+Above two are not the only conditions which need to be met before a VOQ mark for evictions. There are other supporting conditions like differentiation of priority vs normal classes, defining unique thresholds and rules for different memory threshold brackets etc..
+
+
+Now lets see what happens while congestion,
+- VOQ facilitating the packet flow get evicted to HBM
+- And packet flow takes a path through HBM until the congestion persist
+
+![conges.png]({{site.baseurl}}/images/conges.png)
+
+
+
+
+
+
+
+
 
 
 
