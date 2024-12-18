@@ -232,6 +232,85 @@ Now lets see what happens while congestion,
 
 ![conges.png]({{site.baseurl}}/images/conges.png)
 
+- VOQs in HBM will get a default queue limit of 6ms if there is no user-defined queue limit in the respective class of the QOS policy applied on the egress interface
+- VOQs in HBM can buffer additional packets up to the queue limit allocated to it and tail drop will happen if queue associated with the VOQ grow beyond the queue limit length applied to it. Tail drop can be caused by prolonged congestion or large bursts
+- Packet flow experience latency during congestion because of the additional buffer pipe in its packet path
+- VOQs move back to SMS after associated congestion is removed
+
+### Where does buffering takes place??
+
+Buffering is associated with the VOQs and its at ingress side of packet processing. 
+
+### Deep buffering & Buffer management
+
+SiOne has HBM memory module co-packaged with NPU module with an interposer providing low latency read/write access between NPU and HBM modules.
+
+*All VOQs are served in SMS,*
+![HBM-2.png]({{site.baseurl}}/images/HBM-2.png)
+
+As seen above, 
+-	There are many VOQs in SMS memory which is facilitating multiple packet flows through the system but none are congested
+-	HBM is empty as all VOQs are non-congested and serving packet flows at its low latency switching speed in SMS
+
+
+
+*some of VOQs get congested and evicted to HBM,*
+
+![hbm-3.png]({{site.baseurl}}/images/hbm-3.png)
+
+What is happening in above scenario,
+
+-	Some of the VOQs in SMS are experiencing congestion
+-	Congested VOQs get evicted to HBM and additional queue depth get applied to the VOQ while in HBM
+o	Depth of queue depends on the user configured values in the respective class of traffic, default is 6msec if there is no explicit user configured queue limit
+-	HBM start filling as more and more VOQs experience congestion simultaneously
+
+*What happens after all buffers in HBM get filled up??*  Lets see,
+
+![hbm-4.png]({{site.baseurl}}/images/hbm-4.png)
+
+8GB HBM can get exhausted with just ~26 VOQs (based on raw bandwidth calculation) each configured with 300MB queue limit, 26x 300MB -> ~8GB. In deployments, there can be thousands of VOQs serving packet flows simultaneously and system can get choked easily by congesting just hundreds of VOQs simultaneously as per above calculation. 
+
+How do Cisco 8000 service more VOQs in HBM simultaneously to keep optimal functioning of the system??
+
+### Dynamic VOQ adaptation
+
+![hbm-4.png]({{site.baseurl}}/images/hbm-4.png)
+
+As seen above, all VOQs are getting the maximum configured queue limit. As more and more VOQs get congested , System adjusts the queue depth to lower brackets there by reducing the queue depth associated with each VOQs in the HBM. There by free up buffer space so that more and more VOQs can be evicted to HBM. 
+
+As seen below, queue pipe associated with each VOQ adapts to lower size and welcoming more congested VOQs to HBM.
+
+![hbm-5.png]({{site.baseurl}}/images/hbm-5.png)
+
+System is designed with multiple brackets of buffer consumption regions. And each bracket is defined with maximum allocatable buffers per VOQ. Number of buffers per VOQ  get adjusted to next lower value as the number of buffers consumed within HBM crosses each bracket thresholds, this way system can scale higher number of VOQ eviction in worst congestion scenarios.
+
+Ex:- 
+-	26 VOQs evicted to HBM with each having a configured queue depth of 300MB
+-	More and more VOQs started experiencing congestion 
+-	System adjusts buffers allocated to 26 VOQs to lower value (as per the brackets defined ) which are already in HBM and free up HBM space to accommodate more VOQs
+This way dynamic adaptation get initiated by TM based on HBM consumption crosses different brackets.
+
+
+Queueing and Policing on Bundle Ether interfaces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
