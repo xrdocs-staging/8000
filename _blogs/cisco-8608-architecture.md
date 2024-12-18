@@ -166,7 +166,7 @@ Figure 8. 86-MPA-4FH-M
 
 **86-MPA-24Z-M**  
 86-MPA-24Z-M can be inserted into any slot (slot 0 to 7) of the chassis without any restriction. This MPA is a pluggable card that provides 24 interface ports for a maximum total bandwidth of 1.2 Tbps and can support up to:  
-- 24 ports of SFP 10/25/50 GbE modules
+- 24 ports of SFP 1/10/25/50 GbE modules
 
 ![figure9.png]({{site.baseurl}}/images/figure9.png){: .full}    
 Figure 9. 86-MPA-24Z-M  
@@ -638,13 +638,16 @@ It contains details on the connector types, the reach, the minimum release requi
 ### Maximum port scale and support on Cisco 8608      
 The following table represents the maximum number of ports the Cisco 8608 router can support.     
 
-|          | 10 GbE | 25 GbE | 40 GbE | 50 GbE | 100 GbE | 400 GbE |
-|----------|--------|--------|--------|--------|---------|---------|
-| Native   | 192    | 192    | 128    | N/S    | 128     | 32      |
-| Breakout | 128    | 128    | N/A    | N/S    | 128     | N/A     |  
+|          | 1GbE | 10 GbE | 25 GbE | 40 GbE | 50 GbE | 100 GbE | 400 GbE |
+|----------|------|--------|--------|--------|--------|---------|---------|
+| Native   | 192  | 192    | 192    | 128    | 192    | 128     | 32      |
+| Breakout | N/A  | 128    | 128    | N/A    | N/S    | 128     | N/A     |   
 
 N/A: Not applicable – N/S: Not supported   
-  
+
+- 1 GbE  
+  - Used with 86-MPA-24Z-M as native with SFP-1G-LH or SFP-1G-SH, fully populated with this MPA into 8 MPAs slots. 8x MPAs and 24x SFP-1G-LH/SFP-1G-SH on each MPA: 192x 1 GbE total  
+
 - 10 GbE  
   - Used with 86-MPA-24Z-M as native with SFP+, fully populated with this MPA into 8 MPAs slots. 8x MPAs and 24x SFP+ on each MPA: 192x 10 GbE total    
   - Used with 86-MPA-4FH-M as breakout, fully populated with this MPA into 8 MPAs slots. 4x (4x 10 GbE) x 8 MPAs: 128x 10 GbE total  
@@ -865,3 +868,5 @@ The Cisco 8608 is a unique platform that combines flexibility & reliability whil
 |---------|----------|---------------|---------------------|
 | 1       | September-8 | Chang Soo Lee | Initial Publication |
 | 2       | December-21 | Fred Cuiller | Added Fan Tray redundancy section |
+| 3       | December-18 | Chang Soo Lee | Added 1GbE and port density update |  
+
