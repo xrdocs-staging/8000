@@ -622,7 +622,7 @@ Figure 21. 86-MPA-4FH-M Datapath block diagram
 
 <b>86-MPA-24Z-M</b>  
 This redundant MPA supports 24x SFP56 ports. This MPA is a redundant MPA because it can work with to two SC with one being active and the other in standby mode.  
-This MPA provides a per slot bandwidth of 1.2 Tbps. The SFP56 ports can support 10/25G optics and can’t support any Breakout solution.      
+This MPA provides a per slot bandwidth of 1.2 Tbps. The SFP-1G-LH or SFP-1G-SH ports can support 1 GbE optics without any port restriction. The SFP56 ports can support 10/25G optics and can’t support any Breakout solution.      
 
 ![10GMPA_diagram.png]({{site.baseurl}}/images/10GMPA_diagram.png){: .full}      
 Figure 22. 86-MPA-24Z-M Datapath block diagram  
