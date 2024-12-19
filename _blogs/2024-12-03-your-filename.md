@@ -292,7 +292,133 @@ Ex:-
 This way dynamic adaptation get initiated by TM based on HBM consumption crosses different brackets.
 
 
-Queueing and Policing on Bundle Ether interfaces
+## Queueing and Policing on Bundle Ether interfaces
+
+We have seen in above sections that deep buffering takes place at ingress stage of ASIC pipeline. And buffering is at slice level as VOQ replication scope is at slice level. 
+
+First lets look at queueing fairness across slices before jump into the Bundle port scenario,
+
+![bund-1.png]({{site.baseurl}}/images/bund-1.png)
+
+In above picture, 
+
+- 	Traffic ingress on 3 ingress ports (Port-1, 5, 10) destined out of same egress port (Port-20)
+-   Bursty traffic (traffic-class 3) is coming in on 3 ports at ingress and all are on different slices
+-   Traffic-class 3 is classified and marked as ‘traffic-class 3’ at ingress on all 3 ingress ports
+-  Traffic is destined to the same egress port port-20
+
+
+Ex:-
+*policy-map Egress_queuing_policy*
+
+ *class traffic-class-3*
+ 
+  *shape average percent 4*
+  
+  *queue-limit 10 ms*
+  
+!
+
+- Traffic get enqueued into VOQ-3 (traffic -class 3) of port-20 on every ingress slices
+- Bustiness nature of traffic causes congestion at egress port which forces VOQ-3 at ingress side congested , hence evict to HBM
+- Since fairness is at slice level , VOQ-3 of port-20 present in 3 ingress slices get congested and deep buffered as per the queue limit configured 
+- VOQ-3 in all 3 ingress slices get 10ms worth of queue pipe in HBM for buffering packets
+- With that, total of 30ms worth of queue depth get applied for VOQ-3 of port-20 during congestion
+- If all 3 ingress ports are on same slice then aggregate queue depth applicable to VOQ-3 will be 10ms as all 3 ingress source ports enqueue packets into the same VOQ-3
+
+
+### Queueing on Bundle Ether interface:
+
+![bundle-2.png]({{site.baseurl}}/images/bundle-2.png)
+
+- Traffic flow ingress on one port and destined out of one egress Bundle Ether interface having 3 member links 
+- Same Shape rate get programmed on all member links of a given bundle
+- Say, ‘shape rate 10gbps’ is the configured shaper in a policy for a given class-map
+- Aggregate shape rate on above bundle interface is 30Gbps (10Gbps x 3 member links ) after the queueing policy is applied on the bundle interface
+- Flows at ingress get load balanced based on the hash calculated by the load balancing module. 
+- So each flow can get maximum of 10Gbps in above example
+
+![bund-3.png]({{site.baseurl}}/images/bund-3.png)
+
+Refer above picture,
+- Multiple flows ingress the system which are destined out of egress Bundle ether port 100
+- Flows get load balanced as per hash value calculated for each flows
+- Egress shaper/queueing policy applied on the bundle ether port get replicated on each members
+- Each member can get same shape rate & queue depth if any congestion at egress side
+
+
+Ex:-
+- Say, ‘shape rate 10gbps’ is the configured shaper in a policy for a given class-map with ‘queue limit’ of 10ms which is applied on the bundle ether port 100
+- Each member link get programmed with same shape rate & queue limit (10gbps+10ms)
+- Say, 3 unique flows are ingressing 
+- And 3 flows are destined out of Bundle Ether (BE) port 100 at egress side
+- BE-100 has 3x 100G members. (P-1,2,4)
+- If there is congestion on any of the member then corresponding VOQ of the member link get congested and evicted to HBM and get maximum queue depth of 10ms
+
+
+With this, provisioning of QOS applications is easy to deploy on bundle Ether ports where more links can be provisioned as needed as part of capacity expansion. And QOS policy applied on the bundle ether port get programmed on the links which get provisioned newly as and when new links -are added to the bundle ether port.
+
+## Policing 
+
+Policing is more aggressive way of rate limiting and shaping is more controlled way of rate limiting. Major difference between policing and shaping is that policing will drop exceeding traffic and shaping will buffer it.
+
+The logic behind policing is completely different than shaping. To check if traffic matches the traffic contract, the policer will measure the cumulative byte rate of arriving packets conform to certain rate by limiting at that rate. But shaping makes traffic conform to certain rate by delaying packet sending rate. So traffic policing does not cause delay to the traffic flow but shaping causes delay in traffic flow.
+
+Policing can kill the flow which goes slightly over conform rate but shaping can still deliver the spike with little delay. Shaping behaves more like interfaces that have queues to buffer bursts, policing behaves more like interfaces with no queues.
+
+### Policing on Bundle Ether interface:
+
+Cisco 8000 supports policing at ingress direction currently. Scope of policer token bucket programming is at slice level. That means user configured policer on a Bundle interface get programmed at slice level across all member links and not replicated on each member links. Current supported configuration option is in percentage on Bundle main & sub interfaces where absolute and percentage configuration is supported on usual physical main and sub interface types.
+
+![pol-1.png]({{site.baseurl}}/images/pol-1.png)
+
+
+As shown in above picture, 
+- Bundle interface has 3x 100G member links. 2 links are from slice-1 & 1 link form slice-2
+- User has configured 50% police rate 
+- 50% of total Bundle bandwidth will be the police rate is configured on Bundle Ether interface
+- So total police rate applied on the Bundle interface is 50% of 3x100G ie, 150G 
+- In other way, since policer replication is at slice level each slice will get 50% of the aggregate bandwidth of all member links on that slice. So slice-1 will be programmed with 100G (50% of 2x 100G) and slice-2 with 50G (50% of 1x 100G)
+- With that maximum policed traffic out of Bundle interface in above case is 150G
+
+
+
+
+### Bundle with member links from same slice: 
+
+![pol-2.png]({{site.baseurl}}/images/pol-2.png)
+
+In this example,
+- Bundle Ether has 2x 100G member links from same slice: slice-1
+- 50% police rate is applied on the Bundle interface
+- Slice-1 get programmed with police rate of 100G (50% of 2 x 100G)
+
+
+Lets look at the traffic flows and the rate limiting,
+
+![pol-3.png]({{site.baseurl}}/images/pol-3.png)
+
+
+- 2 different flows Flow-1 & Flow-2 ingress the system and both flows are resolved to egress out of the Bundle Ether interface
+- Both flows are coming in at 90G rate
+- Flows are load balanced as per Bundle hashing  and say, Flow-1 resolved over member link-1 and Flow-2  over link-2
+
+*Traffic generator stats:
+![tgn-1.png]({{site.baseurl}}/images/tgn-1.png)
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
