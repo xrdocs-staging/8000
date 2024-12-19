@@ -13,7 +13,9 @@ tags:
   - cisco 8000 policer
   - Cisco 8000 qos on bundle ports
 ---
-## Cisco 8000 QOS Archetecture
+|Ram Mohan A.M., Technical Leader, Technical Marketing (raam@cisco.com)|  
+
+{% include toc icon="table" title="Cisco 8000 QOS Architecture White Paper" %}
 
 
 ## Introduction
@@ -447,70 +449,3 @@ Let’s see the rate limiting after stopping one of the Flow, say Flow-2,
 ![tgn-4.png]({{site.baseurl}}/images/tgn-4.png)
 
 - Flow-2 continues to be rate limited at 50G CIR as policer programming is at slice level. So each Flow get applied with 50G CIR.
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
