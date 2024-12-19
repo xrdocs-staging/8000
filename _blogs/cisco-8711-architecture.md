@@ -12,7 +12,7 @@ tags:
   - Fixed System
 position: hidden
 ---
-{% include toc icon="table" title="Cisco 8711 Architecture White Paper" %}
+{% include toc icon="table" title="Cisco 8711-32FH-M Architecture White Paper" %}
 
 # Introduction
 
