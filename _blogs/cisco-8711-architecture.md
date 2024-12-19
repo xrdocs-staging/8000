@@ -1,7 +1,7 @@
 ---
 published: true
 date: '2024-08-23 18:44 +0200'
-title: Cisco 8711 Architecture White Paper
+title: Cisco 8711-32FH-M Architecture White Paper
 author: Chang Soo Lee
 excerpt: >-
   This post will describe Cisco 8711-32FH-M architecture, based on Silicon One
