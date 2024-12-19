@@ -631,6 +631,9 @@ Figure 22. 86-MPA-24Z-M Datapath block diagram
 **Note**: All even and odd port pair (port 0/1, 2/3, 4/5 … etc) must run at the same speed(both at 10G or both at 25G).  
 {: .notice}  
 
+**Note**: SFP-1G-LH, SFP-1G-SH are supported from XR 24.4.1 onward          
+{: .notice}   
+
 To verify optics supported, please use the Cisco Optics-to-Device Compatibility Matrix tool:  
 [the TMG matrix](https://tmgmatrix.cisco.com/)    
 It contains details on the connector types, the reach, the minimum release required, etc.  
@@ -868,5 +871,4 @@ The Cisco 8608 is a unique platform that combines flexibility & reliability whil
 |---------|----------|---------------|---------------------|
 | 1       | September-8 | Chang Soo Lee | Initial Publication |
 | 2       | December-21 | Fred Cuiller | Added Fan Tray redundancy section |
-| 3       | December-18 | Chang Soo Lee | Added 1GbE and port density update |  
-
+| 3       | December-18 | Chang Soo Lee | Added 1GbE and port density update |
