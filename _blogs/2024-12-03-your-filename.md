@@ -407,6 +407,55 @@ Lets look at the traffic flows and the rate limiting,
 ![tgn-1.png]({{site.baseurl}}/images/tgn-1.png)
 
 
+- Rate limiting happens at slice level and not at individual member link level. So each flow gets 50G each totalling to 100G aggregated police rate out of the Bundle Ether port as seen in above traffic generator snap shot.
+
+Let’s see the rate limiting after stopping Flow-2,
+
+*Traffic generator stats:
+![tgn-2.png]({{site.baseurl}}/images/tgn-2.png)
+
+- Flow-1 get full throughput as its rate is within the police rate on that slice. With this its evident  that policer replication is at slice level and individual flow can get maximum CIR.
+
+### Bundle with member links from different slices: 
+
+![pol-6.png]({{site.baseurl}}/images/pol-6.png)
+
+In this example,
+- Bundle Ether has 2x 100G member links from different slices: slice-1, slice-2
+- 50% police rate is applied on the Bundle interface
+- Each Slice get programmed with a police rate of 50G (50% of 1 x 100G)
+- So total police rate out of Bundle Ether port is 100G
+
+
+Lets look at the traffic flows and the rate limiting,
+
+![pol-5.png]({{site.baseurl}}/images/pol-5.png)
+
+- 2 different flows Flow-1 & Flow-2 ingress the system and both flows are resolved to egress out of the Bundle Ether interface
+- Both flows are coming in at 90G rate
+- Flows are load balanced as per Bundle hashing  and say, Flow-1 resolved over member link-1 and Flow-2  over link-2
+
+
+*Traffic generator stats:
+![tgn-1.png]({{site.baseurl}}/images/tgn-1.png)
+
+- Rate limiting happens at slice level and not at individual member link level. So each flow get rate limited to 50G as slice level policing is at 50G and totalling to 100G out of the Bundle Ether port. Traffic generator snapshot given above.
+
+Let’s see the rate limiting after stopping one of the Flow, say Flow-2,
+
+*Traffic generator stats:
+![tgn-4.png]({{site.baseurl}}/images/tgn-4.png)
+
+- Flow-2 continues to be rate limited at 50G CIR as policer programming is at slice level. So each Flow get applied with 50G CIR.
+
+
+
+
+
+
+
+
+
 
 
  
