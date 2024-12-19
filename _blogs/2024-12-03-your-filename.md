@@ -31,7 +31,7 @@ This document is targeted to help those readers who is interested in understandi
 - Cisco 8000 QOS scheduling and buffering
 - Cisco 8000 shaping & buffering 
 - behaviour on Bundle ports
-- Cisco 8000 policing behaviour and its aggregate behaviour on Bundle ports
+- Cisco 8000 policing behaviour and behaviour on Bundle ports
 
 ## Silicon One (SiOne) NPU Architecture
 
