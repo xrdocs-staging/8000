@@ -18,7 +18,7 @@ tags:
 {% include toc icon="table" title="Cisco 8000 QOS Architecture White Paper" %}
 
 
-## Introduction
+# Introduction
 
 Cisco 8000 series routers combines industry leading Cisco Silicon One, IOS XR networking operating system (OS), clean sheet chassis design and Crosswork automation tools to deliver high performance routers empowered with programmable transport infrastructure and network provisioning & monitoring tools.
 
@@ -35,7 +35,7 @@ This document is targeted to help those readers who is interested in understandi
 - behaviour on Bundle ports
 - Cisco 8000 policing behaviour and behaviour on Bundle ports
 
-## Silicon One (SiOne) NPU Architecture
+# Silicon One (SiOne) NPU Architecture
 
 
 ![npu-arch.png]({{site.baseurl}}/images/npu-arch.png){: .align-center}
@@ -49,7 +49,7 @@ SiOne has started its journey in 2019 and has many variants with different capab
 Example, switching devices need high switching bandwidth , port density , shallow buffering with small routing table and feature scale. But on the other hand routing devices will demand medium to high bandwidth , deep buffering, feature richness and high scale routing table & services. SiOne flexible architecture design helps to build different variants in shorter time to cater to these use cases at minimal production cost.
 
 
-### Life of packet through SiOne
+## Life of packet through SiOne
 
 ![LoP.png]({{site.baseurl}}/images/LoP.png){: .align-center}
 
@@ -67,7 +67,7 @@ Let’s look into the packet forwarding stages in **SiOne**:
 On **distributed systems** ,  traffic incoming & outgoing slices can be on different NPUs across same Line card or different Line card  where Fabric mediates between ingress NPU and egress NPU for transferring packets from ingress to egress.  Since the packet transfer from ingress towards egress is strictly based on the credit grant received from the egress scheduler there no chance of fabric congestion or congestion at egress NPU side.
 
 
-### VOQ architecture
+## VOQ architecture
 
 VOQ (Virtual Output Queue) is a virtual representation of the output queues of a port at ingress side of the packet processing. While the physical buffer associated with the VOQs is on the input side of packet processing, it represents packets queued on the output side. VOQ based systems will have its VOQ representation programmed at ingress side of the packet processing. This programming happens after system boots up and creates the ports. Cisco 8000 systems programs VOQ replication for all default ports on the system. Same time system creates VOQs for the sub-interfaces only after a queueing policy applied on the sub-interface. And programmed VOQs will be deleted after sub-interface is deleted or the queueing policy is removed from the sub-interface
 
