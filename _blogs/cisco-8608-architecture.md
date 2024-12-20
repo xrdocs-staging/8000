@@ -668,6 +668,14 @@ N/A: Not applicable – N/S: Not supported
 - 400 GbE  
   - Used with 86-MPA-4FH-M as native with QSFPDD, fully populated with this MPA into 8 MPAs slots. 8 MPAs x 4x QSFPDD on each: 32x 400 GbE total  
 
+### MACsec Support  
+
+Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8608 with all 3 MPAs. All ports are connected to PHY supporting the feature. It can be supported on 10G, 25G, 40G, 100G, 400G ports and also any breakout ports.
+
+![8608-MACsec.png]({{site.baseurl}}/images/8608-MACsec.png){: .full}  
+Figure 23. MACsec Use Cases of Cisco 8608.     
+{: .text-center}  
+
 ## Redundancy Details  
 Within the system even though RP0, RP1, SC0, SC1 are 4 different cards, from redundancy standpoint system software would consider RP0-SC0 together as Active Pair and RP1-SC1 as Standby Pair.  
 
@@ -686,7 +694,7 @@ Let’s discuss with the default state when system boots up under redundant syst
  RP0-SC0 together as one Domain 0(Active Pair) and RP1-SC1 as the other Domain 1(Standby Pair). 
  
 ![new-active-standby.png]({{site.baseurl}}/images/new-active-standby.png){: .full}  
-Figure 23. Default Redundant state in Cisco 8608  
+Figure 24. Default Redundant state in Cisco 8608  
 {: .text-center}   
 
 In this default scenario, RP0 gains mastership and RP1 is in Backup state.
@@ -740,13 +748,13 @@ ID   Attribute       Value
 If Active RP0 encounters a fatal fault or is removed, Standby RP immediately gains mastership via HW arbitration mechanism. MPAs switchover data path to RP1-SC1.   
 
 ![new figure24.png]({{site.baseurl}}/images/new figure24.png){: .full}  
-Figure 24. RP0 failure scenario in Cisco 8608    
+Figure 25. RP0 failure scenario in Cisco 8608    
 {: .text-center}   
 
 Another scenario is the failure of the SC0 within Active pair, Active RP’s shelfmgr relinquish mastership if standby RP present and ready. Trigger SC reload regardless.    
 
 ![new-figure25.png]({{site.baseurl}}/images/new-figure25.png){: .full}  
-Figure 25. SC0 failure scenario in Cisco 8608    
+Figure 26. SC0 failure scenario in Cisco 8608    
 {: .text-center}   
 
 The show platform CLI output will display the Domain states.  
@@ -819,7 +827,7 @@ Up to 10 ms traffic drop is expected during active RP/SC Failover. No traffic lo
 ### Packet flow in the redundancy system  
 
 ![new-figure26.png]({{site.baseurl}}/images/new-figure26.png){: .full}   
-Figure 26. Data path flow with Redundant System.   
+Figure 27. Data path flow with Redundant System.   
 {: .text-center}  
 
 1.	Ingress traffic coming from the network into the MPA  
@@ -830,7 +838,7 @@ Figure 26. Data path flow with Redundant System.
 6.	PHY will drop packets coming from standby SC1  
 
 ![new-figure27.png]({{site.baseurl}}/images/new-figure27.png){: .full}  
-Figure 27. Data path flow after old active pair (RP0/SC0) shutdown       
+Figure 28. Data path flow after old active pair (RP0/SC0) shutdown       
 {: .text-center}  
 
 1.	Ingress traffic coming from the network into the MPA   
@@ -871,4 +879,4 @@ The Cisco 8608 is a unique platform that combines flexibility & reliability whil
 |---------|----------|---------------|---------------------|
 | 1       | September-8 | Chang Soo Lee | Initial Publication |
 | 2       | December-21 | Fred Cuiller | Added Fan Tray redundancy section |
-| 3       | December-18 | Chang Soo Lee | Added 1GbE and port density update |
+| 3       | December-18 | Chang Soo Lee | Added 1GbE, Port density, and MACsec update |
