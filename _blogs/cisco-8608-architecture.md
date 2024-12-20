@@ -677,9 +677,7 @@ Figure 23. MACsec Use Cases of Cisco 8608
 {: .text-center}  
 
 **Note**: k9 package is required for crypto data plane  
-{: .notice}  
-
-[MACsec configurations on Cisco 8608](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
+{: .notice}    
 
 
 ## Redundancy Details  
@@ -878,6 +876,7 @@ The Cisco 8608 is a unique platform that combines flexibility & reliability whil
 - [Cisco 8608 Hardware Installation Guide](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/hardware/hig-centralized-8600/b-8600-hardware-installation-guide-centralized/modular_series_routers_overview.html)        
 - [Cisco 8000 Configuration guide](https://www.cisco.com/c/en/us/support/routers/8000-series-routers/products-installation-and-configuration-guides-list.html)        
 - [Cisco Optics-to-Device Compatibility Matrix tool](https://tmgmatrix.cisco.com/)  
+- [MACsec configurations on Cisco 8608](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
 
 ## Modification History  
 
