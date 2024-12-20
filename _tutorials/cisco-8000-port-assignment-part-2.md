@@ -422,10 +422,10 @@ Cisco 8700 products embody this cutting-edge innovation of the 8000 portfolio, o
 | FH0/0/0/7 | 0/3/0         | FH0/0/0/15 | 0/2/0         | FH0/0/0/23 | 0/1/0         | FH0/0/0/31 | 0/0/0         |    
 
 ### 8712-MOD-M  
-The Cisco 8712-MOD-M is made of a single K100 NPU. This system can support  up to 16 ports of QSFP56-DD. It supports MACsec on all ports.
-8712-MOD-M chassis with 4 Modular Port Adapter(8K-MPA-16H on top left and right, 8K-MPA-16Z2D on bottom left, 8K-MPA-4D on bottom right). All ports support PTP timing at Class C performance.
+The Cisco 8712-MOD-M is made of a single K100 NPU. This system can support  up to 16 ports of QSFP56-DD. It supports MACsec on all ports. All ports support PTP timing at Class C performance.
 
 ![8712-MOD-M photo.png]({{site.baseurl}}/images/8712-MOD-M photo.png)
+Cisco 8712-MOD-M chassis with 4 Modular Port Adapter(8K-MPA-16H on top left and right, 8K-MPA-16Z2D on bottom left, 8K-MPA-4D on bottom right)  
 
 ![8712-MOD-M IFG.png]({{site.baseurl}}/images/8712-MOD-M IFG.png)
 
