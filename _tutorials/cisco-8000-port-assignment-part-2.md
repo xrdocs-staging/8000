@@ -368,7 +368,7 @@ Hu0/7/0/9    1c0007b8   0   0    0    35  33424      0   etm_global    100G     
 - NPU core: Slice number  
 -- Slice number should be between 0 and 5 for 8212-48FH-M (8000 fixed systems)  
 -- Slice number should be between 0 and 3 for 8711-32FH-M (8000 fixed systems)   
--- Slice number should be between 0 and 1 for 8712-MOD-M  
+-- Slice number should be between 0 and 1 for 8712-MOD-M (8000 fixed systems)   
 -- Slice number shoulbe be 0,1, 2 for 8800 Line cards     
 - PP port: IFG number, should be 0 or 1 within slice    
 {: .notice}  
