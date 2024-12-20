@@ -670,7 +670,12 @@ N/A: Not applicable – N/S: Not supported
 
 ### MACsec Support  
 
-Starting IOS-XR 7.10.1, MACsec is supported on all ports of Cisco 8608 with all 3 MPAs. All ports are connected to PHY supporting the feature. It can be supported on 10G, 25G, 40G, 100G, 400G ports and also any breakout ports.
+Starting IOS-XR 7.10.1, MACsec is supported on all ports of Cisco 8608 with all 3 MPAs. All ports are connected to PHY supporting the feature. It can be supported on 10G, 25G, 40G, 100G, 400G ports and also any breakout ports.  
+
+•	Full line-rate MACsec encryption engines to enable secure and low latency transport  
+•	Supports MACsec GCM-AES-128/256 and GCM-AES-XPN-128/256  
+•	Supports LAN MACsec and WAN MACsec  
+•	Supports “VLAN tag in the clear”    
 
 ![8608-MACsec.png]({{site.baseurl}}/images/8608-MACsec.png)    
 Figure 23. MACsec Use Cases of Cisco 8608     
