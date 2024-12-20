@@ -421,6 +421,14 @@ Cisco 8700 products embody this cutting-edge innovation of the 8000 portfolio, o
 | FH0/0/0/6 | 0/3/0         | FH0/0/0/14 | 0/2/0         | FH0/0/0/22 | 0/1/0         | FH0/0/0/30 | 0/0/0         |
 | FH0/0/0/7 | 0/3/0         | FH0/0/0/15 | 0/2/0         | FH0/0/0/23 | 0/1/0         | FH0/0/0/31 | 0/0/0         |    
 
+### 8712-MOD-M  
+The Cisco 8712-MOD-M is made of a single K100 NPU. This system can support  up to 16 ports of QSFP56-DD. It supports MACsec on all ports.
+8712-MOD-M chassis with 4 Modular Port Adapter(8K-MPA-16H on top left and right, 8K-MPA-16Z2D on bottom left, 8K-MPA-4D on bottom right). All ports support PTP timing at Class C performance.
+
+![8712-MOD-M photo.png]({{site.baseurl}}/images/8712-MOD-M photo.png)
+
+![8712-MOD-M IFG.png]({{site.baseurl}}/images/8712-MOD-M IFG.png)
+
 
 ### 88-LC1-36EH  
 The Cisco 88-LC1-36EH P100 based transport optimized line card provides 36 ports of 800G (high dense 400 GbE), aggregating to a total bandwidth of 28.8 Tbps.There are four P100 NPUs on this line card. Allow Flexible combination of 800G/400G/200G/100G/40G/10G Optics and port based Breakout options. This line card doesn't support MACsec. All ports support PTP timing at Class C performance.    
