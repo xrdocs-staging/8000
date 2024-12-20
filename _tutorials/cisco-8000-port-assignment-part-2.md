@@ -23,7 +23,7 @@ position: top
 The Cisco 8000 Series routers are built around network processors from the Cisco Silicon One family. To continue increasing performance, these network processors (NPUs) have an internal architecture that uses multiple hardware engines to process packets in parallel. The term we use for these internal engine groupings is “slices”. Note: don’t be confused with other platforms where an entire NPU is also called a “slice”. As semiconductor processes allow greater integration, we’ve seen systems like the Cisco 12000, where it took multiple large ASICs on a single linecard to implement the forwarding path. On the Cisco CRS-1, we moved from a few large ASICs to just a couple, to having multiple highly integrated NPUs on a single linecard. The ASR9k continued this integration with multiple NPUs on a card – here each NPU complex was referred to as a “slice”. On the Cisco 8000, each NPU has now integrated multiple forwarding engines onto a single chip along with the fabric interface as well. Better integration means fewer total chips in the forwarding path, with higher performance and lower power.
 The majority of users will never need to know or care exactly how the front panel ports are mapped to these individual NPUs or which forwarding engines are used for a given interface. That said, understanding the port assignments can be useful in analyzing traffic flows, facilitating troubleshooting, and performance analysis. Let's review here how ports are allocated on each of the Cisco 8000 systems.
 
-This second article explores port/IFG/Slice/NPU in P100 based platforms.  
+This second article explores port/IFG/Slice/NPU in P100/K100 based platforms.  
 
 The following CLI command can be used on any Cisco 8000 system to display the assignments of physical ports to their corresponding NPU, slice, and IFG. (“IFG” stands for “interface group”, this is just another internal sub-block of the chip. There are two IFGs for each forwarding slice.  
 
@@ -497,4 +497,5 @@ Also you can find the first part of this post here: [Cisco 8000 Port assignment 
 
 | Version | Data     | Author(s)     | Comments            |
 |---------|----------|---------------|---------------------|
-| 1       | September-26 | Chang Soo Lee | Initial Publication for P100 based platforms |
+| 1       | September-26 | Chang Soo Lee | Initial Publication for P100 based platforms |  
+| 2       | December-20 | Chang Soo Lee | Addes Cisco 8712-MOD-M |  
