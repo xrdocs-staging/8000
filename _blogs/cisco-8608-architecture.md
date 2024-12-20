@@ -885,4 +885,4 @@ The Cisco 8608 is a unique platform that combines flexibility & reliability whil
 |---------|----------|---------------|---------------------|
 | 1       | September-8 | Chang Soo Lee | Initial Publication |
 | 2       | December-21 | Fred Cuiller | Added Fan Tray redundancy section |
-| 3       | December-18 | Chang Soo Lee | Added 1GbE, Port density, and MACsec update |
+| 3       | December-18 | Chang Soo Lee | Added 1GbE, Port density, and MACsec Use Cases update |
