@@ -607,7 +607,7 @@ The following summary is the all scenarios for Native and Breakout solutions on 
 | 15   | No                 | 1x 100 GbE, 1 x 40 GbE, 1x 10 GbE with QSA               |  
 
 
-**Note**: On 86-MPA-14H2FH-M, Port 2 or greater does not support 400G mode CLI.    
+**Note**: On 86-MPA-14H2FH-M, Port 2 or greater does not support 400G mode CLI      
 {: .notice}  
 
   
@@ -675,6 +675,12 @@ Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8608 with all 
 ![8608-MACsec.png]({{site.baseurl}}/images/8608-MACsec.png){: .full}  
 Figure 23. MACsec Use Cases of Cisco 8608.     
 {: .text-center}  
+
+**Note**: k9 package is required for crypto data plane  
+{: .notice}  
+
+[MACsec configurations on Cisco 8608](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
+
 
 ## Redundancy Details  
 Within the system even though RP0, RP1, SC0, SC1 are 4 different cards, from redundancy standpoint system software would consider RP0-SC0 together as Active Pair and RP1-SC1 as Standby Pair.  
