@@ -498,4 +498,4 @@ Also you can find the first part of this post here: [Cisco 8000 Port assignment 
 | Version | Data     | Author(s)     | Comments            |
 |---------|----------|---------------|---------------------|
 | 1       | September-26 | Chang Soo Lee | Initial Publication for P100 based platforms |  
-| 2       | December-20 | Chang Soo Lee | Addes Cisco 8712-MOD-M |  
+| 2       | December-20 | Chang Soo Lee | Updated Cisco 8712-MOD-M |  
