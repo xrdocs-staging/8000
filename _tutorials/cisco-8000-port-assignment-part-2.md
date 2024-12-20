@@ -151,6 +151,30 @@ FH0/0/0/2    78000238   0   3    1    36    840      0        local    400G     
 </pre>
 </div>  
 
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>  
+
+RP/0/RP0/CPU0:8712-MOD-M#<span style="background-color: #A0CFEC">show controllers npu voq-usage interface all instance all location 0/rp0/cpu0</span>   
+
+----------------------------------------------------------------------------------------
+Node ID: 0/RP0/CPU0
+Intf         Intf     <mark>NPU Slice IFG</mark>  Sys   VOQ   Flow       VOQ      Port       Global 
+name         handle    <mark>#    #    #</mark>   Port  base  base       port     speed      IFG #
+             (hex)                                          type                
+----------------------------------------------------------------------------------------
+FH0/1/0/0    780000b4   0   1    0     4    544      0        local    400G      2
+FH0/1/0/1    780000bc   0   1    0     5    552      0        local    400G      2
+FH0/0/0/2    780000c4   0   0    0     6    592      0        local    400G      0
+FH0/0/0/1    780000cc   0   0    0     7    584      0        local    400G      0
+FH0/0/0/0    780000d4   0   0    0     8    576      0        local    400G      0
+FH0/1/0/3    780000dc   0   1    0     9    568      0        local    400G      2
+FH0/1/0/2    780000e4   0   1    0    10    560      0        local    400G      2
+Hu0/0/0/3    780000ec   0   0    0    11    600      0        local    100G      0
+
+</code>
+</pre>
+</div>
 
 <div class="highlighter-rouge">
 <pre class="highlight">
