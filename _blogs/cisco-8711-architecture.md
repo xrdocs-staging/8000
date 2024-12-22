@@ -125,17 +125,17 @@ Figure 4. Mgmt/Timing Interface details
 
 Front panel ports include management and Timing interfaces:
 - Management interfaces  
- -- 1x 10/100/1000 Mbps Management Ethernet port  
- -- 1x USB 3.0 (Type A)  
- -- RJ45 console port directly to CPU  
- -- 1x 10 GbE Control plane Expansion Ethernet port (Not used)  
+  - 1x 10/100/1000 Mbps Management Ethernet port  
+  - 1x USB 3.0 (Type A)  
+  - RJ45 console port directly to CPU  
+  - 1x 10 GbE Control plane Expansion Ethernet port (Not used)  
 - Timing interfaces  
 8711-32FH-M is capable of frequency, time, and phase synchronization. These can be sourced from dedicated interfaces GPS port or from timestamped 1588 packets received on a normal data port in the system. The time, phase and frequency are distributed through the system with a frequency and PPS signal to devices near the physical port where timestamps are applied on ingress and egress packets.  
 In 8711-32FH-M, network synchronization clock can be sourced from any of the QSFPDD ports and from GPS (ToD, 10MHz, 1PPS ports).  
 - 1x GPS interface  
- -- ToD (Time of Day) with RJ45 port  
- -- 1 PPS coax port  
- -- 10 MHz coax port  
+  - ToD (Time of Day) with RJ45 port  
+  - 1 PPS coax port  
+  - 10 MHz coax port  
 - 1x GNSS (Global Navigation Satellite System) receiver ( PRTC(Primary Reference Time Clock) Class B Accuracy) 
 
 **Notes**: No BITS interface support on 8711-32FH-M  
