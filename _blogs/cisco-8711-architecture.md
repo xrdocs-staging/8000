@@ -294,6 +294,31 @@ Total of Group 1:              435W/2.1A         371W/30.7A
 </pre>
 </div>   
 
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>  
+
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show environment fan</span>  
+=============================================================
+                                              Fan speed (rpm)
+Location      FRU Type                        FAN_0    FAN_1   
+-------------------------------------------------------------
+
+0/FT0        FAN-1RU-PI-V2                     19080   16650   
+0/FT1        FAN-1RU-PI-V2                     19020   16770   
+0/FT2        FAN-1RU-PI-V2                     19230   16860   
+0/FT3        FAN-1RU-PI-V2                     19110   16740   
+0/FT4        FAN-1RU-PI-V2                     19050   16680   
+0/FT5        FAN-1RU-PI-V2                     19080   16650   
+0/PM0        <mark>PSU2KW-ACPI</mark>                       14656   13312  
+0/PM1        <mark>PSU2KW-ACPI</mark>                       14560   13408
+
+</code>
+</pre>
+</div>  
+
+
+
 # Slot and Port identification
 
 # System Details
