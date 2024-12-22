@@ -118,7 +118,7 @@ As shown in Figure 3, The front of the chassis has 16 QSFP-DD800 + 16 QSFD56-DD 
 **Notes** : QSFP-DD800 is 800G capable version of the QSFP56-DD.  It is backward compatible to legacy QSFP56- DD and all QSFP modules.
 {: .notice}  
 
-![Screenshot 2024-12-21 at 11.01.51 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 11.01.51 PM.png)  
+  
 
 Figure 4. Mgmt/Timing Interface details  
 {: .text-center}  
@@ -186,6 +186,7 @@ Figure 8. PSI (Port-side Intake) Airflow of Cisco 8711-32FH-M Router
 Figure 9. Back view of 6x FAN-1RU-PE-V2 + 2x PSU2KW-ACPE (Blue Latches)  
 {: .text-center}  
 
+![Screenshot 2024-12-22 at 10.37.44 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 10.37.44 AM.png)
 
 
 Figure 10. PSE (Port-side Exhaust) Airflow of Cisco 8711-32FH-M Router  
