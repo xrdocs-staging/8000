@@ -69,6 +69,10 @@ Cisco’s [Converged SDN Transport Solution](https://blogs.cisco.com/sp/routed-o
 
 ![Screenshot 2024-12-21 at 10.44.17 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.44.17 PM.png)  
 
+The requirements for securing the connection of multiple data center and cloud links typically target a smaller amount of links, while requiring the highest level of bandwidth requirements. Sometimes called data center interconnect (DCI), WAN MACsec is an ideal encryption solution for interconnecting data center or multilocation cloud environments.  
+
+The backhauling of remote branch sites for government, enterprise, or commercial organizations is critical to any business. In the consumer space, this can be important for remote stores and point-of-sale kiosks, and in the enterprise and government space, it is crucial for remote agencies and offices.  
+
 
 
 # Cisco 8711 Usecases
