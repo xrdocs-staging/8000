@@ -399,6 +399,23 @@ HundredGigE0/0/0/0.9           11.0.9.1        Up              Up       default
 </pre>
 </div>  
 
+Breakout Interface Use-case with 2x400 GbE at 800G port ( Even port, Top row ports)  
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>  
+hw-module port-range 0 1 instance 0 location 0/RP0/CPU0 mode 2x400  
+
+RP/0/RP0/CPU0:8711-32FH-M#sh ip int brief
+Interface                      IP-Address      Status          Protocol Vrf-Name
+<mark>FourHundredGigE0/0/0/0/0</mark>      unassigned      Up              Up       default 
+FourHundredGigE0/0/0/0/1      unassigned      Up              Up       default
+
+</code>
+</pre>
+</div>  
+
+
 
 # Slot and Port identification
 
