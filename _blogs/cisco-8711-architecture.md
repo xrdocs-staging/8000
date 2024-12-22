@@ -317,6 +317,24 @@ Location      FRU Type                        FAN_0    FAN_1
 </pre>
 </div>  
 
+## 8711-32FH-M CPU complex card   
+
+8711-32FH-M uses common CPU card designed for Cisco 8000 fixed router.  
+
+CPU complex card is designed with Intel 6 core processor. This processor running IOS XR operating system manages the system by setting up the control plane, NPU, and communicates with various subsystems.  
+
+| Device         | Configuration         |
+|----------------|-----------------------|
+| CPU            | Intel 6 Core @ 2.5GHz |
+| Memory         | 64 GB DDR4 SODIMM     |
+| M.2 SATA Drive | 480 GB SATA SSD       |
+| USB            | 1 x USB3.0            |
+| MGMT           | MGMT copper           |
+| Consoles       |                       |
+| Aikido FPGA    | Aikido Secure Boot    |  
+
+
+
 
 
 # Slot and Port identification
