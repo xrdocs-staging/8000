@@ -199,6 +199,33 @@ Figure 11. Fan Tray LEDs of Cisco 8711-32FH-M Router
 {: .text-center}  
 
 
+## Power Supply Unit(PSU)  
+
+871-32FH-M has two PSUs supporting 1+1 redundancy. Redundancy will be supported for High Line Voltage mode(200Vac to 240Vac) of AC supply. When AC supply is used in low line volage(100Vac to 127Vac), redundancy is not supported.  
+
+**Note**: The Cisco 8711-32FH-M router doesn’t support a mix of AC and DC Power Supply Units (PSUs)  
+{: .notice}  
+
+AC Power Supply Unit (PSU2KW-ACPI, PSU2K-ACPE)  
+- The AC power modules are single feed with 2000W capacity at 220V. They also support operation at 110V with half the capacity    
+- AC power modules are rated at 2000W maximum at 220V AC high line input, and 1000W maximum at 110V AC low line input  
+- AC nominal range: 100 to 127V AC and 200 to 240V AC  
+- AC full range: 90 to 140V AC and 180 to 264V AC; with extended range to 300V AC  
+
+DC Power Supply Unit (PSU2KW-DCPI, PSU2K-DCPE)  
+- The DC power modules are single feed with 2000W capacity at any specified input voltage  
+- DC nominal range: -40 to -72V DC  
+
+| PSU PID     | Input Voltage                     | Input Current(Max) | Output Power  | Output           | Dimension(HxWxL)                    |
+|-------------|-----------------------------------|--------------------|---------------|------------------|-------------------------------------|
+| PSU2KW-ACPI | 100Vac to 127Vac 200Vac to 240Vac | 12A 12A            | 1,000W 2,000W | 12V/84A 12V/167A | 1.575”x2.9”x10.5” (73.5x40.0x265mm) |
+| PSU2KW-ACPE | 100Vac to 127Vac 200Vac to 240Vac | 12A 12A            | 1,000W 2,000W | 12V/84A 12V/167A |                                     |
+| PSU2KW-DCPI | -40Vd to -72Vdc                   | 60A                | 2,000W        | 12V/167A         |                                     |
+| PSU2KW-DCPE | -40Vd to -72Vdc                   | 60A                | 2,000W        | 12V/167A         |                                     |  
+
+Table 3. PSUs types of Cisco 8711-32FH-M  
+{: .text-center}   
+
 
 
 # Slot and Port identification
