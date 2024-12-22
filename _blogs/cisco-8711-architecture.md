@@ -354,7 +354,7 @@ Build Information:
 cisco 8000 (Intel(R) Xeon(R) CPU D-1633N @ 2.50GHz)
 cisco 8711-32FH-M (Intel(R) Xeon(R) CPU D-1633N @ 2.50GHz) processor with 64GB of memory
 8711-32FH-M uptime is 25 minutes
-Cisco 8711 1RU 12.8T P100 System
+<mark>Cisco 8711 1RU 12.8T P100 System</mark>
 
 </code>
 </pre>
