@@ -118,7 +118,7 @@ As shown in Figure 3, The front of the chassis has 16 QSFP-DD800 + 16 QSFD56-DD 
 **Notes** : QSFP-DD800 is 800G capable version of the QSFP56-DD.  It is backward compatible to legacy QSFP56- DD and all QSFP modules.
 {: .notice}  
 
- ![Screenshot 2024-12-22 at 11.27.20 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 11.27.20 AM.png)  
+
 
 Figure 4. Mgmt/Timing Interface details  
 {: .text-center}  
