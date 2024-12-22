@@ -375,6 +375,31 @@ Cisco 8711-32FH-M port numbering follows that of physical interfaces as {Type}{R
 ![Screenshot 2024-12-22 at 12.24.45 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 12.24.45 PM.png)  
 
 
+Native Interface Use-case with 100 GbE at 400 G port  
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>   
+
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show ip interface brief</span>
+Interface                      IP-Address      Status          Protocol Vrf-Name
+<mark>HundredGigE0/0/0/0</mark>             40.0.0.1        Up              Up       default 
+HundredGigE0/0/0/0.1           11.0.1.1        Up              Up       default 
+HundredGigE0/0/0/0.2           11.0.2.1        Up              Up       default 
+HundredGigE0/0/0/0.3           11.0.3.1        Up              Up       default 
+HundredGigE0/0/0/0.4           11.0.4.1        Up              Up       default 
+HundredGigE0/0/0/0.5           11.0.5.1        Up              Up       default 
+HundredGigE0/0/0/0.6           11.0.6.1        Up              Up       default 
+HundredGigE0/0/0/0.7           11.0.7.1        Up              Up       default 
+HundredGigE0/0/0/0.8           11.0.8.1        Up              Up       default 
+HundredGigE0/0/0/0.9           11.0.9.1        Up              Up       default 
+<mark>HundredGigE0/0/0/0.10</mark>          11.0.10.1       Up              Up       default
+
+</code>
+</pre>
+</div>  
+
+
 # Slot and Port identification
 
 # System Details
