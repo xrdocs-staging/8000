@@ -436,11 +436,13 @@ HundredGigE0/0/0/2/6          unassigned      Down            Down     default
 </code>
 </pre>
 </div>     
-  
 
-# Slot and Port identification
+## System Details   
 
-# System Details
+
+### System Block Diagram   
+
+
 
 # Redundancy
 
