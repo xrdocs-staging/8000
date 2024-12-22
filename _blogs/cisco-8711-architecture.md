@@ -175,7 +175,8 @@ All Fan Trays must be the same color (direction) to work correctly.
 Figure 7. Back view of 6x FAN-1RU-PI-V2 + 2x PSU2KW-ACPI (Burgundy Latches)  
 {: .text-center}  
 
-![Screenshot 2024-12-22 at 10.10.09 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 10.10.09 AM.png)  
+![]({{site.baseurl}}images/Screenshot 2024-12-22 at 10.26.56 AM.png)![Screenshot 2024-12-22 at 10.26.56 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 10.26.56 AM.png)
+  
 
 Figure 8. PSI (Port-side Intake) Airflow of Cisco 8711-32FH-M Router  
 {: .text-center}  
