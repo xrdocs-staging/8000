@@ -226,7 +226,27 @@ DC Power Supply Unit (PSU2KW-DCPI, PSU2K-DCPE)
 Table 3. PSUs types of Cisco 8711-32FH-M  
 {: .text-center}   
 
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>  
 
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show platform</span>     
+Node              Type                     State                    Config state
+--------------------------------------------------------------------------------
+0/RP0/CPU0        8711-32FH-M(Active)      IOS XR RUN               NSHUT  
+0/FB0             8711-32FH-M[FB]          OPERATIONAL              NSHUT  
+0/FT0             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
+0/FT1             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
+0/FT2             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
+0/FT3             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
+0/FT4             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
+0/FT5             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
+0/PM0             PSU2KW-ACPI              OPERATIONAL              NSHUT  
+0/PM1             PSU2KW-ACPI              OPERATIONAL              NSHUT  
+
+</code>
+</pre>
+</div>  
 
 # Slot and Port identification
 
