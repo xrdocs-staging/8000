@@ -73,6 +73,33 @@ The requirements for securing the connection of multiple data center and cloud l
 
 The backhauling of remote branch sites for government, enterprise, or commercial organizations is critical to any business. In the consumer space, this can be important for remote stores and point-of-sale kiosks, and in the enterprise and government space, it is crucial for remote agencies and offices.  
 
+**Understanding the Cisco 8711-32FH-M Naming Logic**  
+
+
+
+Let us have a quick refresher of the Cisco 8711-32FH-M’s PIDs and description.  
+
+| PIDs             | Product Description                                           |
+|------------------|---------------------------------------------------------------|
+| 8711-32FH-M      | Cisco 8711 1RU 12.8T P100 System                              |
+| 8000-QSFP-DCAP   | QSFP Dust CAP                                                 |
+| 8700-1RU-4P-KIT  | Rack Mount Kit for Cisco 8700 1RU Chassis 19” and 23”, 4 POST |
+| 8700-1RU-2P-KIT  | Rack Mount Kit for Cisco 8700 1RU Chassis 19” and 23”, 2 POST |
+| FAN-1RU-PI-V2    | 1RU Fan with Port-side Air Intake                             |
+| FAN-1RU-PE-V2    | 1RU Fan with Port-side Air Exhaust                            |
+| PSU2KW-ACPI      | 2000W AC Power Module with Port-side Air Intake               |
+| PSU2KW-ACPE      | 2000W AC Power Module with Port-side Air Exhaust              |
+| PSU2KW-DCPI      | 2000W DC Power Module with Port-side Air Intake               |
+| PSU2KW-DCPE      | 2000W DC Power Module with Port-side Air Exhaust              |
+| PWR-2KW-DC-CBL   | 2000W DC Power Cable                                          |
+| ESS-8KE-100G-RTU | Essential Right-to-Use 100G for Cisco 8000E Series            |
+| ADN-8KE-100G-RTU | Advantage Right-to-Use 100G for Cisco 8000E Series            |
+| PRM-8KE-100G-RTU | Premium Right-to-Use 100G for Cisco 8000E Series              |
+| 8KSW-B-SIA-3     | 8000 Type B Device SIA for 3-year term FCM 2.0                |
+| 8KSW-B-SIA-5     | 8000 Type B Device SIA for 5-year term FCM 2.0                |  
+
+Table 2. Cisco 8711-32FH-M PIDs  
+{: .text-center}  
 
 
 # Cisco 8711 Usecases
