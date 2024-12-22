@@ -406,7 +406,7 @@ Breakout Interface Use-case with 2x400 GbE at 800G port ( Even port, Top row por
 <code>  
 hw-module port-range 0 1 instance 0 location 0/RP0/CPU0 mode 2x400  
 
-RP/0/RP0/CPU0:8711-32FH-M#show ip interface brief
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show ip interface brief</span>
 Interface                      IP-Address      Status          Protocol Vrf-Name
 <mark>FourHundredGigE0/0/0/0/0</mark>      unassigned      Up              Up       default 
 <mark>FourHundredGigE0/0/0/0/1</mark>      unassigned      Up              Up       default
@@ -422,7 +422,7 @@ Breakout Interface Use-case with 8x100 GbE at 800G port ( Even port, Top row por
 <code>    
 hw-module port-range 2 3 instance 0 location 0/RP0/CPU0 mode 8x100  
 
-RP/0/RP0/CPU0:8711-32FH-M#show ip interface brief
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show ip interface brief</span>
 Interface                      IP-Address      Status          Protocol Vrf-Name
 <mark>HundredGigE0/0/0/2/0</mark>          unassigned      Down            Down     default 
 HundredGigE0/0/0/2/1          unassigned      Down            Down     default 
