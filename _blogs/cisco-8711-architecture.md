@@ -248,6 +248,51 @@ Node              Type                     State                    Config state
 </pre>
 </div>   
 
+On this router, there are two Power Supply Units in Cisco 8711-32FH-M  
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>   
+
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show environment power</span>   
+================================================================================
+CHASSIS LEVEL POWER INFO: 0
+================================================================================
+   Total output power capacity (Group 0 + Group 1) :    2000W +     2000W
+   Total output power required                     :    1187W
+   Total power input                               :     913W
+   Total power output                              :     789W
+Power Group 0:
+================================================================================
+   Power       Supply         ------Input----   ------Output---     Status
+   Module      Type            Volts     Amps    Volts     Amps    
+================================================================================
+   0/PM0       <mark>PSU2KW-ACPI</mark>     207.5     2.3     12.1      34.6     OK
+Total of Group 0:              477W/2.3A         418W/34.6A
+Power Group 1:
+================================================================================
+   Power       Supply         ------Input----   ------Output---     Status
+   Module      Type            Volts     Amps    Volts     Amps    
+================================================================================
+   0/PM1       <mark>PSU2KW-ACPI</mark>     207.5     2.1     12.1      30.7     OK
+          
+Total of Group 1:              435W/2.1A         371W/30.7A
+================================================================================
+   Location     Card Type               Power       Power        Status
+                                        Allocated   Used
+                                        Watts       Watts
+================================================================================
+   0/RP0/CPU0   8711-32FH-M             917         -            ON
+   0/FT0        FAN-1RU-PI-V2           45          9            ON
+   0/FT1        FAN-1RU-PI-V2           45          9            ON
+   0/FT2        FAN-1RU-PI-V2           45          10           ON
+   0/FT3        FAN-1RU-PI-V2           45          9            ON
+   0/FT4        FAN-1RU-PI-V2           45          9            ON
+   0/FT5        FAN-1RU-PI-V2           45          9            ON
+
+</code>
+</pre>
+</div>   
 
 # Slot and Port identification
 
