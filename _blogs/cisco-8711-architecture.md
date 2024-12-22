@@ -67,6 +67,9 @@ Cisco’s [Converged SDN Transport Solution](https://blogs.cisco.com/sp/routed-o
 
 Secure High-speed Data Center/Cloud interconnect and large Regional Hub/Branch router   
 
+![Screenshot 2024-12-21 at 10.44.17 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.44.17 PM.png)  
+
+
 
 # Cisco 8711 Usecases
 
