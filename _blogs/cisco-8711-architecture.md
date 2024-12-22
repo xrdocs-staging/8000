@@ -150,7 +150,6 @@ Figure 5. System status LEDs and descriptions details
 
 ![Screenshot 2024-12-22 at 9.57.38 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 9.57.38 AM.png)  
 
-
 Figure 6. Back view of Cisco 8711-32FH-M Router with 6 FTs and 2 PSUs  
 {: .text-center}  
 
@@ -161,8 +160,6 @@ As shown in Figure 6, on the rear side of the chassis, there’re the followings
 - PSUs and FTs are hot-swappable  
 
 This router supports both AC and DC Power Supply Unit providing the system power. The Fan Trays provide system cooling via dual airflow direction mechanism – front to back(PSI) and back to front(PSE).  
-
-
 
 
 
