@@ -193,7 +193,7 @@ Figure 10. PSE (Port-side Exhaust) Airflow of Cisco 8711-32FH-M Router
 
 Fan Tray has tricolor LED (one for each Fan Tray) of color Red, Yellow, and Blue  
 
-
+![Screenshot 2024-12-22 at 10.16.36 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 10.16.36 AM.png)  
 
 Figure 11. Fan Tray LEDs of Cisco 8711-32FH-M Router  
 {: .text-center}  
