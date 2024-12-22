@@ -333,6 +333,32 @@ CPU complex card is designed with Intel 6 core processor. This processor running
 | Consoles       |                       |
 | Aikido FPGA    | Aikido Secure Boot    |  
 
+## IOS XR Software 
+
+The Cisco 8711-32FH-M is launched with IOS XR 24.3.1  
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>   
+
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show version</span>
+Cisco IOS XR Software, <mark>Version 24.3.1 LNT</mark>
+Copyright (c) 2013-2024 by Cisco Systems, Inc.
+Build Information:
+ Built By     : sajshah
+ Built On     : Wed Sep 04 18:28:32 UTC 2024
+ Build Host   : iox-ucs-002
+ Workspace    : /auto/srcarchive11/prod/24.3.1/8000/ws
+ Version      : 24.3.1
+ Label        : 24.3.1-iso
+cisco 8000 (Intel(R) Xeon(R) CPU D-1633N @ 2.50GHz)
+cisco 8711-32FH-M (Intel(R) Xeon(R) CPU D-1633N @ 2.50GHz) processor with 64GB of memory
+8711-32FH-M uptime is 25 minutes
+Cisco 8711 1RU 12.8T P100 System
+
+</code>
+</pre>
+</div>   
 
 
 
