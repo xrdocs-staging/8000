@@ -170,15 +170,21 @@ Cisco 8711-32FH-M supports six Fan trays for system cooling. It supports N+1 red
 
 All Fan Trays must be the same color (direction) to work correctly.  
 
+
+
 Figure 7. Back view of 6x FAN-1RU-PI-V2 + 2x PSU2KW-ACPI (Burgundy Latches)  
 {: .text-center}  
+
+
 
 Figure 8. PSI (Port-side Intake) Airflow of Cisco 8711-32FH-M Router  
 {: .text-center}  
 
 
+
 Figure 9. Back view of 6x FAN-1RU-PE-V2 + 2x PSU2KW-ACPE (Blue Latches)  
 {: .text-center}  
+
 
 
 Figure 10. PSE (Port-side Exhaust) Airflow of Cisco 8711-32FH-M Router  
