@@ -162,7 +162,6 @@ Figure 6. Back view of Cisco 8711-32FH-M Router with 6 FTs and 2 PSUs
 This router supports both AC and DC Power Supply Unit providing the system power. The Fan Trays provide system cooling via dual airflow direction mechanism – front to back(PSI) and back to front(PSE).  
 
 
-
 # Slot and Port identification
 
 # System Details
