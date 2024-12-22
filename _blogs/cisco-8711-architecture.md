@@ -384,7 +384,7 @@ Native Interface Use-case with 100 GbE at 400 G port
 RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show ip interface brief</span>
 Interface                      IP-Address      Status          Protocol Vrf-Name
 <mark>HundredGigE0/0/0/0</mark>             40.0.0.1        Up              Up       default 
-HundredGigE0/0/0/0.1           11.0.1.1        Up              Up       default 
+<mark>HundredGigE0/0/0/0.1</mark>           11.0.1.1        Up              Up       default 
 HundredGigE0/0/0/0.2           11.0.2.1        Up              Up       default 
 HundredGigE0/0/0/0.3           11.0.3.1        Up              Up       default 
 HundredGigE0/0/0/0.4           11.0.4.1        Up              Up       default 
