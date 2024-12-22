@@ -452,15 +452,17 @@ P100 is a family of high-capacity packet switching devices.  P100 consists of 6 
 
 Cisco Silicon One P100 features:  
 - 19.2 Tbps full-duplex and 8.1 Bpps Forwarding Capacity NPU  
-o	192x 100G SerDes with each capable of operating at 10G/25G/50G/100G using NRZ or PAM4 modulation  
-o	Flexible port configuration supporting 10/25/40/50/100/200/400/800 Gbps  
-o	72 MB fully shared on-die packet buffer  
-•	Expandable in-package packet buffer using 8 GB HBM  
-•	On-chip, high-performance, P4-programmable host NPU for high-bandwidth offline packet processing  
-•	Multiple embedded processors for CPU offloading  
-•	64K VoQ(Virtual Output Queue) for Network slice and 16K VoQ for Fabric slice  
-•	Dedicated 132 Counters banks (1M counters) and built-in counters in HCAM  
-•	6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)  
+  - 192x 100G SerDes with each capable of operating at 10G/25G/50G/100G using NRZ or PAM4 modulation  
+  - Flexible port configuration supporting 10/25/40/50/100/200/400/800 Gbps  
+  - 72 MB fully shared on-die packet buffer  
+- Expandable in-package packet buffer using 8 GB HBM  
+- On-chip, high-performance, P4-programmable host NPU for high-bandwidth offline packet processing  
+- Multiple embedded processors for CPU offloading  
+- 64K VoQ(Virtual Output Queue) for Network slice and 16K VoQ for Fabric slice  
+- Dedicated 132 Counters banks (1M counters) and built-in counters in HCAM  
+- 6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)  
+
+
 
 
 
