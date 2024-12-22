@@ -181,6 +181,7 @@ Figure 8. PSI (Port-side Intake) Airflow of Cisco 8711-32FH-M Router
 {: .text-center}  
 
 
+![Screenshot 2024-12-22 at 10.11.38 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 10.11.38 AM.png)  
 
 Figure 9. Back view of 6x FAN-1RU-PE-V2 + 2x PSU2KW-ACPE (Blue Latches)  
 {: .text-center}  
