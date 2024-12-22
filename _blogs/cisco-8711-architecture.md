@@ -38,7 +38,17 @@ Figure 2. Rear view of the Cisco 8711-32FH-M
 
 In the below table high level Cisco 8711-32FH-M overview is listed.   
 
-
+| Data Plane           | Single 12.8T Cisco Silicon One P100 (7nm)<br> 72 MB fully shared packet buffer & 8 GB HBM packet buffer                                                                                                                   |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Control Plane        | Intel 6 Core x86 CPU 64 GB DRAM / 480 GB SSD                                                                                                                                                                          |
+| Port Configuration   | 16x QSFP-DD800 + 16x QSFP56-DD                                                                                                                                                                                        |
+| Management Ports     | RS-232 console, 10 GbE Control Plane expansion, 10/100/1000Mbps Management, 1x USB 3.0, GPS (ToD, 10MHz, 1PPS), GNSS                                                                                                  |
+| Product Capabilities | 800G (QDD-2X400G-FR4, QDD-8X100G-FR)<br> Line-rate MACsec(XR support)/IPsec(HW ready) encryption at all ports<br> Class C timing<br> 400G RON ready (Supports DCO optics)                                                         |
+| Fans and PSU         | 6x Fan Trays 5+1 Redundancy<br> 2x PSUs 1+1 Redundancy<br> Port side intake airflow, Port side Exhaust airflow<br> 2kW AC & 2kW DC PSUs PSU and Fan Trays Field Replaceable Unit                                                  |
+| Software             | Supports Cisco IOS XR Software Release 24.3.1 and later.<br> Enhanced Automation for onboarding, service provisioning and monitoring.<br> Programmable infrastructure with segment routing (SR, SRv6) and Multi-homing EVPN.  |
+| Typical Power        | 740W w/o Optics                                                                                                                                                                                                       |
+| Dimension            | 1RU, (H) 1.73 x (W) 17.3 x (D) 23.6 in. (4.40 x 43.9 x 60 cm)<br> 35.4 lbs (16.07 kg)                                                                                                                                     |
+| Use Case             | Core, Aggregation, Peering, DC Core                                                                                                                                                                                   |  
 
 
 Table 1. Cisco 8711-32FH-M key components  
