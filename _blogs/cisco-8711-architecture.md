@@ -218,8 +218,8 @@ DC Power Supply Unit (PSU2KW-DCPI, PSU2K-DCPE)
 
 | PSU PID     | Input Voltage                     | Input Current(Max) | Output Power  | Output           | Dimension(HxWxL)                    |
 |-------------|-----------------------------------|--------------------|---------------|------------------|-------------------------------------|
-| PSU2KW-ACPI | 100Vac to 127Vac 200Vac to 240Vac | 12A 12A            | 1,000W 2,000W | 12V/84A 12V/167A | 1.575”x2.9”x10.5” (73.5x40.0x265mm) |
-| PSU2KW-ACPE | 100Vac to 127Vac 200Vac to 240Vac | 12A 12A            | 1,000W 2,000W | 12V/84A 12V/167A |                                     |
+| PSU2KW-ACPI | 100Vac to 127Vac<br> 200Vac to 240Vac | 12A<br> 12A            | 1,000W<br> 2,000W | 12V/84A 12V/167A | 1.575”x2.9”x10.5”<br> (73.5x40.0x265mm) |
+| PSU2KW-ACPE | 100Vac to 127Vac<br> 200Vac to 240Vac | 12A<br> 12A            | 1,000W<br> 2,000W | 12V/84A 12V/167A |                                     |
 | PSU2KW-DCPI | -40Vd to -72Vdc                   | 60A                | 2,000W        | 12V/167A         |                                     |
 | PSU2KW-DCPE | -40Vd to -72Vdc                   | 60A                | 2,000W        | 12V/167A         |                                     |  
 
