@@ -108,6 +108,7 @@ The SIAs (Software Innovation Access licenses) are term-based agreements that pr
 # Platform Description  
 Cisco 8711-32FH-M is a 1RU fixed router belonging to Cisco 8700 family of products, a variant of the Cisco 8000 business, intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.  
 
+![Screenshot 2024-12-21 at 10.59.30 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.59.30 PM.png)  
 
 Figure 3. Front view of Cisco 8711-32FH-M Router  
 {: .text-center}  
@@ -116,6 +117,32 @@ As shown in Figure 3, The front of the chassis has 16 QSFP-DD800 + 16 QSFD56-DD 
 
 **Notes** : QSFP-DD800 is 800G capable version of the QSFP56-DD.  It is backward compatible to legacy QSFP56- DD and all QSFP modules.
 {: .notice}  
+
+![Screenshot 2024-12-21 at 11.01.51 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 11.01.51 PM.png)  
+
+Figure 4. Mgmt/Timing Interface details  
+{: .text-center}  
+
+Front panel ports include management and Timing interfaces:
+•	Management interfaces
+o	1x 10/100/1000 Mbps Management Ethernet port
+o	1x USB 3.0 (Type A)
+o	RJ45 console port directly to CPU
+o	1x 10 GbE Control plane Expansion Ethernet port (Not used)
+•	Timing interfaces
+8711-32FH-M is capable of frequency, time, and phase synchronization. These can be sourced from dedicated interfaces GPS port or from timestamped 1588 packets received on a normal data port in the system. The time, phase and frequency are distributed through the system with a frequency and PPS signal to devices near the physical port where timestamps are applied on ingress and egress packets.
+In 8711-32FH-M, network synchronization clock can be sourced from any of the QSFPDD ports and from GPS (ToD, 10MHz, 1PPS ports).
+o	1x GPS interface
+	ToD (Time of Day) with RJ45 port
+	1 PPS coax port
+	10 MHz coax port
+o	1x GNSS (Global Navigation Satellite System) receiver ( PRTC(Primary Reference Time Clock) Class B Accuracy) 
+
+**Notes**: No BITS interface support on 8711-32FH-M  
+{: .notice}   
+
+As shown in Figure 5, There are also 4 LEDs on the front-panel that can be used to display the system status. The front panel faceplate is filled with perforations that provide airflow for cooling.  
+
 
 
 # Slot and Port identification
