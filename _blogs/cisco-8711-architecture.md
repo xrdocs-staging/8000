@@ -443,7 +443,6 @@ HundredGigE0/0/0/2/6          unassigned      Down            Down     default
 
 The Cisco 8711-32FH-M has one common CPU complex board, P100 NPU, 2 Power Supply Units (PSU) with support of (1 + 1) redundancy and 6 Fan Tray (FT) with support of 1 Fan Failure condition. – These PSUs and FTs are field replaceable units (FRUs).  
 
-
 ![Screenshot 2024-12-22 at 12.24.45 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 12.24.45 PM.png)  
 
 Figure 12. Cisco 8711-32FH-M Block Diagram  
