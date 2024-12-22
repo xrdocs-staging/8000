@@ -365,6 +365,8 @@ For a complete list of supported features, refer to the [Cisco Feature Navigator
 Detailed information on IOS XR can be found in the [IOS XR data sheet](https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ios-xr-software/datasheet-c78-743014.html).  
 
 
+## Cisco 8711-32FH-M Port Identification
+**Port Numbering**
 
 
 # Slot and Port identification
