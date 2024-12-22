@@ -50,7 +50,6 @@ In the below table high level Cisco 8711-32FH-M overview is listed.
 | Dimension            | 1RU, (H) 1.73 x (W) 17.3 x (D) 23.6 in. (4.40 x 43.9 x 60 cm)<br> 35.4 lbs (16.07 kg)                                                                                                                                     |
 | Use Case             | Core, Aggregation, Peering, DC Core                                                                                                                                                                                   |  
 
-
 Table 1. Cisco 8711-32FH-M key components  
 {: .text-center}  
 
