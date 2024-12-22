@@ -330,7 +330,7 @@ CPU complex card is designed with Intel 6 core processor. This processor running
 | M.2 SATA Drive | 480 GB SATA SSD       |
 | USB            | 1 x USB3.0            |
 | MGMT           | MGMT copper           |
-| Consoles       |                       |
+| Console        |                       |
 | Aikido FPGA    | Aikido Secure Boot    |  
 
 ## IOS XR Software 
