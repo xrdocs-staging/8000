@@ -161,6 +161,38 @@ Figure 6. Back view of Cisco 8711-32FH-M Router with 6 FTs and 2 PSUs
 
 This router supports both AC and DC Power Supply Unit providing the system power. The Fan Trays provide system cooling via dual airflow direction mechanism – front to back(PSI) and back to front(PSE).  
 
+## Fan Tray   
+
+Cisco 8711-32FH-M supports six Fan trays for system cooling. It supports N+1 redundancy. All the Fan Trays are hot swappable and get inserted from the rear side of the router. There are two types of fans available.  
+
+- Port Side Intake or Front to back Airflow (Burgundy color)  
+- Port Side Exhaust or back to front Airflow (Royal Blue)  
+
+All Fan Trays must be the same color (direction) to work correctly.  
+
+Figure 7. Back view of 6x FAN-1RU-PI-V2 + 2x PSU2KW-ACPI (Burgundy Latches)  
+{: .text-center}  
+
+Figure 8. PSI (Port-side Intake) Airflow of Cisco 8711-32FH-M Router  
+{: .text-center}  
+
+
+Figure 9. Back view of 6x FAN-1RU-PE-V2 + 2x PSU2KW-ACPE (Blue Latches)  
+{: .text-center}  
+
+
+Figure 10. PSE (Port-side Exhaust) Airflow of Cisco 8711-32FH-M Router  
+{: .text-center}  
+
+Fan Tray has tricolor LED (one for each Fan Tray) of color Red, Yellow, and Blue  
+
+
+
+Figure 11. Fan Tray LEDs of Cisco 8711-32FH-M Router  
+{: .text-center}  
+
+
+
 
 # Slot and Port identification
 
