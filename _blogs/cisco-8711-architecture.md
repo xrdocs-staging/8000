@@ -101,10 +101,22 @@ Let us have a quick refresher of the Cisco 8711-32FH-M’s PIDs and description.
 Table 2. Cisco 8711-32FH-M PIDs  
 {: .text-center}  
 
+The RTUs (Right-to-Use licenses) provide customers with the ability to access and utilize specific perpetual software functionalities without the requirement to purchase the complete software package.  
 
-# Cisco 8711 Usecases
+The SIAs (Software Innovation Access licenses) are term-based agreements that provide customers with access to specific software benefits. The SIAs enable customers to optimize their software usage, easily manage licenses across their network infrastructure, and ensure seamless upgrades to the latest versions of IOS XR software.  
 
-# Platform Description
+# Platform Description  
+Cisco 8711-32FH-M is a 1RU fixed router belonging to Cisco 8700 family of products, a variant of the Cisco 8000 business, intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.  
+
+
+Figure 3. Front view of Cisco 8711-32FH-M Router  
+{: .text-center}  
+
+As shown in Figure 3, The front of the chassis has 16 QSFP-DD800 + 16 QSFD56-DD ports along with the IO ports used for management, console, USB, and timing synchronization. Each QSFPDD port has its own bi-color LED that can be used to display the link status indication. 
+
+**Notes** : QSFP-DD800 is 800G capable version of the QSFP56-DD.  It is backward compatible to legacy QSFP56- DD and all QSFP modules.
+{: .notice}  
+
 
 # Slot and Port identification
 
