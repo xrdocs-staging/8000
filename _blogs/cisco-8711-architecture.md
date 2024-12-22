@@ -75,7 +75,7 @@ The backhauling of remote branch sites for government, enterprise, or commercial
 
 **Understanding the Cisco 8711-32FH-M Naming Logic**  
 
-
+![Screenshot 2024-12-21 at 10.50.01 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.50.01 PM.png)   
 
 Let us have a quick refresher of the Cisco 8711-32FH-M’s PIDs and description.  
 
