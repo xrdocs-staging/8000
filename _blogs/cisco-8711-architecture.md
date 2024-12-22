@@ -366,7 +366,7 @@ Detailed information on IOS XR can be found in the [IOS XR data sheet](https://w
 
 
 ## Cisco 8711-32FH-M Port Identification
-**Port Numbering**
+<b>Port Numbering</b>
 
 
 # Slot and Port identification
