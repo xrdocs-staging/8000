@@ -445,6 +445,12 @@ The Cisco 8711-32FH-M has one common CPU complex board, P100 NPU, 2 Power Supply
 
 
 
+Figure 12. Cisco 8711-32FH-M Block Diagram  
+{: .text-center}  
+
+P100 is a family of high-capacity packet switching devices.  P100 consists of 6 slices. Each slice has a Receive and a Transmit part (Rx slice and Tx slice). Each slice supports two groups of interfaces (i.e., a pair of IFGs). Performance wise, each slice handles up to one packet per clock and has a data bandwidth of up to 3.2 Tbps. The total capacity of a P100 device is determined by the number of slices. With four slices used in Cisco 8711-32FH-M and up to 5.047 Bpps forwarding performance per system.  
+
+
 # Redundancy
 
 # Conclusion
