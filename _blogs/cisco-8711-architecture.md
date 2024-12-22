@@ -143,6 +143,7 @@ In 8711-32FH-M, network synchronization clock can be sourced from any of the QSF
 
 As shown in Figure 5, There are also 4 LEDs on the front-panel that can be used to display the system status. The front panel faceplate is filled with perforations that provide airflow for cooling.  
 
+![Screenshot 2024-12-22 at 9.57.25 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 9.57.25 AM.png)  
 
 Figure 5. System status LEDs and descriptions details  
 {: .text-center}  
