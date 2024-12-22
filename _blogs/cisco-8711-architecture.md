@@ -241,8 +241,8 @@ Node              Type                     State                    Config state
 0/FT3             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
 0/FT4             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
 0/FT5             FAN-1RU-PI-V2            OPERATIONAL              NSHUT  
-0/PM0             <span style="background-color: #00FF00">PSU2KW-ACPI</span>              OPERATIONAL              NSHUT    
-0/PM1             <span style="background-color: #00FF00">PSU2KW-ACPI</span>              OPERATIONAL              NSHUT<span>   
+0/PM0             <mark>PSU2KW-ACPI</mark>              OPERATIONAL              NSHUT    
+0/PM1             <mark>PSU2KW-ACPI</mark>              OPERATIONAL              NSHUT     
 
 </code>
 </pre>
