@@ -474,6 +474,8 @@ Figure 14. Cisco Silicon One P100 Details
 
 Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher scale and a broader L2 feature set than is currently capable on Q200 based fixed systems.  
 
+![Screenshot 2024-12-22 at 1.56.23 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 1.56.23 PM.png)  
+
 Figure 15. Cisco Silicon One P100 in 8711-32FH-M
 For more understanding on Cisco Silicon One P100 refer to [Cisco Silicon One P100-Info](https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-p100-processor-ds.html).    
 
