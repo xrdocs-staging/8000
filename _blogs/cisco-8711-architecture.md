@@ -26,8 +26,8 @@ Cisco 8711-32FH-M is a 1RU 12.8T fixed system based on a single P100 ASIC. With 
 # Video  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v13LpoQGXdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
-
-
+  
+  
 Cisco 8711-32FH-M addresses scaled requirements for spine/leaf and collapsed core, Aggregation, Peering, DC Core, 3rd party colocation, and RON use cases.  
 
 ![Figure1.png]({{site.baseurl}}/images/Figure1.png)
