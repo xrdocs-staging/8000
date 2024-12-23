@@ -484,6 +484,7 @@ For more understanding on Cisco Silicon One P100 refer to [Cisco Silicon One P10
 <b>Port/IFG/Slice assignment to P100 based Cisco 8711-32FH-M Router</b>  
 
 There is the output of Port-IFG(Interface Group)-Slice mapping information.  
+
 ![Screenshot 2024-12-22 at 6.08.51 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 6.08.51 PM.png){: .align-center}    
 Figure 16. Port-IFG-Slice mapping of Cisco 8711-32FH-M  
 {: .text-center}  
