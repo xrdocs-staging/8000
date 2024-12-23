@@ -420,7 +420,7 @@ Breakout Interface Use-case with 8x100 GbE at 800G port ( Even port, Top row por
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>    
-hw-module port-range 2 3 instance 0 location 0/RP0/CPU0 mode <span style="background-color: #00FF00">8x100</span>.   
+hw-module port-range 2 3 instance 0 location 0/RP0/CPU0 mode <span style="background-color: #00FF00">8x100</span>     
 
 RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show ip interface brief</span>
 Interface                      IP-Address      Status          Protocol Vrf-Name
