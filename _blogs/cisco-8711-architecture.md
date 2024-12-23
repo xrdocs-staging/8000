@@ -463,12 +463,10 @@ Cisco Silicon One P100 features:
 - 6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)  
 
 ![Screenshot 2024-12-22 at 5.32.27 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 5.32.27 PM.png){: .align-center}{:height="80%" width="80%"}    
- 
 Figure 13. Cisco Silicon One P100  
 {: .text-center}  
 
 ![Screenshot 2024-12-22 at 5.44.39 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 5.44.39 PM.png){: .align-center}{:height="80%" width="80%"}    
-
 Figure 14. Cisco Silicon One P100 Details  
 {: .text-center}  
 
@@ -476,7 +474,6 @@ Figure 14. Cisco Silicon One P100 Details
 Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher scale and a broader L2 feature set than is currently capable on Q200 based fixed systems.  
 
 ![Screenshot 2024-12-22 at 5.46.54 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 5.46.54 PM.png){: .align-center}{:height="80%" width="80%"}  
-
 Figure 15. Cisco Silicon One P100 in 8711-32FH-M  
 {: .text-center}   
 
