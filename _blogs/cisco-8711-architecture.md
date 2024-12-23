@@ -490,6 +490,67 @@ There is the output of Port-IFG(Interface Group)-Slice mapping information
 
 
 
+Figure 16. Port-IFG-Slice mapping of Cisco 8711-32FH-M  
+{: .text-center}  
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>    
+
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show controllers npu voq-usage interface all instance all loc 0/rp0/cpu0</span>
+----------------------------------------------------------------------------------------
+Node ID: 0/RP0/CPU0
+Intf         Intf     NPU Slice IFG  Sys   VOQ   Flow       VOQ      Port       Global 
+name         handle    #    #    #   Port  base  base       port     speed      IFG #
+             (hex)                                          type                
+----------------------------------------------------------------------------------------
+<span style="background-color: #00FF00">Hu0/0/0/0</span>    78000130   0<span style="background-color: #00FF00">   3</span>    1     4    576      0        local    100G      7
+Hu0/0/0/1    78000158   0   3    1     9    584      0        local    100G      7
+FH0/0/0/2    78000228   0   3    1    35    824      0        local    400G      7
+FH0/0/0/3    78000220   0   3    1    34    816      0        local    400G      7
+FH0/0/0/4    78000218   0   3    0    33    808      0        local    400G      6
+FH0/0/0/5    78000210   0   3    0    32    800      0        local    400G      6
+FH0/0/0/6    78000160   0   3    0    10    640      0        local    400G      6
+FH0/0/0/7    78000208   0   3    0    31    648      0        local    400G      6
+FH0/0/0/8    78000168   0   2    1    11    656      0        local    400G      5
+FH0/0/0/9    78000170   0   2    1    12    664      0        local    400G      5
+FH0/0/0/10   78000178   0   2    1    13    672      0        local    400G      5
+FH0/0/0/11   78000180   0   2    1    14    680      0        local    400G      5
+Hu0/0/0/12/0 78000360   0   2    0    15    696      0        local    100G      4
+Hu0/0/0/12/1 78000368   0   2    0    16    832      0        local    100G      4
+Hu0/0/0/12/2 78000370   0   2    0    39    840      0        local    100G      4
+Hu0/0/0/12/3 78000378   0   2    0    40    848      0        local    100G      4
+Hu0/0/0/12/4 78000380   0   2    0    41    856      0        local    100G      4
+Hu0/0/0/12/5 78000388   0   2    0    42    864      0        local    100G      4
+Hu0/0/0/12/6 78000390   0   2    0    43    872      0        local    100G      4
+Hu0/0/0/12/7 78000358   0   2    0    38    688      0        local    100G      4
+FH0/0/0/14   78000198   0   2    0    17    704      0        local    400G      4
+FH0/0/0/15   780001a0   0   2    0    18    712      0        local    400G      4
+Hu0/0/0/16   78000150   0   1    1     8    632      0        local    100G      3
+FH0/0/0/17   780001a8   0   1    1    19    720      0        local    400G      3
+FH0/0/0/18   780001b0   0   1    1    20    728      0        local    400G      3
+Hu0/0/0/19   78000148   0   1    1     7    624      0        local    100G      3
+FH0/0/0/20/0 780001b8   0   1    0    21    616      0        local    400G      2
+FH0/0/0/20/1 780001c0   0   1    0    22    736      0        local    400G      2
+FH0/0/0/22   780001c8   0   1    0    23    744      0        local    400G      2
+Hu0/0/0/23   78000140   0   1    0     6    608      0        local    100G      2
+Hu0/0/0/24   78000138   0   0    1     5    592      0        local    100G      1
+FH0/0/0/25   780001d0   0   0    1    24    600      0        local    400G      1
+FH0/0/0/26   780001d8   0   0    1    25    752      0        local    400G      1
+FH0/0/0/27   780001e0   0   0    1    26    760      0        local    400G      1
+FH0/0/0/28   780001e8   0   0    0    27    768      0        local    400G      0
+FH0/0/0/29   780001f0   0   0    0    28    776      0        local    400G      0
+FH0/0/0/30   780001f8   0   0    0    29    784      0        local    400G      0
+FH0/0/0/31   78000200   0   0    0    30    792      0        local    400G      0
+
+</code>
+</pre>
+</div>   
+
+From the above output, we can see Port 0 to port 7 is connected to slice 3 and Port 8 to port 15 is connected to slice 2.  
+
+
+
 # Redundancy
 
 # Conclusion
