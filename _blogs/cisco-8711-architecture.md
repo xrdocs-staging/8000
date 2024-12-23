@@ -22,6 +22,7 @@ The Cisco 8700 series is an addition to [the Cisco 8000 Series Routers](https://
 # Cisco 8711-32FH-M Overview  
 Cisco 8711-32FH-M is a 1RU 12.8T fixed system based on a single P100 ASIC. With 16 ports of QSFP-DD800 and 16 ports of QSFP56-DD on the faceplate, Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher scale and a broader L2 feature set than is currently capable on Q200 based fixed systems. 
 
+
 # Video  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v13LpoQGXdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
