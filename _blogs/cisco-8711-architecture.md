@@ -467,7 +467,7 @@ Figure 13. Cisco Silicon One P100
 {: .text-center}  
 
 
-
+![Screenshot 2024-12-22 at 5.56.17 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 5.56.17 PM.png){: .align-center}{:height="80%" width="80%"}  
 Figure 14. Cisco Silicon One P100 Details  
 {: .text-center}  
 
