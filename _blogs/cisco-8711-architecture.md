@@ -458,7 +458,7 @@ Cisco Silicon One P100 features:
 - Expandable in-package packet buffer using 8 GB HBM  
 - On-chip, high-performance, P4-programmable host NPU for high-bandwidth offline packet processing  
 - Multiple embedded processors for CPU offloading  
-- 64K VoQ(Virtual Output Queue) for Network slice and 16K VoQ for Fabric slice  
+- 64K VoQ (Virtual Output Queue) for Network slice and 16K VoQ for Fabric slice  
 - Dedicated 132 Counters banks (1M counters) and built-in counters in HCAM  
 - 6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)  
 
