@@ -507,7 +507,7 @@ FH0/0/0/3    78000220   0   3    1    34    816      0        local    400G     
 FH0/0/0/4    78000218   0   3    0    33    808      0        local    400G      6
 FH0/0/0/5    78000210   0   3    0    32    800      0        local    400G      6
 FH0/0/0/6    78000160   0   3    0    10    640      0        local    400G      6
-FH0/0/0/7    78000208   0   3    0    31    648      0        local    400G      6
+<span style="background-color: #00FF00">FH0/0/0/7</span>    78000208   0   <span style="background-color: #00FF00">3    0</span>    31    648      0        local    400G      6
 <span style="background-color: #FFA500">FH0/0/0/8</span>    78000168   0   <span style="background-color: #FFA500">2    1</span>    11    656      0        local    400G      5
 FH0/0/0/9    78000170   0   2    1    12    664      0        local    400G      5
 FH0/0/0/10   78000178   0   2    1    13    672      0        local    400G      5
