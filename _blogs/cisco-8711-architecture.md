@@ -502,7 +502,7 @@ Intf         Intf     NPU Slice IFG  Sys   VOQ   Flow       VOQ      Port       
 name         handle    #    #    #   Port  base  base       port     speed      IFG #
              (hex)                                          type                
 ----------------------------------------------------------------------------------------
-<span style="background-color: #00FF00">Hu0/0/0/0</span>    78000130   0<span style="background-color: #00FF00">   3</span>    1     4    576      0        local    100G      7
+<span style="background-color: #00FF00">Hu0/0/0/0</span>    78000130   0   <span style="background-color: #00FF00">3    1</span>     4    576      0        local    100G      7
 Hu0/0/0/1    78000158   0   3    1     9    584      0        local    100G      7
 FH0/0/0/2    78000228   0   3    1    35    824      0        local    400G      7
 FH0/0/0/3    78000220   0   3    1    34    816      0        local    400G      7
