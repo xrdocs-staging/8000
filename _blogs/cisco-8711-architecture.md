@@ -467,7 +467,7 @@ Cisco Silicon One P100 features:
 Figure 13. Cisco Silicon One P100  
 {: .text-center}  
 
- 
+
 Figure 14. Cisco Silicon One P100 Details  
 {: .text-center}  
 
