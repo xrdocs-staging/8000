@@ -463,7 +463,7 @@ Cisco Silicon One P100 features:
 - 6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)  
 
 
-![Screenshot 2024-12-22 at 1.56.06 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 1.56.06 PM.png){: .align-center}{:height="60%" width="60%"}  
+ 
 Figure 13. Cisco Silicon One P100  
 {: .text-center}  
 
