@@ -545,6 +545,19 @@ FH0/0/0/31   78000200   0   0    0    30    792      0        local    400G     
 
 From the above output, we can see Port 0 to port 7 is connected to slice 3 and Port 8 to port 15 is connected to slice 2.  
 
+### PHY   
+
+IFG of P100 connects to the PHYs through 128 SerDes  each operating at 100G data rate
+The PHY can supports the followings:  
+
+- Up to full 1.6 Tbps capacity  
+- 16 SerDes in host (P100 NPU) side each SerDes operating at 100G  
+- 16 SerDes in the line (Front Panel Ports)  side supporting at 100G (Retimer/800G  mode)  
+- 32 SerDes in the line (Front Panel Ports)  side support at 50G (RGB mode)  
+- PHY controlled from FPGA  
+- SynE clock recovery and PTP (Class C timing) supported by PHY  
+- Line-rate MACsec(XR support) or IPsec (HW ready)  
+
 
 
 # Redundancy
