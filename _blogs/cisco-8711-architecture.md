@@ -462,12 +462,12 @@ Cisco Silicon One P100 features:
 - Dedicated 132 Counters banks (1M counters) and built-in counters in HCAM  
 - 6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)  
 
-      
+![Screenshot 2024-12-22 at 6.37.52 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 6.37.52 PM.png)        
 Figure 13. Cisco Silicon One P100  
 {: .text-center}  
 
 
-![Screenshot 2024-12-22 at 5.56.17 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 5.56.17 PM.png){: .align-center}{:height="80%" width="80%"}  
+ 
 Figure 14. Cisco Silicon One P100 Details  
 {: .text-center}  
 
