@@ -558,6 +558,10 @@ The PHY can supports the followings:
 - SynE clock recovery and PTP (Class C timing) supported by PHY  
 - Line-rate MACsec(XR support) or IPsec (HW ready)  
 
+![Screenshot 2024-12-22 at 7.02.07 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 7.02.07 PM.png)  
+Figure 17. NPU to PHY to QSFPDD Serdes Connectivity  
+{: .text-center}   
+
 
 
 # Redundancy
