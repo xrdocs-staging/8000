@@ -562,6 +562,7 @@ The PHY can supports the followings:
 Figure 17. NPU to PHY to QSFPDD Serdes Connectivity  
 {: .text-center}   
 
+### Front Panel Port combo configurations  
 
 
 # Redundancy
