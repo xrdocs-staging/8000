@@ -783,6 +783,10 @@ RP/0/RP0/CPU0:8711-32FH-M#show interfaces brief | inc Hu0/0/0/2
 </pre>
 </div>  
 
+For more understanding on Cisco QSFP-DD800 Transceiver Modules, refer to [Cisco QSFP-DD800 Transceiver Modules Data Sheet](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html).   
+
+
+
 
 
 
