@@ -746,7 +746,7 @@ RP/0/RP0/CPU0:8711-32FH-M#sh interfaces brief
 </div>  
 
 **Use-Case 3. QDD-8X100G-FR at Port 2 and Grey 400G Optics at Port 0 and Port 1**  
-![Screenshot 2024-12-24 at 10.04.29 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 10.04.29 AM.png)  
+![UC3.png]({{site.baseurl}}/images/UC3.png)   
 
 <div class="highlighter-rouge">
 <pre class="highlight">
