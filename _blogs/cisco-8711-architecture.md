@@ -740,7 +740,7 @@ RP/0/RP0/CPU0:8711-32FH-M#sh interfaces brief
                Name       State       State               Type (byte)    (Kbps)
 --------------------------------------------------------------------------------
        <mark>FH0/0/0/2</mark>        down        down               ARPA  1514  400000000
-       FH0/0/0/3        down        down               ARPA  1514  400000000
+       <mark>FH0/0/0/3</mark>        down        down               ARPA  1514  400000000
 </code>
 </pre>
 </div>  
