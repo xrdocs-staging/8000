@@ -615,6 +615,34 @@ The following table represents the maximum number of ports the Cisco 8711-32FH-M
 *** 4x100G, 8x100G 
 
 
+- 10 GbE  
+  - As Native 10G Optic with CVR-QSFP-SFP10G (QSA), fully populated into all 32 Ports in roadmap  
+  - As Breakout, fully populated into all 32 Ports. 32 ports x (4x10 GbE) = 128 10 GbE total  
+  
+- 25 GbE
+  - As Native 25G Optic , fully populated into all 32 Ports in roadmap  
+  - As Breakout, fully populated into all 32 Ports. 32 ports x (4x25 GbE) = 128 25 GbE total  
+  
+- 40 GbE  
+  - As Native 40G Optic , fully populated into all 32 Ports  
+  
+- 100 GbE  
+  - As Native 100G Optic, fully populated into all 32 Ports   
+  - As Breakout (Use case-2: 2x100 GbE), fully populated into all 32 Ports. 32 ports x (2x100 GbE) = 64 100 GbE total or   
+  - As Breakout (Use case-2: 4x100 GbE), fully populated into all 32 Ports. 32 ports x (4x100 GbE) = 128 100 GbE total or   
+  - As Breakout (Use case-3: 8x100 GbE), populated into 16 even ports(Top) x (8x100 GbE) = 128 100 GbE total   
+  
+- 400 GbE  
+  - As Native 400G Optic, fully populated into all 32 Ports   
+  - As Breakout with 2x 400 GbE, Populated into even 16 Ports (Top row). 16 Even ports (Top) x (2x400 GbE) = 32 400 GbE total  
+  
+- 800 G  
+  - As Native 800G Optic, Not supported  
+  - As Breakout, Used with 2x400 GbE or 8x100 GbE optics at Even ports (Top row)  
+  
+  
+
+
 # Redundancy
 
 # Conclusion
