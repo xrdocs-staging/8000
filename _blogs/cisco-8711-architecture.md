@@ -842,13 +842,12 @@ Cisco 8711-32FH-M is intended to be the primary routing solution for next genera
 
 ## Reference  
 
-Cisco Silicon One™  
-Cisco 8711-32FH-M Datasheet  
-Cisco 8711-32FH-M Hardware Installation Guide  
-Cisco 8000 Configuration guide  
-Cisco Optics-to-Device Compatibility Matrix tool  
-Cisco 8000 Power Calculator  
-
+[Cisco Silicon One™](https://www.cisco.com/site/us/en/products/networking/silicon-one/index.html)    
+[Cisco 8711-32FH-M Datasheet](https://www.cisco.com/c/en/us/products/se/2024/8/Collateral/8700-series-routers-ds.html)    
+[Cisco 8711-32FH-M Hardware Installation Guide](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/hardware/hig-fixed-8700/b-8700-hardware-installation-guide/routers_overview.html)    
+[Cisco 8000 Configuration guide](https://www.cisco.com/c/en/us/support/routers/8000-series-routers/products-installation-and-configuration-guides-list.html)    
+[Cisco Optics-to-Device Compatibility Matrix tool](https://tmgmatrix.cisco.com/)    
+[Cisco 8000 Power Calculator](https://8000-power.cisco.com/)    
 
 ## Modification History  
 
