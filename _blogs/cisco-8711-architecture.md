@@ -786,6 +786,18 @@ RP/0/RP0/CPU0:8711-32FH-M#show interfaces brief | inc Hu0/0/0/2
 For more understanding on Cisco QSFP-DD800 Transceiver Modules, refer to [Cisco QSFP-DD800 Transceiver Modules Data Sheet](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html).   
 
 
+### MACsec Support  
+Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8711-32FH-M. All ports are connected to PHY supporting the feature. It can be supported on 10G, 25G, 40G, 100G, 400G ports and also any breakout ports.  
+
+
+
+- Full line-rate MACsec encryption engines to enable secure and low latency transport  
+- Supports MACsec GCM-AES-128/256 and GCM-AES-XPN-128/256  
+- Supports LAN MACsec and WAN MACsec  
+- Supports “VLAN tag in the clear” in the roadmap  
+
+**Notes**: k9 package is required for crypto data plane    
+{: .notice}  
 
 
 
