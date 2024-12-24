@@ -575,6 +575,24 @@ The second of the configurations is 32x Grey 100 GbE QSFP, in this configuration
 
 The third of the configurations is 400G DCO (Digital Coherent Optic) optics, in this configuration 400G DCO ports are populated with 400G ZR/ZR+/Bright ZR+ into even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 : Top).  
 
+![Screenshot 2024-12-23 at 7.57.00 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 7.57.00 PM.jpg)
+
+The fourth of the configurations is 400G DCO (Digital Coherent Optic) and Grey 400G optics combinations, in this configuration 400G DCO ports are populated with 400G ZR/ZR+/Bright ZR+ into even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 : Top) and 400G Grey optic into Odd ports (1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31: Bottom).  
+
+
+The 5th of the configurations is 16x Grey 800G Grey Optics (QDD 2X400G FR4 or QDD 8X100G FR), in this configuration 800G ports are populated with 800G optics into even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 : Top) and all other Odd ports(Bottom) are shutdown automatically.  
+
+
+The 6th of the configuration is Grey 800G Optics and 400G DCO (ZR/ZR+/Bright ZR+) Optics, in this configuration the number of 800G Grey and 400G DCO (ZR, ZR+, Bright ZR+) must sum to 16 on Even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30: Top).  
+
+
+The 7th of the configuration is Grey 800G Optics, 400G DCO Optics (ZR, ZR+, Bright ZR+), and Grey 400G Optics combination, in this configuration the number of 800G Grey and 400G DCO  must sum to 16 on Even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30: Top). For every even port with 400G DCO (ZR, ZR+, Bright ZR+), the corresponding odd port can also have Grey 400G optics.  
+
+
+To verify optics supported, please use the Cisco Optics-to-Device Compatibility Matrix tool:
+[the TMG matrix](https://tmgmatrix.cisco.com/).     
+It contains details on the connector types, the reach, the minimum release required, etc.  
+
 
 
 
