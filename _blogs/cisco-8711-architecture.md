@@ -600,6 +600,11 @@ To verify optics supported, please use the Cisco Optics-to-Device Compatibility 
 It contains details on the connector types, the reach, the minimum release required, etc.  
 
 
+### Maximum port scale and support on Cisco 8711-32FH-M  
+
+The following table represents the maximum number of ports the Cisco 8711-32FH-M router can support.  
+
+
 
 
 # Redundancy
