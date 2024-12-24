@@ -673,6 +673,9 @@ Figure 19. QDD-8X100G-FR Optical connector
 ### QSFP-DD800 Optics Use Cases  
 Sample 800G Breakout config on Cisco 8711-32FH-M  
 
+![Screenshot 2024-12-23 at 11.09.40 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 11.09.40 PM.jpg)  
+
+Use-Case 1. QDD-2X400G-FR4 at Port 0 and QDD-8X100G-FR at Port 2  
 
 
 
