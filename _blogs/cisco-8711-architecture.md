@@ -853,5 +853,5 @@ Cisco 8711-32FH-M is intended to be the primary routing solution for next genera
 
 | Version | Data     | Author(s)     | Comments            |
 |---------|----------|---------------|---------------------|
-| 1       | January-8, 2025 | Chang Soo Lee | Initial Publication |  
+| 1       | January 8, 2025 | Chang Soo Lee | Initial Publication |  
 
