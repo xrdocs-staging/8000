@@ -676,7 +676,43 @@ Sample 800G Breakout config on Cisco 8711-32FH-M
 ![Screenshot 2024-12-23 at 11.09.40 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 11.09.40 PM.jpg)  
 
 Use-Case 1. QDD-2X400G-FR4 at Port 0 and QDD-8X100G-FR at Port 2  
+![Screenshot 2024-12-24 at 9.42.20 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 9.42.20 AM.png)  
 
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>  
+hw-module port-range 0 1 instance 0 location 0/RP0/CPU0 mode 2x400
+hw-module port-range 2 3 instance 0 location 0/RP0/CPU0 mode 8x100
+</code>
+</pre>
+</div>   
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>  
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show interfaces brief | inc FH0/0/0/0</span> 
+               Intf       Intf        LineP              Encap  MTU        BW
+               Name       State       State               Type (byte)    (Kbps)
+--------------------------------------------------------------------------------
+       FH0/0/0/0/0        down        down               ARPA  1514  400000000
+       FH0/0/0/0/1        down        down               ARPA  1514  400000000
+
+
+RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show interfaces brief | inc Hu0/0/0/2</span> 
+               Intf       Intf        LineP              Encap  MTU        BW
+               Name       State       State               Type (byte)    (Kbps)
+--------------------------------------------------------------------------------
+       Hu0/0/0/2/0        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/1        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/2        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/3        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/4        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/5        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/6        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/7        down        down               ARPA  1514  100000000
+</code>
+</pre>
+</div>  
 
 
 # Redundancy
