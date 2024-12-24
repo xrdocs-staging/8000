@@ -647,6 +647,27 @@ The following table represents the maximum number of ports the Cisco 8711-32FH-M
 **2x400G (QDD-2X400G-FR4) Optical Transceiver**    
 
 Figure 18. QDD-2X400G-FR4 Optical connector  
+{: .text-center}   
+
+- Fiber: SMF  
+- Connector: Dual Duplex LC  
+- 4 Wave (nm): 1270,1290,1310,1330  
+- Use-Case: 2 ports 400 GbE  
+
+
+**8x100G (QDD-8X100G-FR) Optical Transceiver**  
+
+
+Figure 19. QDD-8X100G-FR Optical connector  
+{: .text-center}   
+
+
+- Fiber: SMF  
+- Connector: Dual MPO-12 (APC)  
+- Wave (nm): 1310 - 1 wavelength per fiber  
+- Use-Case: 8 ports 100 GbE with 2x MPO-4xLC SMF breakout cable or 2 ports 400 GbE with MPO-MPO SMF   
+
+
 
 
 # Redundancy
