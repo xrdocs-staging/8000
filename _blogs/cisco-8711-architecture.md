@@ -573,7 +573,7 @@ The first of the configurations is 32x Grey 400 GbE QSFP56-DD, in this configura
 
 The second of the configurations is 32x Grey 100 GbE QSFP, in this configuration the QSFPDD ports are populated with 100G optics not 400G, the QSFP28 ports are populated with 100G optics without manual configuration. There is no restriction.  
 
-
+![Screenshot 2024-12-23 at 7.51.32 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 7.51.32 PM.jpg)  
 
 The third of the configurations is 400G DCO (Digital Coherent Optic) optics, in this configuration 400G DCO ports are populated with 400G ZR/ZR+/Bright ZR+ into even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 : Top).  
 
