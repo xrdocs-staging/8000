@@ -681,8 +681,8 @@ Use-Case 1. QDD-2X400G-FR4 at Port 0 and QDD-8X100G-FR at Port 2
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>  
-hw-module port-range 0 1 instance 0 location 0/RP0/CPU0 mode 2x400
-hw-module port-range 2 3 instance 0 location 0/RP0/CPU0 mode 8x100
+hw-module port-range 0 1 instance 0 location 0/RP0/CPU0 mode <span style="background-color: #00FF00">2x400</span>
+hw-module port-range 2 3 instance 0 location 0/RP0/CPU0 mode <span style="background-color: #00FF00">8x100</span>
 </code>
 </pre>
 </div>   
