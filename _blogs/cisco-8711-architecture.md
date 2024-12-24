@@ -813,13 +813,26 @@ Cisco 8711-332FH-M can support the following MACsec Use Cases.
 [MACsec configurations on Cisco 8711-32FH-M](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
 
 
-## Fan Tray Redundancy  
+### Fan Tray Redundancy  
 Cisco 8711-32FH-M provides 5+1 Fan Tray Redundancy. The system can operate in following conditions:  
 •	6 Fan Trays is Ideal case  
 •	5+1 Fan Tray, followed by major alarm. Speed up the all system Fans to 100%  
 
 
 
+### Packet flow in Cisco 8711-32FH-M
+
+
+Figure 20. Data path flow in Cisco 8711-32FH-M  
+{: .text-center}   
+
+1. Packets arrive on the input slice of the receive device    
+2. The NPU performs the packet lookup, feature (example: ingress ACL) checks, and identifies the destination for the packet  
+3. The ingress NPU enqueues the packet on the corresponding VoQ for the {destination, traffic class}  
+4. When credits are available for the destination VoQ, the packet is switched across the SMS to the destination (egress) slice  
+5. On the egress slice, the transmit direction lookups and feature (example: Egress ACL) checks are performed  
+6. The final encapsulations are added to the packet and it’s transmitted from the TX NPU out the physical interface  
+7. All packets are switched through the same SMS regardless of whether they are bound for the same NPU slice or a different NPU slice  
 
 
 
