@@ -764,14 +764,14 @@ RP/0/RP0/CPU0:8711-32FH-M#show interfaces brief
        Intf       Intf        LineP              Encap  MTU        BW
                Name       State       State               Type (byte)    (Kbps)
 --------------------------------------------------------------------------------
-       FH0/0/0/0        down        down               ARPA  1514  400000000
+       <mark>FH0/0/0/0</mark>        down        down               ARPA  1514  400000000
        FH0/0/0/1        down        down               ARPA  1514  400000000
 
 RP/0/RP0/CPU0:8711-32FH-M#show interfaces brief | inc Hu0/0/0/2 
                Intf       Intf        LineP              Encap  MTU        BW
                Name       State       State               Type (byte)    (Kbps)
 --------------------------------------------------------------------------------
-       Hu0/0/0/2/0        down        down               ARPA  1514  100000000
+       <mark>Hu0/0/0/2/0</mark>        down        down               ARPA  1514  100000000
        Hu0/0/0/2/1        down        down               ARPA  1514  100000000
        Hu0/0/0/2/2        down        down               ARPA  1514  100000000
        Hu0/0/0/2/3        down        down               ARPA  1514  100000000
