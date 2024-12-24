@@ -714,7 +714,7 @@ RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show interface
 </pre>
 </div>  
 
-**Use-Case 2. QDD-2X400G-FR4 at Port 0 and Grey 400G optics at Port 2/3**  
+**Use-Case 2. QDD-2X400G-FR4 at Port 0 and Grey 400G optics at Port 2 and Port 3**  
 
 
 <div class="highlighter-rouge">
