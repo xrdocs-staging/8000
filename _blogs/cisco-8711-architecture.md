@@ -791,14 +791,18 @@ Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8711-32FH-M. A
 
 
 
-- Full line-rate MACsec encryption engines to enable secure and low latency transport  
-- Supports MACsec GCM-AES-128/256 and GCM-AES-XPN-128/256  
+- Full line-rate MACsec encryption engines to enable secure and low latency transport    
+- Supports MACsec GCM-AES-128/256 and GCM-AES-XPN-128/256   
 - Supports LAN MACsec and WAN MACsec  
 - Supports “VLAN tag in the clear” in the roadmap  
 
 **Notes**: k9 package is required for crypto data plane    
 {: .notice}  
 
+Cisco 8711-32FH-M can support the following features to interoperate over the service provider.  
+- Ability to change MKA EAPoL Destination Address type  
+- Ability to change MKA Ether-type value  
+- Ability to configure Anti-replay window sizes  
 
 
 
