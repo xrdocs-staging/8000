@@ -648,7 +648,7 @@ The following table represents the maximum number of ports the Cisco 8711-32FH-M
 
 **2x400G (QDD-2X400G-FR4) Optical Transceiver**    
 
-  
+![Screenshot 2024-12-23 at 11.01.37 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-23 at 11.01.37 PM.png)    
 Figure 18. QDD-2X400G-FR4 Optical connector  
 {: .text-center}   
 
