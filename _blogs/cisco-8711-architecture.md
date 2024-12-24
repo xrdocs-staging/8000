@@ -640,7 +640,10 @@ The following table represents the maximum number of ports the Cisco 8711-32FH-M
   - As Native 800G Optic, Not supported  
   - As Breakout, Used with 2x400 GbE or 8x100 GbE optics at Even ports (Top row)  
   
-  
+ **Other things to know?** 
+- We will support 10 GbE optics (SFP-10G-LR-S, SFP-10G-SR-S, SFP-10G-ER-S)  via QSFP to SFP Adaptor (QSA: CVR-QSFP-SFP10G). Not supported in XR 24.4.1, in the roadmap  
+- 1G will not be supported 
+
 
 
 # Redundancy
