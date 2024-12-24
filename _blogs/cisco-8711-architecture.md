@@ -813,6 +813,13 @@ Cisco 8711-332FH-M can support the following MACsec Use Cases.
 [MACsec configurations on Cisco 8711-32FH-M](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
 
 
+## Fan Tray Redundancy  
+Cisco 8711-32FH-M provides 5+1 Fan Tray Redundancy. The system can operate in following conditions:  
+•	6 Fan Trays is Ideal case  
+•	5+1 Fan Tray, followed by major alarm. Speed up the all system Fans to 100%  
+
+
+
 
 
 
