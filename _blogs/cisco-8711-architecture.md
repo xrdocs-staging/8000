@@ -14,16 +14,16 @@ position: hidden
 ---
 {% include toc icon="table" title="Cisco 8711-32FH-M Architecture White Paper" %}
 
-# Introduction
+## Introduction
 The Cisco 8000 Series combines the revolutionary Cisco Silicon One™, IOS XR® software, and a set of clean sheet chassis to deliver a breakthrough in high-performance routers. 
 High-performance networking systems have historically been divided into routing or switching classes, with distinct hardware and software. But, as the necessity for reliable networks proliferates, it is imperative that traditional networks shift to a new architecture to address exponential bandwidth needs, ubiquitous connectivity, security, better quality of service, low latency coupled with high reliability, availability, and serviceability of the infrastructure. The Cisco® 8000 Series portfolio completes this journey with the Cisco 8700 products.
 The Cisco 8700 series is an addition to [the Cisco 8000 Series Routers](https://www.cisco.com/site/us/en/products/networking/routers/8000-series/index.html) powered by [Cisco Silicon One](https://www.cisco.com/site/us/en/products/networking/silicon-one/index.html)™  ASICs.  8700 products embody this cutting-edge innovation of the 8000 portfolio, offering advanced features engineered for seamless integration and scalability. Whether enhancing existing infrastructure or enabling new capabilities, the 8700 series products empower organizations to achieve their goals with unmatched efficiency and effectiveness. 
 
-# Cisco 8711-32FH-M Overview  
+## Cisco 8711-32FH-M Overview  
 Cisco 8711-32FH-M is a 1RU 12.8T fixed system based on a single P100 ASIC. With 16 ports of QSFP-DD800 and 16 ports of QSFP56-DD on the faceplate, Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher scale and a broader L2 feature set than is currently capable on Q200 based fixed systems. 
 
 
-# Video  
+## Video  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v13LpoQGXdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
   
@@ -58,15 +58,15 @@ Table 1. Cisco 8711-32FH-M key components
 
 
 
-# Cisco 8711-32FH-M Use Cases  
-## Aggregation, Core, Peering and DC Core with RON(Routed Optical Networking)       
+## Cisco 8711-32FH-M Use Cases  
+### Aggregation, Core, Peering and DC Core with RON(Routed Optical Networking)       
 
 ![use-case.png]({{site.baseurl}}/images/use-case.png)  
 
 As the user applications are becoming more dynamic, requiring differentiated user experiences network resources needs to be optimized in terms of power and real estate. Cisco 8711-32FH-M has been designed to cater the market requirement for total system bandwidth, port diversity, and MACsec encryption. The requirements far exceeded what could be accomplished with a single P100 NPU. Cisco 8711-32FH-M supports 12.8 Tbps of forwarding capacity. Supported various configurations of “400G only”, “800G Only” or “800G plus 400G combo” in 1RU height and 600mm depth form factor. It provides 32 ports of high speed 400G or 128 ports of 100G or 128 ports of low speed 10G/25G in the system.  
 Cisco’s [Converged SDN Transport Solution](https://blogs.cisco.com/sp/routed-optical-networking-its-about-the-architecture), is an architecture that delivers efficient network utilization, Simplified single layer, reduced network complexity, faster time to market, automation empowerment, and differentiated service offering. The solution works by merging IP and Optical onto a single layer where all the switching is done at Layer 3. Routers are connected with standardized [400G ZR/ZR+/Bright(0dBm) ZR+ coherent pluggable optics](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/Interfaces/710x/b-interfaces-config-guide-cisco8k-r710x/m-zr-zrp-cisco-8000.html). With a single service layer based upon IP, flexible management tools can leverage [telemetry](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/telemetry/710x/configuration/guide/b-telemetry-cg-8000-710x.html) and [model-driven programmability](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/programmability/710x/b-programmability-cg-8000-710x.html) to streamline lifecycle operations.  
 
-## Secure High-speed Data Center/Cloud interconnect and large Regional Hub/Branch router    
+### Secure High-speed Data Center/Cloud interconnect and large Regional Hub/Branch router    
 
 ![Screenshot 2024-12-21 at 10.44.17 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.44.17 PM.png)  
 
@@ -106,7 +106,7 @@ The RTUs (Right-to-Use licenses) provide customers with the ability to access an
 
 The SIAs (Software Innovation Access licenses) are term-based agreements that provide customers with access to specific software benefits. The SIAs enable customers to optimize their software usage, easily manage licenses across their network infrastructure, and ensure seamless upgrades to the latest versions of IOS XR software.  
 
-# Platform Description  
+## Platform Description  
 Cisco 8711-32FH-M is a 1RU fixed router belonging to Cisco 8700 family of products, a variant of the Cisco 8000 business, intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.  
 
 ![Screenshot 2024-12-21 at 10.59.30 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.59.30 PM.png)  
@@ -162,7 +162,7 @@ Figure 6. Back view of Cisco 8711-32FH-M Router with 6 FTs and 2 PSUs
 
 This router supports both AC and DC Power Supply Unit providing the system power. The Fan Trays provide system cooling via dual airflow direction mechanism – front to back(PSI) and back to front(PSE).  
 
-## Fan Tray   
+### Fan Tray   
 
 Cisco 8711-32FH-M supports six Fan trays for system cooling. It supports N+1 redundancy. All the Fan Trays are hot swappable and get inserted from the rear side of the router. There are two types of fans available.  
 
@@ -200,7 +200,7 @@ Figure 11. Fan Tray LEDs of Cisco 8711-32FH-M Router
 {: .text-center}  
 
 
-## Power Supply Unit(PSU)  
+### Power Supply Unit(PSU)  
 
 871-32FH-M has two PSUs supporting 1+1 redundancy. Redundancy will be supported for High Line Voltage mode(200Vac to 240Vac) of AC supply. When AC supply is used in low line volage(100Vac to 127Vac), redundancy is not supported.  
 
@@ -318,7 +318,7 @@ Location      FRU Type                        FAN_0    FAN_1
 </pre>
 </div>  
 
-## 8711-32FH-M CPU complex card   
+### 8711-32FH-M CPU complex card   
 
 8711-32FH-M uses common CPU card designed for Cisco 8000 fixed router.  
 
@@ -334,7 +334,7 @@ CPU complex card is designed with Intel 6 core processor. This processor running
 | Console        |                       |
 | Aikido FPGA    | Aikido Secure Boot    |  
 
-## IOS XR Software 
+### IOS XR Software 
 
 The Cisco 8711-32FH-M is launched with IOS XR 24.3.1  
 
