@@ -569,7 +569,7 @@ Cisco 8711-32FH-M can support several interface combinations.
 
 The first of the configurations is 32x Grey 400 GbE QSFP56-DD, in this configuration the QSFPDD ports are populated with 400G Grey optics. This is the default mode(without manual configuration). There is no restriction.  
 
-![Screenshot 2024-12-23 at 7.34.16 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-23 at 7.34.16 PM.png)  
+
 
 The second of the configurations is 32x Grey 100 GbE QSFP, in this configuration the QSFPDD ports are populated with 100G optics not 400G, the QSFP28 ports are populated with 100G optics without manual configuration. There is no restriction.  
 
