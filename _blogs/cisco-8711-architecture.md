@@ -676,7 +676,7 @@ Sample 800G Breakout config on Cisco 8711-32FH-M
 ![Screenshot 2024-12-23 at 11.09.40 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 11.09.40 PM.jpg)  
 
 Use-Case 1. QDD-2X400G-FR4 at Port 0 and QDD-8X100G-FR at Port 2  
-![Screenshot 2024-12-24 at 9.42.20 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 9.42.20 AM.png)  
+  
 
 <div class="highlighter-rouge">
 <pre class="highlight">
