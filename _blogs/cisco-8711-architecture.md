@@ -568,7 +568,7 @@ Figure 17. NPU to PHY to QSFPDD Serdes Connectivity
 Cisco 8711-32FH-M can support several interface combinations.  
 
 The first of the configurations is 32x Grey 400 GbE QSFP56-DD, in this configuration the QSFPDD ports are populated with 400G Grey optics. This is the default mode(without manual configuration). There is no restriction.  
-![Screenshot 2024-12-23 at 7.49.52 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 7.49.52 PM.jpg)  
+![Screenshot 2024-12-23 at 7.49.52 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 7.49.52 PM.jpg){: .align-center}{:height="120%" width="120%"}    
 
 The second of the configurations is 32x Grey 100 GbE QSFP, in this configuration the QSFPDD ports are populated with 100G optics not 400G, the QSFP28 ports are populated with 100G optics without manual configuration. There is no restriction.  
 ![Screenshot 2024-12-23 at 7.51.32 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 7.51.32 PM.jpg)  
