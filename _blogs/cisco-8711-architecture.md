@@ -745,6 +745,47 @@ RP/0/RP0/CPU0:8711-32FH-M#sh interfaces brief
 </pre>
 </div>  
 
+**Use-Case 3. QDD-8X100G-FR at Port 2 and Grey 400G Optics at Port 0 and Port 1**  
+
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>   
+hw-module port-range 2 3 instance 0 location 0/RP0/CPU0 mode <span style="background-color: #00FF00">8x100</span>  
+</code>
+</pre>
+</div>  
+
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>   
+RP/0/RP0/CPU0:8711-32FH-M#show interfaces brief        
+       Intf       Intf        LineP              Encap  MTU        BW
+               Name       State       State               Type (byte)    (Kbps)
+--------------------------------------------------------------------------------
+       FH0/0/0/0        down        down               ARPA  1514  400000000
+       FH0/0/0/1        down        down               ARPA  1514  400000000
+
+RP/0/RP0/CPU0:8711-32FH-M#show interfaces brief | inc Hu0/0/0/2 
+               Intf       Intf        LineP              Encap  MTU        BW
+               Name       State       State               Type (byte)    (Kbps)
+--------------------------------------------------------------------------------
+       Hu0/0/0/2/0        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/1        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/2        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/3        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/4        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/5        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/6        down        down               ARPA  1514  100000000
+       Hu0/0/0/2/7        down        down               ARPA  1514  100000000
+</code>
+</pre>
+</div>  
+
+
+
+
 # Redundancy
 
 # Conclusion
