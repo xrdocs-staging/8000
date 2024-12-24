@@ -834,6 +834,13 @@ Figure 20. Data path flow in Cisco 8711-32FH-M
 6. The final encapsulations are added to the packet and it’s transmitted from the TX NPU out the physical interface  
 7. All packets are switched through the same SMS regardless of whether they are bound for the same NPU slice or a different NPU slice  
 
+## Conclusion  
+
+This document discussed the Cisco 8711-32FH-M architecture.  
+The Cisco 8711-32FH-M is the P100 based fixed router. It offers a very high 10G, 25G, 100G, and 400G port density including MACsec and RON in a very small size (1RU).  
+Cisco 8711-32FH-M is intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.   
+
+
 
 
 
