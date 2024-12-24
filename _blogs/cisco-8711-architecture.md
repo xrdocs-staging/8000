@@ -670,6 +670,9 @@ Figure 19. QDD-8X100G-FR Optical connector
 - Wave (nm): 1310 - 1 wavelength per fiber  
 - Use-Case: 8 ports 100 GbE with 2x MPO-4xLC SMF breakout cable or 2 ports 400 GbE with MPO-MPO SMF   
 
+### QSFP-DD800 Optics Use Cases  
+Sample 800G Breakout config on Cisco 8711-32FH-M  
+
 
 
 
