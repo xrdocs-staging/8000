@@ -580,7 +580,7 @@ The fourth of the configurations is 400G DCO (Digital Coherent Optic) and Grey 4
 ![Screenshot 2024-12-23 at 8.12.19 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 8.12.19 PM.jpg)  
 
 The 5th of the configurations is 16x Grey 800G Grey Optics (QDD 2X400G FR4 or QDD 8X100G FR), in this configuration 800G ports are populated with 800G optics into even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 : Top) and all other Odd ports(Bottom) are shutdown automatically.  
-
+![Screenshot 2024-12-23 at 8.14.00 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 8.14.00 PM.jpg)  
 
 The 6th of the configuration is Grey 800G Optics and 400G DCO (ZR/ZR+/Bright ZR+) Optics, in this configuration the number of 800G Grey and 400G DCO (ZR, ZR+, Bright ZR+) must sum to 16 on Even ports (0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30: Top).  
 
