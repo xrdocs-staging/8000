@@ -471,7 +471,7 @@ Cisco Silicon One P100 features:
 - On-chip, high-performance, P4-programmable host NPU for high-bandwidth offline packet processing  
 - Multiple embedded processors for CPU offloading  
 - 64K VoQ (Virtual Output Queue) for Network slice and 16K VoQ for Fabric slice  
-- Dedicated 132 Counters banks (1M counters) and built-in counters in HCAM  
+- Dedicated 132 Counters banks (1M counters) and built-in counters in HCAM(Hash-based TCAM)  
 - 6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)  
 
 ![Screenshot 2024-12-22 at 6.37.52 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 6.37.52 PM.png){: .align-center}          
