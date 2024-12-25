@@ -374,6 +374,7 @@ From a security / integrity perspective, the Cisco 8711-32FH-M implements the la
 For a complete list of supported features, refer to the [Cisco Feature Navigator](https://tools.cisco.com/ITDIT/CFN/jsp/index.jsp). 
 [Cisco Software Download](https://software.cisco.com/download/home/286325065/type/280805694/release/7.3.1) page to download the Cisco IOS XR software images.  
 Detailed information on IOS XR can be found in the [IOS XR data sheet](https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ios-xr-software/datasheet-c78-743014.html).  
+You can refer to [Upgrade guide on CCO](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/b-setup-and-upgrade-cisco8k/upgrade-software.html) as well.  
 
 
 ## Cisco 8711-32FH-M Port Identification
