@@ -810,8 +810,8 @@ Cisco 8711-32FH-M can support the following MACsec Use Cases
 | Use Case#2  | Link MACsec over LAG members       | Supported         |
 | Use Case#3a | CE Port Mode MACsec over P2P L2VPN | Supported         |
 | Use Case#3b | CE Port Mode MACsec over MP L2VPN  | Roadmap           |
-| Use Case#4  | VLAN Clear Tags MACsec over L2VPN  | Roadmap           |  
-
+| Use Case#4  | VLAN Clear Tags MACsec over L2VPN  | Roadmap           |    
+  
 Table 4. Cisco 8711-32FH-M MACsec Use Case supported     
 {: .text-center}  
 
