@@ -374,6 +374,8 @@ For a complete list of supported features, refer to the [Cisco Feature Navigator
 [Cisco Software Download](https://software.cisco.com/download/home/286325065/type/280805694/release/7.3.1) page to download the Cisco IOS XR software images.  
 Detailed information on IOS XR can be found in the [IOS XR data sheet](https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ios-xr-software/datasheet-c78-743014.html).  
 
+From a security / integrity perspective, the Cisco 8711-32FH-M implements the latest secureboot features with TAm (Trust Anchor module) FPGA.  
+
 
 ## Cisco 8711-32FH-M Port Identification
 <b>Port Numbering</b>
