@@ -811,16 +811,16 @@ Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8711-32FH-M. A
 Cisco 8711-32FH-M can support the following MACsec Use Cases    
 ![MACsec-UC.png]({{site.baseurl}}/images/MACsec-UC.png)  
 
-**Notes**: Use-case #3b and #4 in the roadmap  
+**Notes**: Use Case #3b and #4 in the roadmap  
 {: .notice}  
 
 | Use Cases   | Use Case Descriptions              | Cisco 8711-32FH-M |
 |-------------|------------------------------------|-------------------|
-| Use Case#1  | Link MACsec in MPLS/IP Topology    | Supported         |
-| Use Case#2  | Link MACsec over LAG members       | Supported         |
-| Use Case#3a | CE Port Mode MACsec over P2P L2VPN | Supported         |
-| Use Case#3b | CE Port Mode MACsec over MP L2VPN  | Roadmap           |
-| Use Case#4  | VLAN Clear Tags MACsec over L2VPN  | Roadmap           |    
+| Use Case #1  | Link MACsec in MPLS/IP Topology    | Supported         |
+| Use Case #2  | Link MACsec over LAG members       | Supported         |
+| Use Case #3a | CE Port Mode MACsec over P2P L2VPN | Supported         |
+| Use Case #3b | CE Port Mode MACsec over MP L2VPN  | Roadmap           |
+| Use Case #4  | VLAN Clear Tags MACsec over L2VPN  | Roadmap           |    
   
 Table 4. Cisco 8711-32FH-M MACsec Use Case supported     
 {: .text-center}  
