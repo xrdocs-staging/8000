@@ -806,7 +806,6 @@ Cisco 8711-32FH-M can support the following features to interoperate over the se
 
 Cisco 8711-32FH-M can support the following MACsec Use Cases.  
 ![MACsec-UC.png]({{site.baseurl}}/images/MACsec-UC.png)  
-
 **Notes**: Use-case #3b and #4 in the roadmap  
 {: .notice}  
 
