@@ -60,7 +60,6 @@ Table 1. Cisco 8711-32FH-M key components
 
 ## Cisco 8711-32FH-M Use Cases  
 ### Aggregation, Core, Peering and DC Core with RON(Routed Optical Networking)       
-
 ![use-case.png]({{site.baseurl}}/images/use-case.png)  
 
 As the user applications are becoming more dynamic, requiring differentiated user experiences network resources needs to be optimized in terms of power and real estate. Cisco 8711-32FH-M has been designed to cater the market requirement for total system bandwidth, port diversity, and MACsec encryption. The requirements far exceeded what could be accomplished with a single P100 NPU. Cisco 8711-32FH-M supports 12.8 Tbps of forwarding capacity. Supported various configurations of “400G only”, “800G Only” or “800G plus 400G combo” in 1RU height and 600mm depth form factor. It provides 32 ports of high speed 400G or 128 ports of 100G or 128 ports of low speed 10G/25G in the system.  
