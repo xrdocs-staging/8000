@@ -344,7 +344,7 @@ In the software download center, the search engine will not help with 8711 keywo
 
 But you can pick any 8000 image to install your Cisco 8711-32FH-M routers:  
  
-
+![Screenshot 2024-12-24 at 6.07.14 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 6.07.14 PM.png)  
 
 <div class="highlighter-rouge">
 <pre class="highlight">
