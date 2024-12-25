@@ -200,7 +200,7 @@ Figure 11. Fan Tray LEDs of Cisco 8711-32FH-M Router
 {: .text-center}  
 
 
-### Power Supply Unit(PSU)  
+### Power Supply Unit (PSU)  
 
 871-32FH-M has two PSUs supporting 1+1 redundancy. Redundancy will be supported for High Line Voltage mode(200Vac to 240Vac) of AC supply. When AC supply is used in low line volage(100Vac to 127Vac), redundancy is not supported.  
 
