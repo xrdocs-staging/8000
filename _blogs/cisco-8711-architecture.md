@@ -318,7 +318,7 @@ Location      FRU Type                        FAN_0    FAN_1
 </pre>
 </div>  
 
-### 8711-32FH-M CPU complex card   
+### 8711-32FH-M CPU card   
 
 8711-32FH-M uses common CPU card designed for Cisco 8000 fixed router.  
 
