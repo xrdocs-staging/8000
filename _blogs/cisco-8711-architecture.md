@@ -647,7 +647,7 @@ The following table represents the maximum number of ports the Cisco 8711-32FH-M
   - As Breakout with 2x 400 GbE, Populated into even 16 Ports (Top row). 16 Even ports (Top) x (2x400 GbE) = 32 400 GbE total  
   
 - 800 G  
-  - As Native 800G Optic, Not supported  
+  - As Native 800GbE Optic, Not supported  
   - As Breakout, Used with 2x400 GbE or 8x100 GbE optics at Even ports (Top row)  
   
  **Other things to know?** 
