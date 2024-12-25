@@ -799,12 +799,7 @@ Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8711-32FH-M. A
 **Notes**: k9 package is required for crypto data plane    
 {: .notice}  
 
-Cisco 8711-32FH-M can support the following features to interoperate over the service provider.  
-- Ability to change MKA EAPoL Destination Address type  
-- Ability to change MKA Ether-type value  
-- Ability to configure Anti-replay window sizes  
-
-Cisco 8711-32FH-M can support the following MACsec Use Cases.  
+Cisco 8711-32FH-M can support the following MACsec Use Cases    
 ![MACsec-UC.png]({{site.baseurl}}/images/MACsec-UC.png)  
 **Notes**: Use-case #3b and #4 in the roadmap  
 {: .notice}  
@@ -819,6 +814,11 @@ Cisco 8711-32FH-M can support the following MACsec Use Cases.
 
 Table 4. Cisco 8711-32FH-M MACsec Use Case supported     
 {: .text-center}  
+
+Cisco 8711-32FH-M can support the following features to interoperate over the service provider.  
+- Ability to change MKA EAPoL Destination Address type  
+- Ability to change MKA Ether-type value  
+- Ability to configure Anti-replay window sizes   
 
 [MACsec configurations on Cisco 8711-32FH-M](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
 
