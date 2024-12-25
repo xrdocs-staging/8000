@@ -620,9 +620,9 @@ The following table represents the maximum number of ports the Cisco 8711-32FH-M
 | Breakout | 128     | 128     | N/A    | 128**   | 32**    | 16 Even ports |  
 
 
-                                                       * 2x400G & 8x100G only  
-                                                       ** 2x400G only  
-                                                       *** 4x100G, 8x100G   
+                                                            * 2x400G & 8x100G only  
+                                                            ** 2x400G only  
+                                                            *** 4x100G, 8x100G   
 
 
 - 10 GbE  
