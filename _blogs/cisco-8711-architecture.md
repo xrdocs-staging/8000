@@ -818,7 +818,7 @@ Cisco 8711-32FH-M can support the following MACsec Use Cases.
 | Use Case#4  | VLAN Clear Tags MACsec over L2VPN  | Roadmap           |  
 
 Table 4. Cisco 8711-32FH-M MACsec Use Case supported     
-{: .text-center}
+{: .text-center}  
 
 [MACsec configurations on Cisco 8711-32FH-M](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
 
