@@ -820,7 +820,7 @@ Cisco 8711-32FH-M can support the following features to interoperate over the se
 - Ability to change MKA Ether-type value  
 - Ability to configure Anti-replay window sizes   
 
-[[MACsec configurations on Cisco 8711-32FH-M]](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html) 
+[MACsec configurations on Cisco 8711-32FH-M](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/security/24xx/configuration/guide/b-system-security-cg-cisco8000-24xx/configuring-macsec.html)  
 
 
 ### Fan Tray Redundancy  
