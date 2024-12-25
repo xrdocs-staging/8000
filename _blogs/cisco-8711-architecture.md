@@ -835,8 +835,8 @@ Cisco 8711-32FH-M can support the following features to interoperate over the se
 
 ### Fan Tray Redundancy  
 Cisco 8711-32FH-M provides 5+1 Fan Tray Redundancy. The system can operate in following conditions:  
-•	6 Fan Trays is Ideal case  
-•	5+1 Fan Tray, followed by major alarm. Speed up the all system Fans to 100%  
+- 6 Fan Trays is Ideal case  
+- 5+1 Fan Tray, followed by major alarm. Speed up the all system Fans to 100%  
 
 
 ### Packet flow in Cisco 8711-32FH-M
