@@ -68,7 +68,7 @@ Cisco’s [Converged SDN Transport Solution](https://blogs.cisco.com/sp/routed-o
 
 ### Secure High-speed Data Center/Cloud interconnect and large Regional Hub/Branch router    
 
-![Screenshot 2024-12-21 at 10.44.17 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.44.17 PM.png)  
+ 
 
 The requirements for securing the connection of multiple data center and cloud links typically target a smaller amount of links, while requiring the highest level of bandwidth requirements. Sometimes called data center interconnect (DCI), WAN MACsec is an ideal encryption solution for interconnecting data center or multilocation cloud environments.  
 
