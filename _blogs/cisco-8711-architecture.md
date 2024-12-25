@@ -800,6 +800,7 @@ Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8711-32FH-M. A
 
 Cisco 8711-32FH-M can support the following MACsec Use Cases    
 ![MACsec-UC.png]({{site.baseurl}}/images/MACsec-UC.png)  
+
 **Notes**: Use-case #3b and #4 in the roadmap  
 {: .notice}  
 
