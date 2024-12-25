@@ -567,7 +567,7 @@ The PHY can supports the followings:
 - 32 SerDes in the line (Front Panel Ports)  side support at 50G (RGB mode)  
 - PHY controlled from FPGA  
 - SynE clock recovery and PTP (Class C timing) supported by PHY  
-- Line-rate MACsec(XR support) or IPsec (HW ready)  
+- Line-rate MACsec (XR support) or IPsec (HW ready)  
 
 ![Screenshot 2024-12-22 at 7.48.32 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 7.48.32 PM.png)  
 Figure 17. NPU to PHY to QSFPDD Serdes Connectivity  
