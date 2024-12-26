@@ -868,6 +868,8 @@ Cisco 8711-32FH-M is intended to be the primary routing solution for next genera
 [Cisco 8000 Configuration guide](https://www.cisco.com/c/en/us/support/routers/8000-series-routers/products-installation-and-configuration-guides-list.html)    
 [Cisco Optics-to-Device Compatibility Matrix tool](https://tmgmatrix.cisco.com/)    
 [Cisco 8000 Power Calculator](https://8000-power.cisco.com/)    
+[802.1AE MACsec White Paper](https://www.cisco.com/c/dam/en/us/td/docs/solutions/Enterprise/Security/MACsec/WP-High-Speed-WAN-Encrypt-MACsec.pdf )  
+
 
 ## Modification History  
 
