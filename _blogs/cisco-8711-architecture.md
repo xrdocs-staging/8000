@@ -842,7 +842,7 @@ Cisco 8711-32FH-M provides 5+1 Fan Tray Redundancy. The system can operate in fo
 
 ### Packet flow in Cisco 8711-32FH-M
 
- 
+![Screenshot 2024-12-25 at 10.40.24 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-25 at 10.40.24 PM.png)   
 Figure 20. Data path flow in Cisco 8711-32FH-M  
 {: .text-center}   
 
