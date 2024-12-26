@@ -860,9 +860,9 @@ This document discussed the Cisco 8711-32FH-M architecture.
 The Cisco 8711-32FH-M is the P100 based fixed router. It offers a very high 10G, 25G, 100G, and 400G port density including MACsec and RON in a very small size (1RU).  
 Cisco 8711-32FH-M is intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.   
 
-## Reference  
+## References  
 
-[Cisco Silicon One](https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-p100-processor-ds.html)        
+[Cisco Silicon One™ (P100)](https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-p100-processor-ds.html)               
 [Cisco 8711-32FH-M Datasheet](https://www.cisco.com/c/en/us/products/se/2024/8/Collateral/8700-series-routers-ds.html)    
 [Cisco 8711-32FH-M Hardware Installation Guide](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/hardware/hig-fixed-8700/b-8700-hardware-installation-guide/routers_overview.html)    
 [Cisco 8000 Configuration guide](https://www.cisco.com/c/en/us/support/routers/8000-series-routers/products-installation-and-configuration-guides-list.html)    
