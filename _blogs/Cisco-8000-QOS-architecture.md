@@ -449,3 +449,7 @@ Let’s see the rate limiting after stopping one of the Flow, say Flow-2,
 ![tgn-4.png]({{site.baseurl}}/images/tgn-4.png)
 
 - Flow-2 continues to be rate limited at 50G CIR as policer programming is at slice level. So each Flow get applied with 50G CIR.
+
+## Conclusion
+This white paper briefs fundamental architecture of Cisco 8000 serries routers powered by SiOne NPU co-packaged with HBM. QOS architecture explained in this document is applicable to all SiOne NPU generations with some of the additions like Egress Feature Capability(EFC aka eTM) , Priority propagation features etc. supported on latest SiOne generations.
+
