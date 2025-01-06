@@ -115,7 +115,6 @@ VOQs act as pit stop for packets while traffic manager facilitate packet transpo
 
 Lets look at below depiction which briefs packet enqueuing into VOQs:
 
-<img width="737" alt="enQ" src="https://github.com/user-attachments/assets/ab7852a9-b4a4-4da1-af91-2a8cb83a8a45" />
 
 - System has multiple slices, slice-0 & 2 are receiving traffic on port-1 & 3
 - System resolves forwarding to egress port-7 & finds out the corresponding VOQ-ID to enqueue packets into
@@ -126,7 +125,6 @@ Lets look at below depiction which briefs packet enqueuing into VOQs:
 - Egress scheduler reply back to ingress scheduler with credits accordingly
 
 Till now traffic is held in VOQs and lets understand further flow from below picture:
-<img width="784" alt="deQ" src="https://github.com/user-attachments/assets/1581a359-09db-4b08-8bd5-fc29df88f171" />
 
 - Ingress scheduler dequeue packets out of VOQs as per the credit grant received from egress side
 - Dequeued packets will be passed to the respective output queue at TxPP side and transmitted out to wire from there
@@ -475,3 +473,6 @@ Let’s see the rate limiting after stopping one of the Flow, say Flow-2,
 ## Conclusion
 This white paper briefs fundamental architecture of Cisco 8000 serries routers powered by SiOne NPU co-packaged with HBM. QOS architecture explained in this document is applicable to all SiOne NPU generations with some of the additions like Egress Feature Capability(EFC aka eTM) , Priority propagation features etc. supported on latest SiOne generations.
 
+
+## Conclusion
+This document briefs fundamental architecture of Cisco 8000 series routers powered by SiOne NPU co-packaged with HBM. QOS architecture explained in this document is applicable to all SiOne NPU generations except some of the additions like Egress Feature Capability(EFC aka eTM) , Priority propagation features etc. on latest SiOne variants like P100/K100. And these changes will be documented in upcoming write ups.
