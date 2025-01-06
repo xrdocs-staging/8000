@@ -26,8 +26,6 @@ Cisco 8000 is powered by Silicon One Network Processing Unit(NPU) which is evolv
 
 Cisco 8000 router series has 3 form factors, Fixed, Centralised and Distributed Line card systems. there are many variants with different throughput capacity and port configurations already shipping in the field. There are different Cisco 8000 router variants addressing different roles in the network primarily Service Provider domain and Webscaler / Data Center domains. 
 
-System buffering capability is one of the important architecture piece in NPU when it get designed to cater webscaler/DC and Service Provider use cases. Primarily 2 types of buffering needs during congestion situations in networks:  shallow buffering to absorb inflight packets over short range fiber links and deep buffering to absorb inflight packets over long distance fiber links. 
-
 This document is targeted to help those readers who is interested in understanding below topics,
 - SiOne NPU architecture
 - Cisco 8000 QOS scheduling and buffering
@@ -111,6 +109,30 @@ How to enqueue incoming packets into the right VOQs and enforce differentiated Q
 
 - Cisco 8000 supports 2 policy applications at egress side , remarking policy (DSCP/Prec, EXP remarking) and queueing policy
 - Queueing policy application on egress interface decides the type of scheduling (strict priority, shaping, BWRR etc..) to be applied for each class of traffic and buffer management methods like, flat queueing threshold, curved queueing (RED) threshold, dual queueing thresholds.
+
+## Life of packet in VOQs: Enqueuing and Dequeuing
+VOQs act as pit stop for packets while traffic manager facilitate packet transport from ingress NPU to egress NPU. VOQs are bound with multiple functions like, enqueue and deque of packets, drop packets at the tail of the queue while over flow caused by congestion,  account the drops in respective VOQs , facilitate ECN marking while congestion experience etc.. 
+
+Lets look at below depiction which briefs packet enqueuing into VOQs:
+
+<img width="737" alt="enQ" src="https://github.com/user-attachments/assets/ab7852a9-b4a4-4da1-af91-2a8cb83a8a45" />
+
+- System has multiple slices, slice-0 & 2 are receiving traffic on port-1 & 3
+- System resolves forwarding to egress port-7 & finds out the corresponding VOQ-ID to enqueue packets into
+- Packets enqueues into the VOQ and ingress scheduler get initiated
+- Ingress scheduler sends credit request message to egress scheduler 
+- Scheduler does book keep of the credit allocation and its consumption etc.
+- Egress scheduler is programmed with the egress QOS policy applied on port-7 and has the complete visibility of the traffic situations in each of the OQs associated with port-7: what is the scheduling algorithm applied to each of the output queues , which output queue is congested , what is the situation of port level congestion etc..
+- Egress scheduler reply back to ingress scheduler with credits accordingly
+
+Till now traffic is held in VOQs and lets understand further flow from below picture:
+<img width="784" alt="deQ" src="https://github.com/user-attachments/assets/1581a359-09db-4b08-8bd5-fc29df88f171" />
+
+- Ingress scheduler dequeue packets out of VOQs as per the credit grant received from egress side
+- Dequeued packets will be passed to the respective output queue at TxPP side and transmitted out to wire from there
+- If the credit grant is not sufficient then packet start pile up in VOQs at ingress side and lead to congestion after the VOQ capacity exhaust. This can arise when congestion is experienced at egress side
+- Queue limit come into apply after VOQ capacity exhaust. Queue limit size is derived from user configured QOS policy at egress side or default system queue limit if there is no explicit queue limit configured
+- Queue limit decides how much of additional data can be accommodated in the VOQ when it get congested before tail drop and data above the queue limit size get tail dropped
 
 ### Default scheduling on main-interface
 
