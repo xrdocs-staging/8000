@@ -115,6 +115,7 @@ VOQs act as pit stop for packets while traffic manager facilitate packet transpo
 
 Lets look at below depiction which briefs packet enqueuing into VOQs:
 
+<<<<<<< picutre need to be inserted >>>>>>>>>
 
 - System has multiple slices, slice-0 & 2 are receiving traffic on port-1 & 3
 - System resolves forwarding to egress port-7 & finds out the corresponding VOQ-ID to enqueue packets into
@@ -125,6 +126,8 @@ Lets look at below depiction which briefs packet enqueuing into VOQs:
 - Egress scheduler reply back to ingress scheduler with credits accordingly
 
 Till now traffic is held in VOQs and lets understand further flow from below picture:
+
+<<<<<<< picutre need to be inserted >>>>>>>>>
 
 - Ingress scheduler dequeue packets out of VOQs as per the credit grant received from egress side
 - Dequeued packets will be passed to the respective output queue at TxPP side and transmitted out to wire from there
