@@ -28,10 +28,11 @@ Cisco 8000 router series has 3 form factors, Fixed, Centralised and Distributed 
 
 This document is targeted to help those readers who is interested in understanding below topics,
 - SiOne NPU architecture
+- VOQ architecture and life of packet in VOQ
 - Cisco 8000 QOS scheduling and buffering
 - Cisco 8000 shaping & buffering 
-- behaviour on Bundle ports
-- Cisco 8000 policing behaviour and behaviour on Bundle ports
+- Shaping & buffering on Bundle ports
+- Cisco 8000 policing architecture and behaviour on Bundle ports
 
 # Silicon One (SiOne) NPU Architecture
 
