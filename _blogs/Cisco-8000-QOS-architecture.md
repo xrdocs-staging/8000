@@ -94,6 +94,35 @@ VOQ architecture advantages,
 
 **low latency forwarding :**  Unlike traditional multi-stage forwarding model, VOQ architecture based system deduce most of the metadata required to push out  the packets at ingress processing stage itself leaving minimal processing requirements at the egress processing unit. With this,  system minimise the number of  read/write actions to different memory modules and associated data bases needed for overall packet processing through the system. All these ultimately helps the system to achieve the forwarding throughput with optimal latency where single stage buffering is also a major factor to achieve this.
 
+## Cisco 8000 QOS policy application model
+
+Every system has QOS application model which defines the ingress & egress QOS policy applications and associated capabilities which end user can be explored with the system. 
+
+Lets look at Cisco 8000 QOS application model , below is the depiction of the same:
+![qos-model.png]({{site.baseurl}}/images/qos-model.png)
+
+Cisco 8000 system has 3 policy configuration model ,
+-	single policy at ingress side
+-	2 policy model at egress: one for queueing and another for remarking. On Cisco 8000 remarking of DSCP/Precedence, MPLS-EXP can be performed at ingress  and egress. This capability gives more flexibility with Cisco 8000 as some of the deployment use cases demand egress remarking rather than performing at ingress.
+
+*Ingress QOS Policy functionality:*
+-	Packet classification based on,
+o	 L3 :-  ACL, DSCP, Precedence, MPLS-EXP
+o	L2 :- CoS, DEI
+-	Marking / Re-marking: 
+o	Marking of Discard-class (for Dual queueing purpose) , traffic-class (for queueing) , qos-group (internal system marking to match at egress side for remarking applications at egress side)
+o	Remarking of DSCP/Precedence, MPLS-EXP, CoC, DEI
+-	Policing:
+o	Traffic rate limiting at ingress side:- 1R2C, 2R3C
+
+*Egress QOS policy functionality:*
+-	Egress Queueing: 
+o	Shaping, queueing, BWRR, RED, ECN, priority profiles
+-	Egress remarking:
+o	Remarking of DSCP/Precedence, MPLS-EXP
+
+
+
 ## Cisco 8000 queueing & scheduling
 
 Traffic can come in on any type of interfaces like main-interface, sub-interface, Bundle-main interface or Bundle sub-interface etc. at ingress side. But that does not matter from VOQ architecture and packet scheduling point of view. What matters is that out of which interface the packets have to egress out of the box.
