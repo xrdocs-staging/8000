@@ -20,15 +20,16 @@ tags:
 
 # Introduction
 
-Cisco 8000 series routers combines industry leading Cisco Silicon One, IOS XR networking operating system (OS), clean sheet chassis design and Crosswork automation tools to deliver high performance routers empowered with programmable transport infrastructure and network provisioning & monitoring tools.
+Cisco 8000 series routers combines industry leading Cisco **Silicon One**, **IOS XR** networking operating system (OS), clean sheet chassis design and Crosswork automation tools to deliver high performance routers empowered with programmable transport infrastructure and network provisioning & monitoring tools.
 
-Cisco 8000 is powered by Silicon One Network Processing Unit(NPU) which is evolving since 2019 , started with 10.8T capable 1st generation and 51.2T capable 3rd generation already rolled out in deployment.
+Cisco 8000 is powered by Silicon One Network Processing Unit(NPU) which is evolving since 2019 , started with **10.8T** capable 1st generation and **51.2T** capable 3rd generation already rolled out in deployment.
 
 Cisco 8000 router series has 3 form factors, Fixed, Centralised and Distributed Line card systems. there are many variants with different throughput capacity and port configurations already shipping in the field. There are different Cisco 8000 router variants addressing different roles in the network primarily Service Provider domain and Webscaler / Data Center domains. 
 
 This document is targeted to help those readers who is interested in understanding below topics,
 - SiOne NPU architecture
 - VOQ architecture
+- Cisco 8000 QOS policy application model
 - Cisco 8000 QOS scheduling and buffering
 - Life of packet in VOQs: Enqueuing and Dequeuing
 - Traffic manager and packet memories
