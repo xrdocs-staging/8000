@@ -455,14 +455,14 @@ HundredGigE0/0/0/2/6          unassigned      Down            Down     default
 
 ### System Block Diagram   
 
-The Cisco 8711-32FH-M has one common CPU complex board, P100 NPU, 2 Power Supply Units (PSU) with support of (1 + 1) redundancy and 6 Fan Tray (FT) with support of 1 Fan Failure condition. – These PSUs and FTs are field replaceable units (FRUs).  
+Cisco 8711-32FH-M has one common CPU complex board, P100 NPU, 2 Power Supply Units (PSU) with support of 1+1 redundancy, and 6 Fan Trays (FT) with support of 1 Fan Failure condition. All PSUs and FTs are field replaceable units (FRUs).    
 
 ![Screenshot 2024-12-22 at 1.08.04 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 1.08.04 PM.png)  
 
 Figure 12. Cisco 8711-32FH-M Block Diagram  
 {: .text-center}  
 
-P100 is a family of high-capacity packet switching devices.  P100 consists of 6 slices. Each slice has a Receive and a Transmit part (Rx slice and Tx slice). Each slice supports two groups of interfaces (i.e., a pair of IFGs). Performance wise, each slice handles up to one packet per clock and has a data bandwidth of up to 3.2 Tbps. The total capacity of a P100 device is determined by the number of slices. With four slices used in Cisco 8711-32FH-M and up to 5.047 Bpps forwarding performance per system.  
+P100 is a family of high-capacity packet switching devices. P100 consists of 6 slices. Each slice has a “receive” and a “transmit” part, respectively the Rx and Tx slices. Each slice supports two groups of interfaces (i.e., a pair of IFGs). Performance wise, each slice handles up to one packet per clock and has a data bandwidth of up to 3.2 Tbps. The total capacity of a P100 device is determined by the number of slices. Cisco 8711-32FH-M uses four slices and archieve up to 5.047 Bpps forwarding performance per system.    
 
 Cisco Silicon One P100 features:  
 - 19.2 Tbps full-duplex and 8.1 Bpps Forwarding Capacity NPU  
@@ -492,7 +492,7 @@ Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher
 Figure 15. Cisco Silicon One P100 in 8711-32FH-M  
 {: .text-center}   
 
-For more understanding on Cisco Silicon One P100 refer to [Cisco Silicon One P100-Info](https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-p100-processor-ds.html).    
+For more information about Cisco Silicon One P100, refer to [Cisco Silicon One P100-Info](https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-p100-processor-ds.html).    
 
 
 <b>Port/IFG/Slice assignment to P100 based Cisco 8711-32FH-M Router</b>  
