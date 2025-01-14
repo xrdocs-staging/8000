@@ -877,4 +877,4 @@ This document discussed the Cisco 8711-32FH-M architecture. Cisco 8711-32FH-M is
 
 | Version | Data     | Author(s)     | Comments            |
 |---------|----------|---------------|---------------------|
-| 1       | January 8, 2025 | Chang Soo Lee | Initial Publication |
+| 1       | January 15, 2025 | Chang Soo Lee | Initial Publication |
