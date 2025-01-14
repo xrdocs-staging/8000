@@ -322,9 +322,9 @@ Location      FRU Type                        FAN_0    FAN_1
 
 ### 8711-32FH-M CPU card   
 
-8711-32FH-M uses common CPU card designed for Cisco 8000 fixed router.  
+8711-32FH-M uses a common CPU card designed for Cisco 8000 fixed routers.  
 
-CPU complex card is designed with Intel 6 core processor. This processor running IOS XR operating system manages the system by setting up the control plane, NPU, and communicates with various subsystems.  
+The CPU complex card is designed with an Intel 6 core processor. This processor, which runs IOS XR, manages the system by setting up the control plane and NPU, and communicating with various subsystems.  
 
 | Device         | Configuration         |
 |----------------|-----------------------|
@@ -340,13 +340,13 @@ CPU complex card is designed with Intel 6 core processor. This processor running
 
 The Cisco 8711-32FH-M is launched with IOS XR 24.3.1  
 
-In the software download center, the search engine will not help with 8711 keywords:  
-
-![Screenshot 2024-12-24 at 5.57.21 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 5.57.21 PM.png)  
-
-But you can pick any 8000 (8200, 8600, 8800) image to install your Cisco 8711-32FH-M routers:  
+Pick any 8000 image (e.g., 8200, 8600, 8800) to install from the Software Download Center.    
  
 ![Screenshot 2024-12-24 at 6.07.14 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 6.07.14 PM.png)  
+
+Note that the search engine will not return any results for the specific keyword “8711”   
+
+![Screenshot 2024-12-24 at 5.57.21 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 5.57.21 PM.png)  
 
 <div class="highlighter-rouge">
 <pre class="highlight">
