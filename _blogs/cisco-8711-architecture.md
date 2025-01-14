@@ -561,7 +561,7 @@ From the above output, we can see Ports 0 to 7 are connected to Slice 3 and Port
 
 ### PHY   
 
-IFG of P100 connects to the PHYs through 128 SerDes  each operating at 100G data rate
+IFG of P100 connects to the PHYs through 128 SerDes, each operating at 100G data rate.  
 The PHY can supports the followings:  
 
 - Up to full 1.6 Tbps capacity per PHY    
@@ -576,15 +576,15 @@ The PHY can supports the followings:
 Figure 17. NPU to PHY to QSFPDD Serdes Connectivity  
 {: .text-center}   
 
-### Front Panel Port combo configurations  
+### Front Panel Port Combination Configurations  
 
 Cisco 8711-32FH-M can support several interface combinations.  
 
-The first of the configurations is 32x Grey 400 GbE QSFP56-DD, in this configuration the QSFPDD ports are populated with 400G Grey optics. This is the default mode(without manual configuration). There is no restriction.  
+The first configuration is 32x Grey 400 GbE QSFP56-DD. In this configuration, the QSFPDD ports are populated with 400G Grey optics. This is the default mode with no manual configuration.    
 
 ![Screenshot 2024-12-23 at 8.05.33 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-23 at 8.05.33 PM.png)  
 
-The second of the configurations is 32x Grey 100 GbE QSFP, in this configuration the QSFPDD ports are populated with 100G optics not 400G, the QSFP28 ports are populated with 100G optics without manual configuration. There is no restriction.
+The second configuration is 32x Grey 100 GbE QSFP. In this configuration, the QSFPDD ports are populated with 100G optics and the QSFP28 ports are populated with 100G optics. There is no manual configuration.    
 
 ![Screenshot 2024-12-23 at 8.07.53 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 8.07.53 PM.jpg)  
 
