@@ -79,7 +79,7 @@ Backhauling remote branch sites is critical to the success of many commercial, e
 
 ![Screenshot 2024-12-21 at 10.50.01 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-21 at 10.50.01 PM.png)   
 
-Let us have a quick refresher of the Cisco 8711-32FH-M’s PIDs and description.  
+The following is a quick refresher on Cisco 8711-32FH-M’s PIDs.    
 
 | PIDs             | Product Description                                           |
 |------------------|---------------------------------------------------------------|
@@ -103,9 +103,9 @@ Let us have a quick refresher of the Cisco 8711-32FH-M’s PIDs and description.
 Table 2. Cisco 8711-32FH-M PIDs  
 {: .text-center}  
 
-The RTUs (Right-to-Use licenses) provide customers with the ability to access and utilize specific perpetual software functionalities without the requirement to purchase the complete software package.  
+Right-to-Use (RTU) licenses provide customers with the ability to access and utilize specific perpetual software functionalities without the requirement to purchase the complete software package.  
 
-The SIAs (Software Innovation Access licenses) are term-based agreements that provide customers with access to specific software benefits. The SIAs enable customers to optimize their software usage, easily manage licenses across their network infrastructure, and ensure seamless upgrades to the latest versions of IOS XR software.  
+Software Innovation Access (SIA) licenses are term-based agreements that provide customers with access to specific software benefits. SIAs enable customers to optimize their software usage, easily manage licenses across their network infrastructure, and ensure seamless upgrades to the latest versions of IOS XR software.    
 
 ## Platform Description  
 Cisco 8711-32FH-M is a 1RU fixed router belonging to Cisco 8700 family of products, a variant of the Cisco 8000 business, intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.  
