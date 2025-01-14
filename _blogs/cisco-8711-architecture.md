@@ -40,7 +40,7 @@ Figure 1. Front view of the Cisco 8711-32FH-M
 Figure 2. Rear view of the Cisco 8711-32FH-M  
 {: .text-center}   
 
-In the below table high level Cisco 8711-32FH-M overview is listed.   
+The key features of the Cisco 8711-32FH-M are summarized below.     
 
 | Items                | Descriptions                                                                                                                                                                                                          |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
