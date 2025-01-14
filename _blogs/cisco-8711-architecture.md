@@ -631,29 +631,29 @@ The following table represents the maximum number of ports the Cisco 8711-32FH-M
 
 
 - 10 GbE  
-  - As Native 10G Optic with CVR-QSFP-SFP10G (QSA), fully populated into all 32 Ports in roadmap  
-  - As Breakout, fully populated into all 32 Ports. 32 ports x (4x10 GbE) = 128 10 GbE total  
+  - As Native 10G Optic with CVR-QSFP-SFP10G (QSA), fully populated into all 32 ports in roadmap  
+  - As Breakout, fully populated into all 32 ports. 32 ports x (4x10 GbE) = 128 10 GbE total  
   
 - 25 GbE
-  - As Native 25G Optic , fully populated into all 32 Ports in roadmap  
-  - As Breakout, fully populated into all 32 Ports. 32 ports x (4x25 GbE) = 128 25 GbE total  
+  - As Native 25G Optic , fully populated into all 32 ports in roadmap  
+  - As Breakout, fully populated into all 32 ports. 32 ports x (4x25 GbE) = 128 25 GbE total  
   
 - 40 GbE  
-  - As Native 40G Optic , fully populated into all 32 Ports  
+  - As Native 40G Optic , fully populated into all 32 ports  
   
 - 100 GbE  
-  - As Native 100G Optic, fully populated into all 32 Ports   
-  - As Breakout (Use case-2: 2x100 GbE), fully populated into all 32 Ports. 32 ports x (2x100 GbE) = 64 100 GbE total or   
-  - As Breakout (Use case-2: 4x100 GbE), fully populated into all 32 Ports. 32 ports x (4x100 GbE) = 128 100 GbE total or   
-  - As Breakout (Use case-3: 8x100 GbE), populated into 16 even ports(Top) x (8x100 GbE) = 128 100 GbE total   
+  - As Native 100G Optic, fully populated into all 32 ports   
+  - As Breakout (Use Case 2: 2x100 GbE), fully populated into all 32 ports. 32 ports x (2x100 GbE) = 64 100 GbE total or   
+  - As Breakout (Use Case 2: 4x100 GbE), fully populated into all 32 Ports. 32 ports x (4x100 GbE) = 128 100 GbE total or   
+  - As Breakout (Use Case 3: 8x100 GbE), populated into 16 even ports (top) x (8x100 GbE) = 128 100 GbE total   
   
 - 400 GbE  
-  - As Native 400G Optic, fully populated into all 32 Ports   
-  - As Breakout with 2x 400 GbE, Populated into even 16 Ports (Top row). 16 Even ports (Top) x (2x400 GbE) = 32 400 GbE total  
+  - As Native 400G Optic, fully populated into all 32 ports   
+  - As Breakout with 2x 400 GbE, Populated into even 16 ports (Top row). 16 even ports (Top) x (2x400 GbE) = 32 400 GbE total  
   
-- 800 G  
-  - As Native 800GbE Optic, Not supported  
-  - As Breakout, Used with 2x400 GbE or 8x100 GbE optics at Even ports (Top row)  
+- 800G  
+  - As Native 800 GbE Optic, not supported  
+  - As Breakout, Used with 2x400 GbE or 8x100 GbE optics at even ports (Top row)  
   
  **Other things to know** 
 - We will support 10 GbE optics (SFP-10G-LR-S, SFP-10G-SR-S, SFP-10G-ER-S)  via QSFP to SFP Adaptor (QSA: CVR-QSFP-SFP10G). Not supported in XR 24.4.1, in the roadmap  
@@ -690,7 +690,7 @@ Sample 800G Breakout config on Cisco 8711-32FH-M
 
 ![Screenshot 2024-12-23 at 11.09.40 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 11.09.40 PM.jpg)  
 
-**Use-Case 1. QDD-2X400G-FR4 at Port 0 and QDD-8X100G-FR at Port 2**  
+**Use Case 1. QDD-2X400G-FR4 at port 0 and QDD-8X100G-FR at port 2**  
 ![Screenshot 2024-12-24 at 9.49.59 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 9.49.59 AM.png)  
 
 <div class="highlighter-rouge">
@@ -729,7 +729,7 @@ RP/0/RP0/CPU0:8711-32FH-M#<span style="background-color: #A0CFEC">show interface
 </pre>
 </div>  
 
-**Use-Case 2. QDD-2X400G-FR4 at Port 0 and Grey 400G optics at Port 2 and Port 3**  
+**Use Case 2. QDD-2X400G-FR4 at port 0 and Grey 400G optics at port 2 and port 3**  
 ![UC2.png]({{site.baseurl}}/images/UC2.png)  
 
 <div class="highlighter-rouge">
@@ -760,7 +760,7 @@ RP/0/RP0/CPU0:8711-32FH-M#sh interfaces brief
 </pre>
 </div>  
 
-**Use-Case 3. QDD-8X100G-FR at Port 2 and Grey 400G Optics at Port 0 and Port 1**  
+**Use-Case 3. QDD-8X100G-FR at port 2 and Grey 400G optics at port 0 and port 1**  
 ![UC3.png]({{site.baseurl}}/images/UC3.png)   
 
 <div class="highlighter-rouge">
@@ -798,7 +798,7 @@ RP/0/RP0/CPU0:8711-32FH-M#show interfaces brief | inc Hu0/0/0/2
 </pre>
 </div>  
 
-For more understanding on Cisco QSFP-DD800 Transceiver Modules, refer to [Cisco QSFP-DD800 Transceiver Modules Data Sheet](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html).   
+For more informatoin about Cisco QSFP-DD800 Transceiver Modules, refer to [Cisco QSFP-DD800 Transceiver Modules Data Sheet](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html).   
 
 
 ### MACsec Support  
