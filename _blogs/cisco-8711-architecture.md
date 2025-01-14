@@ -143,7 +143,7 @@ In 8711-32FH-M, network synchronization clock can be sourced from any of the QSF
 **Notes**: No BITS interface support on 8711-32FH-M  
 {: .notice}   
 
-As shown in Figure 5, There are also 4 LEDs on the front-panel that can be used to display the system status. The front panel faceplate is filled with perforations that provide airflow for cooling.  
+As shown in Figure 5, there are also 4 LEDs on the front-panel that can be used to display the system status. The front panel faceplate is filled with perforations that provide airflow for cooling.  
 
 ![Screenshot 2024-12-22 at 9.57.25 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 9.57.25 AM.png)  
 
@@ -151,15 +151,16 @@ Figure 5. System status LEDs and descriptions details
 {: .text-center}  
 
 ![Screenshot 2024-12-22 at 9.57.38 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 9.57.38 AM.png)    
+Figure 6. Back view of Cisco 8711-32FH-M Router with 6 FTs and 2 PSUs  
+{: .text-center}   
 
-As shown in Figure 6, on the rear side of the chassis, there’re the followings:    
+As shown in Figure 6, othe rear side of the chassis includes:    
 - 2 Power Supply Units (PSUs) with support of  (1 + 1) redundancy  
 - Pull-out label: Serial number and PSU/Fan Tray location  
 - 6 Fan Tray (FT) with support of 1 Fan Failure condition  
 - PSUs and FTs are hot-swappable  
 
-Figure 6. Back view of Cisco 8711-32FH-M Router with 6 FTs and 2 PSUs  
-{: .text-center}  
+ 
 
 This router supports both AC and DC Power Supply Unit providing the system power. The Fan Trays provide system cooling via dual airflow direction mechanism – front to back(PSI) and back to front(PSE).  
 
