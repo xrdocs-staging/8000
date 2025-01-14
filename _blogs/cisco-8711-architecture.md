@@ -115,17 +115,17 @@ Cisco 8711-32FH-M is a 1RU fixed router belonging to Cisco 8700 family of produc
 Figure 3. Front view of Cisco 8711-32FH-M Router  
 {: .text-center}  
 
-As shown in Figure 3, The front of the chassis has 16 QSFP-DD800 + 16 QSFD56-DD ports along with the IO ports used for management, console, USB, and timing synchronization. Each QSFPDD port has its own bi-color LED that can be used to display the link status indication. 
+As shown in Figure 3, the front of the chassis has 16 QSFP-DD800 + 16 QSFD56-DD ports along with the IO ports used for management, console, USB, and timing synchronization. Each QSFPDD port has its own bi-color LED that can be used to display the link status indication. 
 
 **Notes** : QSFP-DD800 is 800G capable version of the QSFP56-DD.  It is backward compatible to legacy QSFP56- DD and all QSFP modules.
 {: .notice}  
 
 ![Screenshot 2024-12-22 at 11.31.06 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 11.31.06 AM.png)  
 
-Figure 4. Mgmt/Timing Interface details  
+Figure 4. Management and Timing Interface Details    
 {: .text-center}  
 
-Front panel ports include management and Timing interfaces:
+Front panel ports include management and timing interfaces:
 - Management interfaces  
   - 1x 10/100/1000 Mbps Management Ethernet port  
   - 1x USB 3.0 (Type A)  
@@ -138,7 +138,7 @@ In 8711-32FH-M, network synchronization clock can be sourced from any of the QSF
   - ToD (Time of Day) with RJ45 port  
   - 1 PPS coax port  
   - 10 MHz coax port  
-- 1x GNSS (Global Navigation Satellite System) receiver ( PRTC(Primary Reference Time Clock) Class B Accuracy) 
+- 1x GNSS (Global Navigation Satellite System) receiver [PRTC (Primary Reference Time Clock) Class B Accuracy] 
 
 **Notes**: No BITS interface support on 8711-32FH-M  
 {: .notice}   
