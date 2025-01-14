@@ -162,14 +162,14 @@ As shown in Figure 6, othe rear side of the chassis includes:
 
  
 
-This router supports both AC and DC Power Supply Unit providing the system power. The Fan Trays provide system cooling via dual airflow direction mechanism – front to back(PSI) and back to front(PSE).  
+This router supports either AC or DC Power Supply Unit providing the system power. The Fan Trays provide system cooling via dual airflow direction mechanism – front to back (PSI) and back to front (PSE).  
 
 ### Fan Tray   
 
 Cisco 8711-32FH-M supports six Fan trays for system cooling. It supports N+1 redundancy. All the Fan Trays are hot swappable and get inserted from the rear side of the router. There are two types of fans available.  
 
-- Port Side Intake or Front to back Airflow (Burgundy color)  
-- Port Side Exhaust or back to front Airflow (Royal Blue)  
+- Port Side Intake (PSI), or front to back airflow (in burgundy)    
+- Port Side Exhaust (PSE), or back to front airflow (in royal blue)    
 
 All Fan Trays must be the same color (direction) to work correctly.  
 
@@ -194,7 +194,7 @@ Figure 9. Back view of 6x FAN-1RU-PE-V2 + 2x PSU2KW-ACPE (Blue Latches)
 Figure 10. PSE (Port-side Exhaust) Airflow of Cisco 8711-32FH-M Router  
 {: .text-center}  
 
-Fan Tray has tricolor LED (one for each Fan Tray) of color Red, Yellow, and Blue  
+Each fan tray has tricolor LED (one for each Fan Tray) of color red, yellow, and blue  
 
 ![Screenshot 2024-12-22 at 10.16.36 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 10.16.36 AM.png)  
 
@@ -204,7 +204,7 @@ Figure 11. Fan Tray LEDs of Cisco 8711-32FH-M Router
 
 ### Power Supply Unit (PSU)  
 
-871-32FH-M has two PSUs supporting 1+1 redundancy. Redundancy will be supported for High Line Voltage mode(200Vac to 240Vac) of AC supply. When AC supply is used in low line volage(100Vac to 127Vac), redundancy is not supported.  
+8711-32FH-M has two PSUs supporting 1+1 redundancy. Redundancy is supported for high line voltage AC supply (200 Vac to 240 Vac), but not for low line voltage AC supply (100 Vac to 127 Vac).  
 
 **Note**: The Cisco 8711-32FH-M router doesn’t support a mix of AC and DC Power Supply Units (PSUs)  
 {: .notice}  
