@@ -389,7 +389,7 @@ Cisco 8711-32FH-M port numbering follows that of physical interfaces as {Type}{R
 ![Screenshot 2024-12-22 at 12.24.45 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 12.24.45 PM.png)  
 
 
-Native Interface Use-case with 100 GbE at 400 G port  
+Native Interface Use Case with 100 GbE at 400 G port  
 
 <div class="highlighter-rouge">
 <pre class="highlight">
@@ -413,7 +413,7 @@ HundredGigE0/0/0/0.9           11.0.9.1        Up              Up       default
 </pre>
 </div>  
 
-Breakout Interface Use-case with 2x400 GbE at 800G port ( Even port, Top row ports)  
+Breakout Interface Use-case with 2x400 GbE at 800G port (even ports, i.e., top row)    
 
 <div class="highlighter-rouge">
 <pre class="highlight">
@@ -429,7 +429,7 @@ Interface                      IP-Address      Status          Protocol Vrf-Name
 </pre>
 </div>  
 
-Breakout Interface Use-case with 8x100 GbE at 800G port ( Even port, Top row ports)  
+Breakout Interface Use-case with 8x100 GbE at 800G port (even ports, i.e., top row)    
 
 <div class="highlighter-rouge">
 <pre class="highlight">
