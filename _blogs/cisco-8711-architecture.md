@@ -557,7 +557,7 @@ FH0/0/0/31   78000200   0   0    0    30    792      0        local    400G     
 </pre>
 </div>   
 
-From the above output, we can see Port 0 to port 7 is connected to slice 3 and Port 8 to port 15 is connected to slice 2.  
+From the above output, we can see Ports 0 to 7 are connected to Slice 3 and Ports 8 to 15 are connected to Slice 2.    
 
 ### PHY   
 
