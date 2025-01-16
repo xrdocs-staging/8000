@@ -194,7 +194,7 @@ Figure 9. Back view of 6x FAN-1RU-PE-V2 + 2x PSU2KW-ACPE (Blue Latches)
 Figure 10. PSE (Port-side Exhaust) Airflow of Cisco 8711-32FH-M Router  
 {: .text-center}  
 
-Each fan tray has tricolor LED (one for each Fan Tray) of color red, yellow, and blue  
+Each fan tray has tricolor LED (one for each Fan Tray) of color green, amber, and blue  
 
 ![Screenshot 2024-12-22 at 10.16.36 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 10.16.36 AM.png)  
 
