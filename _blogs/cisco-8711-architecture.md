@@ -149,7 +149,8 @@ As shown in Figure 5, there are also 4 LEDs on the front-panel that can be used 
 Figure 5. System status LEDs and descriptions details  
 {: .text-center}  
 
-![Screenshot 2024-12-22 at 9.57.38 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 9.57.38 AM.png)    
+![Screenshot 2024-12-22 at 9.57.38 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-22 at 9.57.38 AM.png)  
+
 Figure 6. Back view of Cisco 8711-32FH-M Router with 6 FTs and 2 PSUs  
 {: .text-center}   
 
