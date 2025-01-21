@@ -805,7 +805,7 @@ For more informatoin about Cisco QSFP-DD800 Transceiver Modules, refer to [Cisco
 
 
 ### MACsec Support  
-Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8711-32FH-M. All ports are connected to PHY supporting the feature. It can be supported on 10G, 25G, 40G, 100G, 400G ports and also any breakout ports.  
+Starting IOS-XR 24.4.1, MACsec is supported on all ports of Cisco 8711-32FH-M without performance impact. All ports are connected to PHY supporting the feature. It can be supported on 10G, 25G, 40G, 100G, 400G ports and also any breakout ports.  
 ![]({{site.baseurl}}images/Screenshot 2024-12-24 at 10.18.13 AM.png)  ![Screenshot 2024-12-24 at 10.18.13 AM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 10.18.13 AM.png)  
 
 - Full line-rate MACsec encryption engines to enable secure and low latency transport    
