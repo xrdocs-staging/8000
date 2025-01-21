@@ -20,7 +20,7 @@ High-performance networking systems have historically been divided into routing 
 The Cisco 8700 series is an addition to [the Cisco 8000 Series Routers](https://www.cisco.com/site/us/en/products/networking/routers/8000-series/index.html) powered by [Cisco Silicon One](https://www.cisco.com/site/us/en/products/networking/silicon-one/index.html)™  ASICs.  8700 products embody this cutting-edge innovation of the 8000 portfolio, offering advanced features engineered for seamless integration and scalability. Whether enhancing existing infrastructure or enabling new capabilities, the 8700 series products empower organizations to achieve their goals with unmatched efficiency and effectiveness. 
 
 ## Cisco 8711-32FH-M Overview  
-Cisco 8711-32FH-M is a 1RU 12.8T fixed system based on a single P100 ASIC. With 16 ports of QSFP-DD800 and 16 ports of QSFP56-DD on the faceplate, Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher scale and a broader L2 feature set than is currently capable on Q200 based fixed systems.  
+Cisco 8711-32FH-M is a 1RU 12.8T fixed system based on a single Silicon One P100 ASIC. With 16 ports of QSFP-DD800 and 16 ports of QSFP56-DD on the faceplate, Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher scale and a broader L2 feature set than is currently capable on Q200 based fixed systems.  
   
   
 
