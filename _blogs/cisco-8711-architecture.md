@@ -863,7 +863,7 @@ Figure 20. Data path flow in Cisco 8711-32FH-M
 
 ## Conclusion  
 
-This document discussed the Cisco 8711-32FH-M architecture. Cisco 8711-32FH-M is a Silicon One P100 based fixed router. It offers a very high 10G, 25G, 100G, and 400G port density with MACsec and RON while minimizing size (1RU). Cisco 8711-32FH-M is intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.   
+This document discussed the Cisco 8711-32FH-M architecture. Cisco 8711-32FH-M is a Silicon One P100 based fixed router. It offers a very high 10G, 25G, 100G, and 400G port density with MACsec and RON while compact size (1RU). Cisco 8711-32FH-M is intended to be the primary routing solution for next generation Core, Aggregation, Peering, and DC Core networks.   
 
 ## References  
 
