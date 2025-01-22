@@ -10,7 +10,7 @@ tags:
   - Cisco 8000
   - Silicon One P100
   - Fixed System
-position: hidden
+position: top
 ---
 {% include toc icon="table" title="Cisco 8711-32FH-M Architecture White Paper" %}
 
