@@ -595,7 +595,7 @@ The third configuration is 400G DCO (Digital Coherent Optic). In this configurat
 
 ![Screenshot 2024-12-23 at 8.10.15 PM.jpg]({{site.baseurl}}/images/Screenshot 2024-12-23 at 8.10.15 PM.jpg)  
 
-**Note**: Lower row qualification pending lab certification  
+**Notes**: Lower row qualification pending lab certification  
 {: .notice}   
 
 The fourth configuration is a combination of 400G DCO (Digital Coherent Optic) and Grey 400G optics. In this configuration, the even ports are populated with 400G DCO optics (ZR/ZR+/Bright ZR+), and the odd ports (i.e., bottom row) are populated with 400G Grey optics.    
