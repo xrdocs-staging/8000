@@ -135,7 +135,7 @@ The Cisco 8608 supports three different modular port adapters (MPAs). The detail
 
 | Modular Port Adapter | Bandwidth | 10/25/50 GbE Physical Ports | 100 GbE Physical Ports | 400 GbE Physical Ports | MACsec | Timing     |
 |----------------------|-----------|-----------------------------|------------------------|------------------------|--------|------------------|
-| 86-MPA-14H2FH-M      | 1.6 Tbps  | -                           | 14                     | 2                      | Yes    | Class B/C        |
+| 86-MPA-14H2FH-M      | 1.6 Tbps  | -                           | 14                     | 2                      | Yes    | Class C        |
 | 86-MPA-24Z-M         | 1.2 Tbps  | 24                          | -                      | -                      | Yes    | Class B/C        |
 | 86-MPA-4FH-M         | 1.6 Tbps  | -                           | -                      | 4                      | Yes    | Class B/C        |  
 
