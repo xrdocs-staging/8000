@@ -399,7 +399,7 @@ For a complete list of supported features, refer to the [Cisco Feature Navigator
 
 
 ## Cisco 8608 Slot and Port identification    
-Slots numberingSlot numbering on the Cisco 8608 from the front goes On front view of the Cisco 8608 chassis, left to right direction is MPA0 to MPA7 and, RP0 to RP1.  
+Slots numbering on the Cisco 8608 from the front goes On front view of the Cisco 8608 chassis, left to right direction is MPA0 to MPA7 and, RP0 to RP1.  
 
 <b>Slots numbering</b>  
 On front view of the Cisco 8608 chassis, left to right direction is MPA0 to MPA7, RP0 to RP1.  
