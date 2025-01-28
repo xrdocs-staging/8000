@@ -50,10 +50,9 @@ Investment Protection – The design of the system keeps in mind the ability to 
 
 The key chassis components and their overview is captured in the table below:     
 
-![new-tabel1.png]({{site.baseurl}}/images/new-tabel1.png){: .align-center}   
+![Table1.jpg]({{site.baseurl}}/images/Table1.jpg){: .align-center}     
 Table 1. Cisco 8608 key components      
 {: .text-center}  
-
 
 ### Cisco 8608 value proposition  
 
