@@ -17,18 +17,18 @@ tags:
 ## Cisco 8000 Overview   
 The Cisco® 8000 Series combines the revolutionary Cisco Silicon One™, IOS XR® software, and clean sheet chassis design to deliver a breakthrough in high-performance routers. The 8000 Series comprises a full range of feature-rich and highly scalable and reliable routers. Cisco 8608 is a part of a new complementary portfolio built on Centralized Architecture based chassis design.  
 
-The Cisco 8608 is a unique platform that combines flexibility and reliability while offering investment protection. Customers can achieve unmatched reliability with redundant control and data plane via redundant route processors and redundant switch cards. Unlike distributed architecture, the forwarding decisions on centralized platforms are centrally performed. Cisco 8608 can also be operated in a non-redundant mode as per the appropriate customer required use case. Cisco 8608 first generation switch cards are powered by [Cisco Silicon One™ Q200 ASIC](https://www.cisco.com/c/dam/en/us/solutions/collateral/silicon-one/white-paper-sp-fixed-box-router.pdf). A wide variety of modular port adapters allow for high interface diversity.  
+The Cisco 8608 is a unique platform that combines flexibility and reliability while offering investment protection. Customers can achieve unmatched reliability with redundant control and data plane via redundant route processors and redundant switch cards. Unlike distributed architecture, the forwarding decisions on centralized platforms are centrally performed. Cisco 8608 can also be operated in a non-redundant mode as per the appropriate customer required use case. Cisco 8608 first generation switch cards are powered by [Cisco Silicon One™ Q200 NPU](https://www.cisco.com/c/dam/en/us/solutions/collateral/silicon-one/white-paper-sp-fixed-box-router.pdf). A wide variety of modular port adapters allow for high interface diversity.  
 
-This data sheet is specifically for the Cisco 8608 router. In addition to the centralized router architecture in the Cisco 8608, the Cisco 8000 Series includes two other distinct router architectures that utilize the Cisco Silicon One ASICs:  
+This data sheet is specifically for the Cisco 8608 router. In addition to the centralized router architecture in the Cisco 8608, the Cisco 8000 Series includes two other distinct router architectures that utilize the Cisco Silicon One NPU:  
   - **Distributed**: The Cisco 8800 Series provides the highest bandwidth via distributed chassis with a redundant control plane and switch fabric. The 8800 Series includes the Cisco 8804, 8808, 8812, and 8818. These chassis deliver up to 28.8 Tbps per line card via 100, 400, and 800G ports.  
-  - **Fixed**: The Cisco 8100 and 8200 utilize Cisco’s standalone architecture to deliver full routing functionality with a single ASIC per router. Both support the full routing feature set. The 8200 has deep buffers and expanded forwarding tables, while the 8100 is targeted for routed data center applications with lower buffering and forwarding table scale requirements.  
+  - **Fixed**: The Cisco 8100 and 8200 utilize Cisco’s standalone architecture to deliver full routing functionality with a single NPU per router. Both support the full routing feature set. The 8200 has deep buffers and expanded forwarding tables, while the 8100 is targeted for routed data center applications with lower buffering and forwarding table scale requirements.  
   
 Learn more about Cisco 8000 distributed and fixed portfolio in the [Cisco 8000 data sheet](https://www.cisco.com/c/en/us/products/collateral/routers/8000-series-routers/datasheet-c78-742571.html).  
 
 ## Cisco 8608 Overview   
 Large, distributed chassis have traditionally been designed to cater to the market requirement for total system bandwidth, port diversity, and redundancy. The requirements far exceeded what could be accomplished with a single NPU. The fabrics that weave together multi-NPU systems had to be provisioned to the highest bandwidth use case and deployed 100% upfront, consuming power and capital regardless of the number of installed line cards. That wisdom held true for multiple generations of core, edge, and aggregation distributed systems.  
 
-Now with the advent of dense Cisco Silicon One ASICs, we can address these roles with a new breed of centralized architectures that combine the best aspects of distributed and fixed systems.  Cisco 8608 has combined the redundancy and I/O diversity of distributed systems with the economics and simple elegance of fixed platforms. As a result, Cisco 8608 delivers redundancy at an optimized cost while enabling flexibility and expandability through generational continuity.  
+Now with the advent of dense Cisco Silicon One NPU, we can address these roles with a new breed of centralized architectures that combine the best aspects of distributed and fixed systems.  Cisco 8608 has combined the redundancy and I/O diversity of distributed systems with the economics and simple elegance of fixed platforms. As a result, Cisco 8608 delivers redundancy at an optimized cost while enabling flexibility and expandability through generational continuity.  
   
 ![Screenshot 2023-06-28 at 5.33.35 PM.png]({{site.baseurl}}/images/Screenshot 2023-06-28 at 5.33.35 PM.png){: .align-center}      
 Figure 1. Front view of the Cisco 8608  
@@ -42,7 +42,7 @@ The Cisco 8608 router is 7 RU in height and less than 600mm in sheet metal depth
 
 Supporting the Cisco 8608 router capabilities demanded a wide range of new approaches to platform design. By leveraging decades of high-performance system design, Cisco has delivered unprecedented capacity without compromising forwarding performance. This required new power supplies, a redesigned cooling architecture, and future-proof connectors.  
 
-The Cisco 8608 router required extensive innovation and consolidation of capabilities to greatly increase the power efficiency of the solution. As with all modern networking devices the power density of the ASIC creates challenging thermal conditions. These challenges are addressed via advanced system design, including optimized fans and heat sinks.   
+The Cisco 8608 router required extensive innovation and consolidation of capabilities to greatly increase the power efficiency of the solution. As with all modern networking devices the power density of the NPU creates challenging thermal conditions. These challenges are addressed via advanced system design, including optimized fans and heat sinks.   
 
 The Cisco 8608 router utilizes a state-of-the-art orthogonal design with advanced cooling via front to back airflow, high power capacity and new power supplies. The chassis and all data path components for the Cisco 8608 router benefit from a clean sheet design that allows the systems to take full advantage of the latest technologies and Cisco’s design expertise. This design connects all forwarding path components directly without a backplane or midplane. In the Cisco 8608 router, the eight Modular Port Adaptors (MPAs) along with the two Route Processors are vertically oriented. Every major component of the Cisco 8608 router was developed with a clean sheet approach – representing unprecedented investment and commitment to a long lifecycle for the Cisco 8608 router.  
 
@@ -473,7 +473,7 @@ Inside the chassis, there are two Route Processors (RPs), two Switch Cards (SCs)
   - PCIE, P2PM, 10 GbE for control   
   - Trusted Anchor Module (TAM) for secure boot  
 - Switch Card (2 for redundant mode, 1 for non-redundant mode)  
-  - Each SC has one Cisco Silicon One Q200 ASIC with 8 GB HBM    
+  - Each SC has one Cisco Silicon One Q200 NPU with 8 GB HBM    
   - PCIE switch to interconnect the key components  
   - Fan Controller Board  
   - Orthogonal Connector to all inter-connectivity with the MPAs  
