@@ -166,7 +166,7 @@ Figure 8. 86-MPA-4FH-M
 
 **86-MPA-24Z-M**  
 86-MPA-24Z-M can be inserted into any slot (slot 0 to 7) of the chassis without any restriction. This MPA is a pluggable card that provides 24 interface ports for a maximum total bandwidth of 1.2 Tbps and can support up to:  
-- 24 ports of SFP 1/10/25/50 GbE modules
+- 24 ports of SFP56 1/10/25/50 GbE modules
 
 ![figure9.png]({{site.baseurl}}/images/figure9.png){: .full}    
 Figure 9. 86-MPA-24Z-M  
