@@ -132,7 +132,7 @@ The Q200 on the SC has up to 32x 50Gbps SerDes to each MPA slot regardless of sl
 **Cisco 8608 modular port adapters**  
 The Cisco 8608 supports three different modular port adapters (MPAs). The details are captured in table below:  
 
-| Modular Port Adapter | Bandwidth | 10/25/50 GbE Physical Ports | 100 GbE Physical Ports | 400 GbE Physical Ports | MACsec | Timing     |
+| Modular Port Adapter | Bandwidth | 10/25/50 GbE Physical Ports | 100 GbE Physical Ports | 400 GbE Physical Ports | MACsec | PTP Timing     |
 |----------------------|-----------|-----------------------------|------------------------|------------------------|--------|------------------|
 | 86-MPA-14H2FH-M      | 1.6 Tbps  | -                           | 14                     | 2                      | Yes    | Class C        |
 | 86-MPA-24Z-M         | 1.2 Tbps  | 24                          | -                      | -                      | Yes    | Class C        |
