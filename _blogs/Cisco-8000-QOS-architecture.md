@@ -269,7 +269,7 @@ High Bandwidth Memory (HBM):
 - Secondary packet memory
 - Fully shared memory
 
-HBM is a deep pool of on-demand buffers for quaranteed packet delivery. Cisco 8000 is designed with 8GB of HBM memory co-packaged with SiOne ASIC which is primarily used for deep buffering scenarios like, smoothening occosional bursty peaks of traffic, ingress to egress port speed over subscrioption etc.. So when we talk about queue-limit, RED etc. it is associated with HBM memory.
+HBM is a deep pool of on-demand buffers for quaranteed packet delivery. Cisco 8000 is designed with 8GB of HBM memory co-packaged with SiOne ASIC which is primarily used for deep buffering scenarios like, smoothening occosional bursty peaks of traffic, ingress to egress port speed over subscrioption etc..So when we talk about queue-limit, RED etc. it is in context of HBM memory.
 
 ### Packet flow in non-congestion & congestion scenarios:
 In non-congestion scenario packet get switched though SMS and HBM does not come into picture for such flows: packet gets enqueued into VOQs and dequeued out without any contention and associated latency. So packet movement out of VOQs towards egress OQs will happen at system designed switching speed.
