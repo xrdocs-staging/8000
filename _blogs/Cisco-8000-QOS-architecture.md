@@ -234,7 +234,7 @@ Lets look with another policy example as below,
 
 ### What is default fairness in scheduling
 
-Scope of VOQ replication on Cisco 8000 is at slice level as briefed in above sections. So  fairness is also at slice level.  What that means is, packet get scheduled out of VOQs across multiple ingress slices towards corresponding egress port OQs  in round robin fashion for a given traffic class. So bandwidth is scheduled equally for all slices for that given queue in congestion scenario keeping fair queueing at slice level.
+Scope of VOQ replication on Cisco 8000 is at slice level as briefed in above sections. So  fairness is also at slice level.  What that means is, if traffic is incoming on multiple ports acrosss different slices and destined out of same egress port then packet get scheduled out of each VOQs replicated on each ingress slices towards corresponding egress port OQs  in round robin fashion for a given traffic class. So bandwidth is scheduled equally for all slices for that given queue in congestion scenario keeping fair queueing at slice level.
 
 As shown below figure, 
 
