@@ -38,6 +38,8 @@ This document is targeted to help those readers who is interested in understandi
 - Dynamic VOQ adaption and congestion management
 - Shaping & buffering on Bundle ports
 - Cisco 8000 policing architecture and behaviour on Bundle ports
+- Cisco 8000 locally originated control packet protection
+
 
 # Silicon One (SiOne) NPU Architecture
 
@@ -508,6 +510,10 @@ Let’s see the rate limiting after stopping one of the Flow, say Flow-2,
 ![tgn-4.png]({{site.baseurl}}/images/tgn-4.png)
 
 - Flow-2 continues to be rate limited at 50G CIR as policer programming is at slice level. So each Flow get applied with 50G CIR.
+
+## Cisco 8000 locally originated control packet protection
+Fundamental building blocks of any network is the control plane protocols like L3 routing protocols, L2 protocols , OAM protocols etc. While system is offering different scheduling models like priority profiles, LLQ, WFQ, BRR etc. for user data traffic prioritization of locally injected protocol packets are very important . For that Cisco 8000 routing device  marks all network operations impacting protocol packets like BGP, IGP, OAM etc.. as traffic-class 7 and mapped to VOQ7. And system mandate traffic-class 7 to be set as ‘priority level 1’ in user configured policy applications. And in the absence of user configured policy, system programs P1+P2+PNs as the default scheduling profile which also make sure control protocol packets are treated with utmost priority. And setting traffic-class to 7 for all locally originated control packets are not based on the marking embedded in L3 or L2 fields like DSCP or CoS values. These marking can be altered using the specific protocol setting which is offered by some of the protocol configurations.
+
 
 ## Conclusion
 This document briefs fundamental architecture of Cisco 8000 series routers powered by SiOne NPU co-packaged with HBM. QOS architecture explained in this document is applicable to all SiOne NPU generations except latest generation SiOne K100, P100 NPUs which has some of the additional capabilities like Egress Feature Capability(EFC aka eTM) , Priority propagation features etc.And these changes will be documented in upcoming write ups.
