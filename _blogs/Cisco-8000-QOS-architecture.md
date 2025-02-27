@@ -325,7 +325,7 @@ What is happening in above scenario,
 
 -	Some of the VOQs in SMS are experiencing congestion
 -	Congested VOQs get evicted to HBM and additional queue depth get applied to the VOQ while in HBM
-o	Depth of queue depends on the user configured values in the respective class of traffic, default is 6msec if there is no explicit user configured queue limit
+- Depth of queue depends on the user configured values in the respective class of traffic, default is 6msec if there is no explicit user configured queue limit
 -	HBM start filling as more and more VOQs experience congestion simultaneously
 
 *What happens after all buffers in HBM get filled up??*  Lets see,
