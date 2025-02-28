@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 date: '2024-12-03 14:22 +0530'
 title: Cisco 8000 QOS Archetecture
 author: Ram Mohan A M
@@ -12,7 +12,7 @@ tags:
   - Cisco 8000 QOS
   - cisco 8000 policer
   - Cisco 8000 qos on bundle ports
-position: hidden
+position: top
 ---
 |Ram Mohan A.M., Technical Leader, Technical Marketing (raam@cisco.com)|  
 
