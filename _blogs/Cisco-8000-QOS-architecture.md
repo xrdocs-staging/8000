@@ -1,9 +1,9 @@
 ---
 published: true
 date: '2024-12-03 14:22 +0530'
-title: Cisco 8000 Cisco Silicon One™ QOS Architecture
+title: Cisco 8000 Silicon One™ QOS Architecture
 author: Ram Mohan A M
-excerpt: Cisco 8000 QOS archetecture
+excerpt: Cisco 8000 Silicon One QOS Architecture
 tags:
   - iosxr
   - cisco
@@ -12,6 +12,9 @@ tags:
   - Cisco 8000 QOS
   - cisco 8000 policer
   - Cisco 8000 qos on bundle ports
+  - Cisco Silicon One
+  - Silicon One
+  - SiOne
 position: top
 ---
 |Ram Mohan A.M., Technical Leader, Technical Marketing (raam@cisco.com)|  
