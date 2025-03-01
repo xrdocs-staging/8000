@@ -101,7 +101,7 @@ VOQ architecture advantages,
 
 **low latency forwarding :**  Unlike traditional multi-stage forwarding model, VOQ architecture based system deduce most of the metadata required to push out  the packets at ingress processing stage itself leaving minimal processing requirements at the egress processing unit. With this,  system minimise the number of  read/write actions to different memory modules and associated data bases needed for overall packet processing through the system. All these ultimately helps the system to achieve the forwarding throughput with optimal latency where single stage buffering is also a major factor to achieve this.
 
-## Cisco 8000 QOS policy application model
+# Cisco 8000 QOS policy application model
 
 Every system has a QOS application model which defines the ingress & egress QOS policy applications and associated capabilities which end user can be explored with the system. 
 
@@ -130,7 +130,7 @@ o	Remarking of DSCP/Precedence, MPLS-EXP
 
 
 
-## Cisco 8000 queueing & scheduling
+# Cisco 8000 queueing & scheduling
 
 Traffic can come in on any type of interfaces like main-interface, sub-interface, Bundle-main interface or Bundle sub-interface etc. at ingress side. But that does not matter from VOQ architecture and packet scheduling point of view. What matters is that out of which interface the packets have to egress out of the box.
 
@@ -176,7 +176,7 @@ Till now traffic is held in VOQs and lets understand further flow from below pic
 - Queue limit come into apply after VOQ capacity exhaust. Queue limit size is derived from user configured QOS policy at egress side or default system queue limit if there is no explicit queue limit configured
 - Queue limit decides how much of additional data can be accommodated in the VOQ when it get congested before tail drop and data above the queue limit size get tail dropped
 
-### Default scheduling on main-interface
+## Default scheduling on main-interface
 
 ![default-sch-main.png]({{site.baseurl}}/images/default-sch-main.png)
 {: .align-center}
@@ -185,7 +185,7 @@ Till now traffic is held in VOQs and lets understand further flow from below pic
 Without any qos policy application at ingress and at egress,
 - All classes of incoming traffic get mapped to default VOQ ie, VOQ0 (class-default) at ingress slice and hence mapped to OQ0 at egress side
 
-### Default scheduling on sub-interface
+## Default scheduling on sub-interface
 
 System creates unique set of VOQs for sub-interfaces only if there is queueing policy attached to the sub-interface otherwise traffic destined out of sub-interface takes main-interface VOQs only.
 
@@ -198,14 +198,13 @@ In this example, egress interface is a sub-interface for the traffic flow
 - There is no qos policy application at ingress as well as at egress (sub-intf)
 - All classes of incoming traffic get mapped to default VOQ ie, VOQ0 (class-default) of the main-interface
 
-### Scheduling on main-interface with ingress traffic-class marking
+## Scheduling on main-interface with ingress traffic-class marking
 
 Ingress classification and traffic-class marking policy is applied on ingress interfaces
-###### Ex:-
+**Ex:-**
 
 ![ing.png]({{site.baseurl}}/images/ing.png)
 {: .align-center}
-
 
 
 
@@ -237,7 +236,7 @@ Lets look with another policy example as below,
 - Child classes has 2 priority classes PQ-1 (TC6) & PQ-2 (TC5) and 2 normal priority classes (TC4 & default-class). There is TC7 also mentioned there which is a mandatory class to be mentioned in any user defined policies. TC7 carries all control plane traffic originated from the system
 
 
-### What is default fairness in scheduling
+## What is default fairness in scheduling
 
 Scope of VOQ replication on Cisco 8000 is at slice level as briefed in above sections. So  fairness is also at slice level.  What that means is, if traffic is incoming on multiple ports acrosss different slices and destined out of same egress port then packet get scheduled out of each VOQs replicated on each ingress slices towards corresponding egress port OQs  in round robin fashion for a given traffic class. So bandwidth is scheduled equally for all slices for that given queue in congestion scenario keeping fair queueing at slice level.
 
@@ -256,7 +255,7 @@ all ingress ports are on different slices and egress scheduler grants 33.33% por
 
 Cisco 8000 supports fair queueing at port level on some fixed form factor systems based on Q200 ASIC (Second generation SiOne ASIC) to cater to some specific use cases of customers. VOQs have to be replicated at source port level to achieve port level fairness and hence more number of VOQ replications which in turn bring down over all VOQ scale.
 
-## Traffic manager (TM)  & Packet Memory
+# Traffic manager (TM)  & Packet Memory
 
 Traffic Manager (TM) block in SiOne chip facilitate the overall packet management within the ASIC which includes, packet enqueuing into input buffer which is managed as VOQs which are programmed per destination/output port at slice level, dequeuing packets out of input buffer which is controlled by ingress & egress scheduling entities and streamlining over all congestion management & congestion avoidance with a set of well-defined rules.  
 
@@ -276,7 +275,7 @@ High Bandwidth Memory (HBM):
 
 HBM is a deep pool of on-demand buffers for quaranteed packet delivery. Cisco 8000 is designed with 8GB of HBM memory co-packaged with SiOne ASIC which is primarily used for deep buffering scenarios like, smoothening occosional bursty peaks of traffic, ingress to egress port speed over subscrioption etc..So when we talk about queue-limit, RED etc. it is in context of HBM memory.
 
-### Packet flow in non-congestion & congestion scenarios:
+## Packet flow in non-congestion & congestion scenarios:
 In non-congestion scenario packet get switched though SMS and HBM does not come into picture for such flows: packet gets enqueued into VOQs and dequeued out without any contention and associated latency. So packet movement out of VOQs towards egress OQs will happen at system designed switching speed.
 
 ![noncong.png]({{site.baseurl}}/images/noncong.png)
@@ -303,7 +302,7 @@ Now lets see what happens while congestion,
 - Packet flow experience latency during congestion because of the additional buffer pipe in its packet path
 - VOQs move back to SMS after associated congestion is removed
 
-### Where does buffering takes place??
+## Where does buffering takes place??
 
 Buffering is associated with the VOQs and its at ingress side of packet processing. 
 
@@ -448,8 +447,6 @@ As shown in above picture,
 - With that maximum policed traffic out of Bundle interface in above case is 150G
 
 
-
-
 ### Bundle with member links from same slice: 
 
 ![pol-2.png]({{site.baseurl}}/images/pol-2.png)
@@ -514,9 +511,9 @@ Let’s see the rate limiting after stopping one of the Flow, say Flow-2,
 
 - Flow-2 continues to be rate limited at 50G CIR as policer programming is at slice level. So each Flow get applied with 50G CIR.
 
-## Cisco 8000 locally originated control packet protection
+# Cisco 8000 locally originated control packet protection
 Fundamental building blocks of any network is the control plane protocols like L3 routing protocols, L2 protocols , OAM protocols etc. While system is offering different scheduling models like priority profiles, LLQ, WFQ, BRR etc. for user data traffic prioritization of locally injected protocol packets are very important . For that Cisco 8000 routing device  marks all network operations impacting protocol packets like BGP, IGP, OAM etc.. as traffic-class 7 and mapped to VOQ7. And system mandate traffic-class 7 to be set as ‘priority level 1’ in user configured policy applications. And in the absence of user configured policy, system programs P1+P2+PNs as the default scheduling profile which also make sure control protocol packets are treated with utmost priority. And setting traffic-class to 7 for all locally originated control packets are not based on the marking embedded in L3 or L2 fields like DSCP or CoS values. These marking can be altered using the specific protocol setting which is offered by some of the protocol configurations.
 
 
-## Conclusion
+# Conclusion
 This document briefs fundamental architecture of Cisco 8000 series routers powered by SiOne NPU co-packaged with HBM. QOS architecture explained in this document is applicable to all SiOne NPU generations except latest generation SiOne K100, P100 NPUs which has some of the additional capabilities like Egress Feature Capability(EFC aka eTM) , Priority propagation features etc.And these changes will be documented in upcoming write ups.
