@@ -1,7 +1,7 @@
 ---
 published: true
 date: '2024-12-03 14:22 +0530'
-title: Cisco 8000 QOS Archetecture
+title: Cisco 8000 Cisco Silicon One™ QOS Architecture
 author: Ram Mohan A M
 excerpt: Cisco 8000 QOS archetecture
 tags:
@@ -16,12 +16,12 @@ position: top
 ---
 |Ram Mohan A.M., Technical Leader, Technical Marketing (raam@cisco.com)|  
 
-{% include toc icon="table" title="Cisco 8000 QOS Architecture White Paper" %}
+{% include toc icon="table" title="Cisco 8000 Silicon One™ QOS Architecture White Paper" %}
 
 
 # Introduction
 
-Cisco 8000 series routers combines industry leading Cisco **Silicon One**, **IOS XR** networking operating system (OS), clean sheet chassis design and Crosswork automation tools to deliver high performance routers empowered with programmable transport infrastructure and network provisioning & monitoring tools.
+Cisco 8000 series routers combines industry leading **Cisco Silicon One™**, **IOS XR®** networking operating system (OS), clean sheet chassis design and Crosswork automation tools to deliver high performance routers empowered with programmable transport infrastructure and network provisioning & monitoring tools.
 
 Cisco 8000 is powered by Silicon One Network Processing Unit(NPU) which is evolving since 2019 , started with **10.8T** capable 1st generation and **51.2T** capable 3rd generation already rolled out in deployment.
 
@@ -41,7 +41,7 @@ This document is targeted to help those readers who is interested in understandi
 - Cisco 8000 locally originated control packet protection
 
 
-# Silicon One (SiOne) NPU Architecture
+# Cisco Silicon One™(SiOne) NPU Architecture
 
 
 ![npu-arch.png]({{site.baseurl}}/images/npu-arch.png){: .align-center}
