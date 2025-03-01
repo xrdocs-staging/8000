@@ -357,7 +357,7 @@ Ex:-
 This way dynamic adaptation get initiated by TM based on HBM consumption crosses different brackets.
 
 
-## Queueing and Policing on Bundle Ether interfaces
+# Queueing and Policing on Bundle Ether interfaces
 
 We have seen in above sections that deep buffering takes place at ingress stage of ASIC pipeline. And buffering is at slice level as VOQ replication scope is at slice level. 
 
@@ -392,7 +392,7 @@ Ex:-
 - If all 3 ingress ports are on same slice then aggregate queue depth applicable to VOQ-3 will be 10ms as all 3 ingress source ports enqueue packets into the same VOQ-3
 
 
-### Queueing on Bundle Ether interface:
+## Queueing on Bundle Ether interface:
 
 ![bundle-2.png]({{site.baseurl}}/images/bundle-2.png)
 
