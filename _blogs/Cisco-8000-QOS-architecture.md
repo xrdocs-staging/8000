@@ -25,7 +25,7 @@ Cisco 8000 series routers combines industry leading Cisco **Silicon One**, **IOS
 
 Cisco 8000 is powered by Silicon One Network Processing Unit(NPU) which is evolving since 2019 , started with **10.8T** capable 1st generation and **51.2T** capable 3rd generation already rolled out in deployment.
 
-Cisco 8000 router series has 3 form factors, Fixed, Centralised and Distributed Line card systems. there are many variants with different throughput capacity and port configurations already shipping in the field. There are different Cisco 8000 router variants addressing different roles in the network primarily Service Provider domain and Webscaler / Data Center domains. 
+Cisco 8000 router series has **3 form factors**, Fixed, Centralised and Distributed Line card systems. there are many variants with different throughput capacity and port configurations already shipping in the field. There are different Cisco 8000 router variants addressing different roles in the network primarily Service Provider domain and Webscaler / Data Center domains. 
 
 This document is targeted to help those readers who is interested in understanding below topics,
 - SiOne NPU architecture
@@ -46,11 +46,11 @@ This document is targeted to help those readers who is interested in understandi
 
 ![npu-arch.png]({{site.baseurl}}/images/npu-arch.png){: .align-center}
 
-Silicon One (SiOne) ASIC is built with multiple slices where each slice comprise a set of Network Processing Engines(NPEs) for different packet processing functionalities like: Interface Groups (IFGs) - MAC provisioning, RxPP – receive packet processor, TxPP- Transmit packet processor and Traffic Manager – VOQs & Schedulers. And all slices function parallelly and perform the tasks associated with different packet processing tasks assigned by the run-to-completion processing blocks.
+Silicon One (SiOne) ASIC is built with multiple slices where each slice comprise a set of Network Processing Engines(NPEs) for different packet processing functionalities like: **Interface Groups**(IFGs) - MAC provisioning, **RxPP** – receive packet processor, **TxPP**- Transmit packet processor and **Traffic Manager** – VOQs & Schedulers. And all slices function parallelly and perform the tasks associated with different packet processing tasks assigned by the run-to-completion processing blocks.
 
-Every stage of packet processing has its associated data base lookups which is built by the system based on the configurations applied as well as the dynamically learned through different protocols. And these databases  supports the processing engine functions at each stages of packet processing by providing results for the corresponding lookups performed, feature processing etc.. And these data bases are hosted on different type of memory modules present on the system like TCAM, SRAM, HBM. These memory accesses  are well organised and optimised in such way SiOne ASIC achieves multibillion packet processing per clock cycle without compromising on high bandwidth performance.
+Every stage of packet processing has its associated data base lookups which is built by the system based on the configurations applied as well as the dynamically learned through different protocols. And these databases  supports the processing engine functions at each stages of packet processing by providing results for the corresponding lookups performed, feature processing etc.. And these data bases are hosted on different type of memory modules present on the system like **TCAM, SRAM, HBM**. These memory accesses  are well organised and optimised in such way SiOne ASIC achieves multibillion packet processing per clock cycle without compromising on high bandwidth performance.
 
-SiOne has started its journey in 2019 and has many variants with different capabilities designed to cater to different segments in the networking paradigm. SiOne started by addressing webscaler spine roles then expanded to address service provider core, enterprise switching segment, DC interconnect and now stretching its legs towards SP aggregation, edge and access segments. Not stopping there and journey continues.  SiOne’s flexible architecture model helped in building new variants in short time. And it is evolving continuously. Number of slices and resource scaling can differ between different SiOne variants keeping fundamental architecture same. What varies between different variants is the bandwidth, serdes speed, size of different memory modules which directly influence features and associated service scale capability. 
+SiOne has started its journey in **2019** and has many variants with different capabilities designed to cater to different segments in the networking paradigm. SiOne started by addressing webscaler spine roles then expanded to address service provider core, enterprise switching segment, DC interconnect and now stretching its legs towards SP aggregation, edge and access segments. Not stopping there and journey continues.  SiOne’s flexible architecture model helped in building new variants in short time. And it is evolving continuously. Number of slices and resource scaling can differ between different SiOne variants keeping fundamental architecture same. What varies between different variants is the bandwidth, serdes speed, size of different memory modules which directly influence features and associated service scale capability. 
 
 Example, switching devices need high switching bandwidth , port density , shallow buffering with small routing table and feature scale. But on the other hand routing devices will demand medium to high bandwidth , deep buffering, feature richness and high scale routing table & services. SiOne flexible architecture design helps to build different variants in shorter time to cater to these use cases at minimal production cost.
 
@@ -75,16 +75,16 @@ On **distributed systems** ,  traffic incoming & outgoing slices can be on diffe
 
 ## VOQ architecture
 
-VOQ (Virtual Output Queue) is a virtual representation of the output queues of a port at ingress side of the packet processing. While the physical buffer associated with the VOQs is on the input side of packet processing, it represents packets queued on the output side. VOQ based systems will have its VOQ representation programmed at ingress side of the packet processing. This programming happens after system boots up and creates the ports. Cisco 8000 systems programs VOQ replication for all default ports on the system. Same time system creates VOQs for the sub-interfaces only after a queueing policy applied on the sub-interface. And programmed VOQs will be deleted after sub-interface is deleted or the queueing policy is removed from the sub-interface
+VOQ (Virtual Output Queue) is a virtual representation of the output queues of a port at ingress side of the packet processing. While the physical buffer associated with the VOQs is on the input side of packet processing, it represents packets queued on the output side. VOQ based systems will have its VOQ representation programmed at ingress side of the packet processing. This programming happens after system boots up and creates the ports. Cisco 8000 systems programs **VOQ replication** for all default ports on the system. Same time system creates VOQs for the sub-interfaces only after a queueing policy applied on the **sub-interface**. And programmed VOQs will be deleted after sub-interface is deleted or the queueing policy is removed from the sub-interface
 
-Every port has 8 hardwired Output Queues (OQ) on Cisco 8000. VOQs facilitate receiving traffic from any of the ingress ports hosted on any of the slices on the SiOne and transfer packets to the corresponding egress OQs of the respective egress port which is resolved by the forwarding lookup.
+Every port has **8 hardwired Output Queues (OQ)** on Cisco 8000. VOQs facilitate receiving traffic from any of the ingress ports hosted on any of the slices on the SiOne and transfer packets to the corresponding egress OQs of the respective egress port which is resolved by the forwarding lookup.
 
 
 ![voq-arch.png]({{site.baseurl}}/images/voq-arch.png)
 {: .align-center}
 
 
-Above figure depicts the VOQ replication aspects, set of 8 VOQs is programmed on every slices of the SiOne NPU for a given port . And same way, this replication happens on all slices on all SiOne NPUs across all line card modules in a distributed system. These VOQs uniquely identifies output queues of a port . This empowers the system to resolve most of the system information needed to forward out the packets at ingress processing stage. Thus optimises over all processing latency, read/write operations etc. which make the system more efficient in packet processing and power consumption. 
+Above figure depicts the VOQ replication aspects, set of 8 VOQs is programmed on every slices of the SiOne NPU for a given port . And same way, this replication happens on all slices on all SiOne NPUs across all line card modules in a distributed system. These VOQs uniquely identifies output queues of a port . This empowers the system to resolve most of the system information needed to forward out the packets at **ingress processing stage**. Thus optimises over all processing latency, read/write operations etc. which make the system more efficient in packet processing and power consumption. 
 
 Traffic can come in on any port hosted on any of the slices which egress out of a port seen in the figure above, traffic get delivered to the OQs of the egress port from different slices which is facilitated by the VOQs representing that egress port &  scheduler present in each of the slices.
 
@@ -100,12 +100,12 @@ VOQ architecture advantages,
 
 ## Cisco 8000 QOS policy application model
 
-Every system has QOS application model which defines the ingress & egress QOS policy applications and associated capabilities which end user can be explored with the system. 
+Every system has a QOS application model which defines the ingress & egress QOS policy applications and associated capabilities which end user can be explored with the system. 
 
 Lets look at Cisco 8000 QOS application model , below is the depiction of the same:
 ![qos-model.png]({{site.baseurl}}/images/qos-model.png)
 
-Cisco 8000 system has 3 policy configuration model ,
+Cisco 8000 system has **3 policy configuration model** ,
 -	single policy at ingress side
 -	2 policy model at egress: one for queueing and another for remarking. On Cisco 8000 remarking of DSCP/Precedence, MPLS-EXP can be performed at ingress  and egress. This capability gives more flexibility with Cisco 8000 as some of the deployment use cases demand egress remarking rather than performing at ingress.
 
@@ -148,7 +148,7 @@ How to enqueue incoming packets into the right VOQs and enforce differentiated Q
 - Queueing policy application on egress interface decides the type of scheduling (strict priority, shaping, BWRR etc..) to be applied for each class of traffic and buffer management methods like, flat queueing threshold, curved queueing (RED) threshold, dual queueing thresholds.
 
 ## Life of packet in VOQs: Enqueuing and Dequeuing
-VOQs act as pit stop for packets while traffic manager facilitate packet transport from ingress NPU to egress NPU. VOQs are bound with multiple functions like, enqueue and deque of packets, drop packets at the tail of the queue while over flow caused by congestion,  account the drops in respective VOQs , facilitate ECN marking while congestion experience etc.. 
+VOQs act as pit stop for packets while traffic manager facilitate packet transport from ingress NPU to egress NPU in case of distributed system **OR** ingress slice to egress slice in case of single NPU standalone system. VOQs are bound with multiple functions like, enqueue and deque of packets, drop packets at the tail of the queue while over flow caused by congestion,  account the drops in respective VOQs , facilitate ECN marking while congestion experience etc.. 
 
 Lets look at below depiction which briefs packet enqueuing into VOQs:
 
