@@ -436,7 +436,7 @@ Cisco 8000 supports policing at ingress direction currently. Scope of policer to
 
 
 ```
-Policer programming on Q200 is at IFG level instead of slice level which is the case on all latest SiOne NPUs like P100, K100 
+Policer programming on Q200 SiOne NPU is at IFG level instead of slice level which is the case on all latest SiOne NPUs like P100, K100 
 
 ```
 
