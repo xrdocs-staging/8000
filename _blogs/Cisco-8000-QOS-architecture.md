@@ -14,7 +14,6 @@ tags:
   - Cisco 8000 qos on bundle ports
   - Cisco Silicon One
   - Silicon One
-  - SiOne
 position: top
 ---
 |Ram Mohan A.M., Technical Leader, Technical Marketing (raam@cisco.com)|  
@@ -434,6 +433,12 @@ Policing can kill the flow which goes slightly over conform rate but shaping can
 ### Policing on Bundle Ether interface:
 
 Cisco 8000 supports policing at ingress direction currently. Scope of policer token bucket programming is at slice level. That means user configured policer on a Bundle interface get programmed at slice level across all member links and not replicated on each member links. Current supported configuration option is in percentage on Bundle main & sub interfaces where absolute and percentage configuration is supported on usual physical main and sub interface types.
+
+
+```
+Policer programming on Q200 is at IFG level instead of slice level which is the case on all latest SiOne NPUs like P100, K100 
+
+```
 
 ![pol-1.png]({{site.baseurl}}/images/pol-1.png)
 
