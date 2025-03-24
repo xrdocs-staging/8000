@@ -186,6 +186,7 @@ HundredGigE0/7/0/33/3          unassigned      Shutdown        Down     default
 ## System Details 
 
 <b>System Block Diagram</b> 
+
 The Cisco 88-LC1-12TH24FH-E line card is built based on four P100 NPU processors with aggregated bandwidth of 12 Tbps. The line card has two types of faceplate ports on the network side – QSFP56-DD 400G (native) or QSFP28-DD 200G (2x100G breakout) ports. Other breakout interface options supported are – 4x10G, 4x25G. Fabric interfaces connect the line card with the fabric cards of the chassis. The block diagram of Cisco 88-LC1-12TH24FH-E is presented in Figure 10.  
 
 ![Figure10.png]({{site.baseurl}}/images/Figure10.png)
@@ -201,6 +202,7 @@ Figure 11. Cisco 88-LC1-52Y8H-EM Block Diagram
 {: .text-center}
 
 <b>P100 NPU Overview</b>
+
 The P100 family comprises high-capacity packet switching devices, each consisting of six slices. Every slice includes a receive and a transmit component (RX slice and TX slice) and supports two groups of interfaces (a pair of IFGs). In terms of performance, each slice can process up to one packet per clock cycle and offers a data bandwidth of up to 3.2 Tbps. The total capacity of a P100 device is determined by the number of slices utilized for a specific product type. Both the Cisco 88-LC1-52Y8H-EM and 88-LC1-12TH24FH-E line cards employ three slices on the network side and three slices on the fabric side.  
 
 Cisco Silicon One P100 features: 
@@ -228,14 +230,13 @@ Figure 13. Cisco Silicon One P100 architecture used in Cisco 88-LC1-52Y8H-EM and
 For more details on Cisco Silicon One P100, refer to [Cisco Silicon One P100 Processor Data Sheet](https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-p100-processor-ds.html). 
 
 <b>Port/IFG/Slice assignment</b> 
+
 When customers contemplate upgrading from legacy equipment to the new Cisco 8000 Routers, gaining insight into the internal architecture of Cisco 8000 line cards is essential. The processing resources of the Cisco Silicon One ASIC are distributed among different internal components, including slices and interface groups (IFGs). Understanding the allocation of physical ports to NPU/slice/IFG is vital for the migration and new deployment planning. The exact port mapping information can be derived by using the following CLI: 
 
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>  
-
 show controllers npu voq-usage interface all instance all location all 
-
 </code>
 </pre>
 </div>  
