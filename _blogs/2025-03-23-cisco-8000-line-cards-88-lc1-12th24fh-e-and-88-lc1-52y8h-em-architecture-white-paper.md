@@ -165,7 +165,7 @@ Breakout Interface Use-case with 4x100 GbE at 400G port (Cisco 88-LC1-12TH24FH-E
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>  
-controller Optics0/7/0/33 
+controller Optics 0/7/0/33 
  breakout <span style="background-color: #00FF00">4x100</span>
 ! 
 
