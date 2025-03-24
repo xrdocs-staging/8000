@@ -217,14 +217,14 @@ Cisco Silicon One P100 features:
 - Dedicated 132 Counters banks (1M counters) and built-in counters in HCAM 
 - 6M IPv4 or 3M IPv6 FIB qualified scale without compression (Hardware capable much more)
 
-![Figure12.png]({{site.baseurl}}/images/Figure12.png)
+![Figure12.png]({{site.baseurl}}/images/Figure12.png){: .align-center} 
 
 Figure 12. Cisco Silicon One P100
 {: .text-center}
 
 Cisco 8000 P100-based line cards use 3 slices of each P100 ASIC as network-facing interfaces and 3 slices as fabric-facing, optimizing for high feature scale and high capacity when it’s used in the distributed system. 
 
-![Figure13.png]({{site.baseurl}}/images/Figure13.png)
+![Figure13.png]({{site.baseurl}}/images/Figure13.png){: .align-center} 
 
 Figure 13. Cisco Silicon One P100 architecture used in Cisco 88-LC1-52Y8H-EM and 88-LC1-12TH24FH-E line cards
 {: .text-center}
