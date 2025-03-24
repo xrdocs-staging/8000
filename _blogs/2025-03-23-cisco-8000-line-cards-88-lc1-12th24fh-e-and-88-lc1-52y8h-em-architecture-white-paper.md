@@ -286,14 +286,14 @@ The following table represents the maximum number of ports the Cisco 88-LC1-12TH
 - As Breakout, fully populated into all 36 Ports. 36 ports x (4x25 GbE) = 144x25 GbE total
 
 40 GbE 
-- As Native 40G Optic , populated into odd ports, 18x40GbE total.
+- As Native 40G Optic, populated into odd ports, 18x40GbE total.
 
 100 GbE 
 - As Native 100G Optic, fully populated into all 36 Ports  
-- As 2x100 GbE breakout populated into 12 200G ports, as 4x100 GbE breakout populated into 24 400G ports = 120 x 100 GbE total
+- As 2x100 GbE breakout populated into 12 QSFP28-DD ports, as 4x100 GbE breakout populated into 24 QSFP56-DD ports = 120 x 100 GbE total
 
 400 GbE 
-- As Native 400G Optic, fully populated into 24 Ports
+- As Native 400G Optic, fully populated into 24 QSFP56-DD Ports
 
 ### Maximum port scale and support on Cisco 88-LC1-52Y8H-EM 
 The following table represents the maximum number of ports the 88-LC1-52Y8H-EM line card can support. 
