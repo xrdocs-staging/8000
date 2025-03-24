@@ -275,7 +275,7 @@ The following table represents the maximum number of ports the Cisco 88-LC1-12TH
 
 |   Speed   |    10 GbE     | 25 GbE  | 40 GbE  | 100 GbE  | 400 GbE  |
 |:---------:|:-------------:|:-------:|:-------:|:--------:|:--------:|
-|  Native   | 36 (Roadmap)  |   N/A   |   18    |    36    |    36    |
+|  Native   | 36 (Roadmap)  |   N/A   |   18    |    36    |    24    |
 | Breakout  |      72       |   144   |   N/A   |   120    |   N/A    |
 
 10 GbE 
