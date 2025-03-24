@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 date: '2025-03-23 14:14 -0700'
 title: >-
   Cisco 8000 Line Cards 88-LC1-12TH24FH-E and 88-LC1-52Y8H-EM Architecture White
@@ -12,6 +12,7 @@ author: Alexey Babaytsev
 excerpt: >-
   This post will describe Cisco 8000 Line Cards 88-LC1-12TH24FH-E and
   88-LC1-52Y8H-EM architecture.
+position: hidden
 ---
 {% include toc icon="table" title="Cisco 8000 Line Cards 88-LC1-12TH24FH-E and 88-LC1-52Y8H-EM Architecture White Paper" %}
 
