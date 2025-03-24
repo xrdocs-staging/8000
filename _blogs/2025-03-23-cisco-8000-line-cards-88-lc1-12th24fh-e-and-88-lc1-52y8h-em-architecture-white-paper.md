@@ -153,21 +153,18 @@ Native 400GbE Interface (Cisco 88-LC1-12TH24FH-E as an example)
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>  
- 
 RP/0/RP0/CPU0:8808#<span style="background-color: #A0CFEC">show interfaces brief | i 0/7/0/32</span>
 Interface                      IP-Address      Status          Protocol Vrf-Name 
-FourHundredGigE0/7/0/32        unassigned      Down            Down     default 
-
+FourHundredGigE0/7/0/32        unassigned      Down            Down     default
 </code>
 </pre>
 </div>  
  
-Breakout Interface Use-case with 4x100 GbE at 400G port (Cisco 88-LC1-12TH24FH-E as an example) 
+Breakout Interface Use-case with 4x100 GbE at 400G port (Cisco 88-LC1-12TH24FH-E as an example)
 
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>  
-
 controller Optics0/7/0/33 
  breakout <span style="background-color: #00FF00">4x100</span>
 ! 
@@ -178,7 +175,6 @@ HundredGigE0/7/0/33/0          unassigned      Shutdown        Down     default
 HundredGigE0/7/0/33/1          unassigned      Shutdown        Down     default 
 HundredGigE0/7/0/33/2          unassigned      Shutdown        Down     default 
 HundredGigE0/7/0/33/3          unassigned      Shutdown        Down     default 
-
 </code>
 </pre>
 </div>  
@@ -187,13 +183,13 @@ HundredGigE0/7/0/33/3          unassigned      Shutdown        Down     default
 
 ### System Block Diagram
 
-The Cisco 88-LC1-12TH24FH-E line card is built based on four P100 NPU processors with aggregated bandwidth of 12 Tbps. The line card has two types of faceplate ports on the network side – QSFP56-DD 400G (native) or QSFP28-DD 200G (2x100G breakout) ports. Other breakout interface options supported are – 4x10G, 4x25G. Fabric interfaces connect the line card with the fabric cards of the chassis. The block diagram of Cisco 88-LC1-12TH24FH-E is presented in Figure 10.  
+The Cisco 88-LC1-12TH24FH-E line card is built based on four P100 NPU processors with aggregated bandwidth of 12 Tbps. The line card has two types of faceplate ports on the network side – QSFP56-DD 400G (native) or QSFP28-DD 200G (2x100G breakout) ports. Other supported interface options are – 100G (native), 40G (native), 4x10G (breakout), 4x25G (breakout). Fabric interfaces connect the line card with the fabric cards of the chassis. The block diagram of Cisco 88-LC1-12TH24FH-E is presented in Figure 10.  
 
 ![Figure10.png]({{site.baseurl}}/images/Figure10.png)
 Figure 10. Cisco 88-LC1-12TH24FH-E Block Diagram
 {: .text-center} 
 
-The Cisco 88-LC1-52Y8H-EM line card shares a similar design approach with the Cisco 88-LC1-12TH24FH-E, both utilizing P100 NPU processors. However, the 88-LC1-52Y8H-EM features two NPUs, providing an aggregated bandwidth of 3.7 Tbps. This line card supports a variety of native interface speeds, including 400G, 100G, 40G, 25G, and 10G. A key feature of the Cisco 88-LC1-52Y8H-EM line card is its MACsec capability, enabled by the use of an additional PHY ASIC. 
+The Cisco 88-LC1-52Y8H-EM line card shares a similar design approach with the Cisco 88-LC1-12TH24FH-E, both utilizing P100 NPU processors. However, the 88-LC1-52Y8H-EM features two NPUs, providing an aggregated bandwidth of 3.7 Tbps. This line card supports a variety of native interface speeds, including 400G, 100G, 40G, 25G, and 10G. Breakout options (4x10G, 4x25G) are also supported. A key feature of the Cisco 88-LC1-52Y8H-EM line card is its MACsec capability. 
 
 The block diagram of Cisco 88-LC1-52Y8H-EM is presented in Figure 11.  
 
