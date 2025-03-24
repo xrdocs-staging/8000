@@ -21,7 +21,7 @@ The [Cisco 8000 Series Routers](https://www.cisco.com/site/us/en/products/networ
 
 ## Line Cards Overview 
 
-<b> 88-LC1-12TH24FH-E</b>
+### 88-LC1-12TH24FH-E
 The Cisco 88-LC1-12TH24FH-E 12 Tbps line card is a recent addition to the Cisco 8000 line card family, based on a P100 ASIC. Featuring 24 ports of QSFP56-DD and 12 ports of QSFP28-DD on the faceplate, the Cisco 88-LC1-12TH24FH-E line card incorporates 4 P100 Silicon One network processors, optimizing the delivery of L2 and L3 services while enhancing the capabilities available in the Q200 based line card portfolio.  
 
 Cisco 88-LC1-12TH24FH-E line card addresses scaled and capacity requirements for Collapsed core, Aggregation, Peering, DC Core, 3rd party colocation, and RON use cases.
@@ -46,7 +46,7 @@ In the table below, a high-level Cisco 88-LC1-12TH24FH-E overview is listed.
 Table 1. Cisco 88-LC1-12TH24FH-E key characteristics 
 {: .text-center}
 
-<b>88-LC1-52Y8H-EM</b> 
+### 88-LC1-52Y8H-EM
 Cisco 88-LC1-52Y8H-EM 3.7 Tbps line card is built based on 2 P100 ASICs. With 4 ports of QSFP56-DD, 8 ports of QSFP28, and 52 ports of SFP28 on the faceplate, and support of MACsec on all ports, Cisco 88-LC1-12TH24FH-E line card addresses scaled and capacity requirements for Collapsed core, Aggregation, Peering, DC Core, 3rd party colocation, and RON use cases. 
 
 ![Figure2.png]({{site.baseurl}}/images/Figure2.png)
@@ -71,7 +71,7 @@ Table 2. Cisco 88-LC1-52Y8H-EM key characteristics
 
 ## Use Cases
 
-<b>Aggregation, Core, Peering, and DC Core with RON (Routed Optical Networking)</b> 
+### Aggregation, Core, Peering, and DC Core with RON (Routed Optical Networking)
 As user applications become increasingly dynamic and demand differentiated experiences, optimizing network resources in terms of power, scale, and flexibility is crucial. The Cisco 8000 line cards, 88-LC1-52Y8H-EM and 88-LC1-12TH24FH-E, are designed to meet market demands for high system bandwidth, port diversity, and security. The 88-LC1-52Y8H-EM line card supports MACsec encryption, while both line cards provide enhanced scalability and advanced functionalities such as egress policing, queuing, flowspec, and support for a variety of other features for service providers, data centers, and enterprise customers. These features empower the Cisco 8000 to be utilized in various scenarios, including collapsed core, L3 gateway, aggregation and peering, and enterprise WAN edge. 
 
 ![Figure3.png]({{site.baseurl}}/images/Figure3.png)
@@ -80,7 +80,7 @@ Figure 3. Aggregation, Core, Peering and DC Core with RON Use Case
 
 Cisco’s [Converged SDN Transport Solution](https://blogs.cisco.com/sp/routed-optical-networking-its-about-the-architecture), is an architecture that delivers efficient network utilization, Simplified single layer, reduced network complexity, faster time to market, automation empowerment, and differentiated service offering. The solution works by merging IP and Optical onto a single layer where all the switching is done at Layer 3. Routers are connected with standardized [400G ZR/ZR+/Bright(0dBm) ZR+ coherent pluggable optics](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/Interfaces/24xx/configuration/guide/b-interfaces-config-guide-cisco8k-r24xx/m-zr-zrp-cisco-8000.html). With a single service layer based upon IP, flexible management tools can leverage [telemetry](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/telemetry/24xx/configuration/guide/b-telemetry-cg-8000-24xx.html) and [model-driven programmability](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/programmability/24xx/configuration/guide/b-programmability-cg-8000-24xx.html) to streamline lifecycle operations. 
 
-<b>Secure High-speed Data Center/Cloud interconnect</b> 
+### Secure High-speed Data Center/Cloud interconnect
 ![Figure4.png]({{site.baseurl}}/images/Figure4.png)
 Figure 4. Secure High-speed Data Center/Cloud Interconnect Use Case 
 {: .text-center}
@@ -89,7 +89,7 @@ The requirements for securing the connection of multiple data-center and cloud l
 
 The backhauling of remote branch sites for government, enterprise, or commercial organizations is critical to any business. In the consumer space, this can be important for remote stores and point-of-sale kiosks, and in the enterprise and government space, it is crucial for remote agencies and offices.
 
-<b>Collapsed Core Use Case</b>
+### Collapsed Core Use Case
 In contemporary networks, numerous customers opt to integrate multiple functionalities within a single location and device. The collapsed core design facilitates the coexistence of traditional core/peering features alongside aggregation/edge functionality, with improved L2/L3 service termination. The Cisco 88-LC1-52Y8H-EM and 88-LC1-12TH24FH-E line cards support popular core and edge features such as MPLS, SR, SRTE, SRv6, L3VPN, L2VPN, QoS, OAM, and EVPN. 
 
 ![Figure5.png]({{site.baseurl}}/images/Figure5.png)
@@ -185,7 +185,7 @@ HundredGigE0/7/0/33/3          unassigned      Shutdown        Down     default
 
 ## System Details 
 
-<b>System Block Diagram</b> 
+### System Block Diagram
 
 The Cisco 88-LC1-12TH24FH-E line card is built based on four P100 NPU processors with aggregated bandwidth of 12 Tbps. The line card has two types of faceplate ports on the network side – QSFP56-DD 400G (native) or QSFP28-DD 200G (2x100G breakout) ports. Other breakout interface options supported are – 4x10G, 4x25G. Fabric interfaces connect the line card with the fabric cards of the chassis. The block diagram of Cisco 88-LC1-12TH24FH-E is presented in Figure 10.  
 
@@ -201,7 +201,7 @@ The block diagram of Cisco 88-LC1-52Y8H-EM is presented in Figure 11.
 Figure 11. Cisco 88-LC1-52Y8H-EM Block Diagram
 {: .text-center}
 
-<b>P100 NPU Overview</b>
+### P100 NPU Overview
 
 The P100 family comprises high-capacity packet switching devices, each consisting of six slices. Every slice includes a receive and a transmit component (RX slice and TX slice) and supports two groups of interfaces (a pair of IFGs). In terms of performance, each slice can process up to one packet per clock cycle and offers a data bandwidth of up to 3.2 Tbps. The total capacity of a P100 device is determined by the number of slices utilized for a specific product type. Both the Cisco 88-LC1-52Y8H-EM and 88-LC1-12TH24FH-E line cards employ three slices on the network side and three slices on the fabric side.  
 
@@ -229,7 +229,7 @@ Figure 13. Cisco Silicon One P100 architecture used in Cisco 88-LC1-52Y8H-EM and
 
 For more details on Cisco Silicon One P100, refer to [Cisco Silicon One P100 Processor Data Sheet](https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-p100-processor-ds.html). 
 
-<b>Port/IFG/Slice assignment</b> 
+### Port/IFG/Slice assignment
 
 When customers contemplate upgrading from legacy equipment to the new Cisco 8000 Routers, gaining insight into the internal architecture of Cisco 8000 line cards is essential. The processing resources of the Cisco Silicon One ASIC are distributed among different internal components, including slices and interface groups (IFGs). Understanding the allocation of physical ports to NPU/slice/IFG is vital for the migration and new deployment planning. The exact port mapping information can be derived by using the following CLI: 
 
@@ -266,7 +266,9 @@ Table 5. Port-IFG-Slice mapping of Cisco 88-LC1-12TH24FH-E
 Table 6. Port-IFG-Slice mapping of Cisco 88-LC1-52Y8H-EM
 {: .text-center}
 
-## Maximum port scale and support on Cisco 88-LC1-12TH24FH-E 
+## Port Options
+
+### Maximum port scale and support on Cisco 88-LC1-12TH24FH-E 
 The following table represents the maximum number of ports the Cisco 88-LC1-12TH24FH-E line card can support. 
 
 |   Speed   |    10 GbE     | 25 GbE  | 40 GbE  | 100 GbE  | 400 GbE  |
@@ -291,7 +293,7 @@ The following table represents the maximum number of ports the Cisco 88-LC1-12TH
 400 GbE 
 - As Native 400G Optic, fully populated into 24 Ports
 
-## Maximum port scale and support on Cisco 88-LC1-52Y8H-EM 
+### Maximum port scale and support on Cisco 88-LC1-52Y8H-EM 
 The following table represents the maximum number of ports the 88-LC1-52Y8H-EM line card can support. 
 
 |   Speed   | 10 GbE  | 25 GbE  | 40 GbE  | 100 GbE  | 400 GbE  |
