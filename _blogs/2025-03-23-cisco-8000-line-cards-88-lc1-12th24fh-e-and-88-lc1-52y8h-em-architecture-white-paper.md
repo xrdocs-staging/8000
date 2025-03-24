@@ -333,7 +333,7 @@ Additionally, the line cards provide egress class-level traffic shaping for subi
 Furthermore, the priority propagation on the egress queues feature ensures that high-priority traffic is consistently prioritized across multiple sub-interfaces on the same network port. This capability enhances the performance of critical applications by allowing high-priority traffic to take precedence over non-priority traffic, maintaining optimal network performance, and reducing latency for essential services such as voice and real-time video. These egress features collectively contribute to the robust and efficient operation of networks utilizing the Cisco 8000 P100-based line cards. 
 
 ## MACsec support on Cisco 88-LC1-52Y8H-EM  
-Starting IOS-XR 24.3.1, MACsec is supported on all ports of Cisco 88-LC1-52Y8H-EM including breakout ports. 
+Starting IOS-XR 24.3.1, MACsec is supported on all ports of Cisco 88-LC1-52Y8H-EM. 
 
 - Full line-rate MACsec encryption engines to enable secure and low-latency transport 
 - Supports MACsec GCM-AES-128/256 and GCM-AES-XPN-128/256 
@@ -370,6 +370,3 @@ This document outlines the architecture of the P100-based Cisco 88-LC1-12TH24FH-
 [Cisco Optics-to-Device Compatibility Matrix tool](https://tmgmatrix.cisco.com/)
 
 [Cisco 8000 Power Calculator](https://8000-power.cisco.com/)
-
-
-
