@@ -193,7 +193,7 @@ The Cisco 88-LC1-52Y8H-EM line card shares a similar design approach with the Ci
 
 The block diagram of Cisco 88-LC1-52Y8H-EM is presented in Figure 11.  
 
-![Figure11.png]({{site.baseurl}}/images/Figure11.png)
+![Figure11_2.png]({{site.baseurl}}/images/Figure11_2.png)
 Figure 11. Cisco 88-LC1-52Y8H-EM Block Diagram
 {: .text-center}
 
