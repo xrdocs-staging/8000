@@ -20,31 +20,67 @@ Cisco 8712-MOD-M is a 2RU 6.4Tbps fixed system based on a single Cisco Silicon O
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=2ckU9oAP9hI&t=17s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
   
-  
-Cisco 8711-32FH-M addresses scaled requirements for spine/leaf and collapsed core, Aggregation, Peering, DC Core, 3rd party colocation, and RON use cases.  
+The key features of the Cisco 8712-MOD-M are summarized below.     
 
-![Figure1.png]({{site.baseurl}}/images/Figure1.png)
-Figure 1. Front view of the Cisco 8711-32FH-M  
+![product-specs.png]({{site.baseurl}}/images/product-specs.png)
+
+## Service Provider(SP) networking Architecture shift
+
+
+Lets look at traditional SP network architecture and the how it is transitioning to nextGen network driven by Agile Services Networking architecture.
+
+Network roles are strictly defined and deployed in networks. Devices must be groomed specifically to address different roles in network. And feature capability , scale and bandwidth requirements are differently fitted to address different needs in the network.
+
+Common view of traditional service provider network is as following, different services like business, wireless, mobile etc. are terminated into the transport aggregation which includes further nailing down to access, preaggregation and aggregation network segments etc.. Aggregated transport networks talk to Edge then merge into the  Core segment. Edge can segregated to cater to different use cases as per the specific need of each categories like, Business edge, Mobile edge, Wireless edge etc..or all types of edge services can be centrally placed and provisioned.
+
+
+## Cisco 8712-MOD-M Use Cases  
+### Aggregation, Core, Peering and DC Core with RON(Routed Optical Networking)       
+![use-case.png]({{site.baseurl}}/images/use-case.png)  
+
+**As user applications become more dynamic, differentiated user experiences are required, and network resources need to be optimized in terms of power and real estate. Cisco 8712-MOD-M has been designed to cater to the market requirement for total system bandwidth, port diversity, and MACsec encryption. These new capabilities far exceed what could be accomplished with a single P100 NPU. Specifically, Cisco 8712-MOD-M supports 12.8 Tbps of forwarding capacity, as well as 32 ports of high speed 400G, 128 ports of 100G, or 128 ports of low speed 10G or 25G.  
+
+Moreover, Cisco’s [Converged SDN Transport Solution](https://blogs.cisco.com/sp/routed-optical-networking-its-about-the-architecture), is a simplified single layer architecture that delivers efficient network utilization, reduced network complexity, faster time-to-market, automation empowerment, and differentiated service offering. This solutions works by merging IP and Optimal onto a single layer where all the switching is done. Routers are connected with standardized [400G ZR/ZR+/Bright(0dBm) ZR+ coherent pluggable optics](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/Interfaces/710x/b-interfaces-config-guide-cisco8k-r710x/m-zr-zrp-cisco-8000.html). With a single service layer based upon IP, flexible management tools can leverage [telemetry](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/telemetry/710x/configuration/guide/b-telemetry-cg-8000-710x.html) and [model-driven programmability](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/programmability/710x/b-programmability-cg-8000-710x.html) to streamline lifecycle operations.  
+
+### Secure High-speed Data Center/Cloud interconnect and large Regional Hub/Branch router    
+![Screenshot 2024-12-24 at 5.08.50 PM.png]({{site.baseurl}}/images/Screenshot 2024-12-24 at 5.08.50 PM.png)  
+
+Securing the connections of multiple data centers and cloud environments typically involves meeting the highest levels of bandwidth requirements on a smaller number of links. WAN MACsec, sometimes called data center interconnect (DCI), is the ideal encryption solution for such settings.    
+
+Backhauling remote branch sites is critical to the success of many commercial, enterprise, and government organizations. In the consumer space, backhauling is important for remote stores and point-of-sale kiosks. In the government space, it is crucial for the operation of remote agencies and offices.    
+
+
+*Understand Cisco 8712-MOD-M’s modules and associated PIDs
+
+| PIDs             | Product Description                                           |
+|------------------|---------------------------------------------------------------|
+| 8712-MOD-M       | Cisco 8712 2RU 6.4T KR100 System with 4 MPA bays              |
+| 8000-QSFP-DCAP   | QSFP Dust CAP                                                 |
+| 8700-1RU-4P-KIT  | Rack Mount Kit for Cisco 8700 1RU Chassis 19” and 23”, 4 POST |
+| 8700-1RU-2P-KIT  | Rack Mount Kit for Cisco 8700 1RU Chassis 19” and 23”, 2 POST |
+| FAN-1RU-PI-V2    | 1RU Fan with Port-side Air Intake                             |
+| FAN-1RU-PE-V2    | 1RU Fan with Port-side Air Exhaust                            |
+| PSU2KW-ACPI      | 2000W AC Power Module with Port-side Air Intake               |
+| PSU2KW-ACPE      | 2000W AC Power Module with Port-side Air Exhaust              |
+| PSU2KW-DCPI      | 2000W DC Power Module with Port-side Air Intake               |
+| PSU2KW-DCPE      | 2000W DC Power Module with Port-side Air Exhaust              |
+| PWR-2KW-DC-CBL   | 2000W DC Power Cable                                          |
+| ESS-8KE-100G-RTU | Essential Right-to-Use 100G for Cisco 8000E Series            |
+| ADN-8KE-100G-RTU | Advantage Right-to-Use 100G for Cisco 8000E Series            |
+| PRM-8KE-100G-RTU | Premium Right-to-Use 100G for Cisco 8000E Series              |
+| 8KSW-B-SIA-3     | 8000 Type B Device SIA for 3-year term FCM 2.0                |
+| 8KSW-B-SIA-5     | 8000 Type B Device SIA for 5-year term FCM 2.0                |
+
+
+
+## Platform Description
+Cisco 8712-MOD-M is a Cisco Silicon One™ based 2RU fixed router belonging to Cisco 8700 family of products, a first in class device to play interlligent Edge roles across Service Provider, Enterprise WAN , Data Center Interconnect, DC gateway network applications.
+
+![fron-view.png]({{site.baseurl}}/images/fron-view.png)
+Figure 1. Front view of the Cisco 8712-MOD-M  
 {: .text-center}  
 
-![Figure2.png]({{site.baseurl}}/images/Figure2.png)
-Figure 2. Rear view of the Cisco 8711-32FH-M  
-{: .text-center}   
 
-The key features of the Cisco 8711-32FH-M are summarized below.     
-
-| Items                | Descriptions                                                                                                                                                                                                          |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Data Plane           | Single 12.8T Cisco Silicon One P100 (7nm)<br> 72 MB fully shared packet buffer & 8 GB HBM packet buffer                                                                                                                   |
-| Control Plane        | Intel 6 Core x86 CPU<br> 64 GB DRAM / 480 GB SSD                                                                                                                                                                          |
-| Port Configuration   | 16x QSFP-DD800 + 16x QSFP56-DD                                                                                                                                                                                        |
-| Management Ports     | RS-232 console, 10 GbE Control Plane expansion, 10/100/1000Mbps Management,<br> 1x USB 3.0, GPS (ToD, 10MHz, 1PPS), GNSS                                                                                                  |
-| Product Capabilities | 800G (QDD-2X400G-FR4, QDD-8X100G-FR)<br> Line-rate MACsec(XR support) encryption at all ports<br> Class C timing<br> 400G RON ready (Supports DCO optics)                                                         |
-| Fans and PSU         | 6x Fan Trays 5+1 Redundancy<br> 2x PSUs 1+1 Redundancy<br> Port side intake airflow, Port side Exhaust airflow<br> 2kW AC & 2kW DC PSUs PSU and Fan Trays<br> Field Replaceable Unit                                                  |
-| Software             | Supports Cisco IOS XR Software Release 24.3.1 and later<br> Enhanced Automation for onboarding, service provisioning and monitoring<br> Programmable infrastructure with segment routing (SR, SRv6) and Multi-homing EVPN  |
-| Typical Power        | 740W w/o Optics                                                                                                                                                                                                       |
-| Dimension            | 1RU, (H) 1.73 x (W) 17.3 x (D) 23.6 in. (4.40 x 43.9 x 60 cm)<br> 35.4 lbs (16.07 kg)                                                                                                                                     |
-| Use Case             | Core, Aggregation, Peering, DC Core                                                                                                                                                                                   |  
-
-Table 1. Cisco 8711-32FH-M key components  
-{: .text-center}
+![fron-rear-full-chassi-view.png]({{site.baseurl}}/images/fron-rear-full-chassi-view.png)
+Figure 1. Fron & Rear Full system view of Cisco 8712-MOD-M  
+{: .text-center} 
