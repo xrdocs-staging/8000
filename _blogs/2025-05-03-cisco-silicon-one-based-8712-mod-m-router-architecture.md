@@ -130,9 +130,14 @@ Cisco Silicon One™ K100 NPU features:
 	- each slice has a forwarding capacity of 3.2Tbps
 	- has 128x56G SerDes
 	- 2 Interfaec Groups (IFGs) per slice
-- has crypto engine for MACsec & IPsec applications
-- has 64MB on-chip packet memory
-- has 8GB HBM deep buffering memory co-packaged with NPU
+    - has 64MB on-chip packet memory
+	- has 8GB HBM deep buffering memory co-packaged with NPU
+
+- On-chip crypto engine for MACsec & IPsec applications
+- Multiple embedded ARC processors for CPU offloading
+- 128K VoQ (Virtual Output Queue)
+- 1M counters to facilitate statistics punching for different feature applications and built-in counters in HCAM(Hash-based TCAM)
+- 6M IPv4 or 6M IPv6 FIB qualified scale without compression
 
 
 
