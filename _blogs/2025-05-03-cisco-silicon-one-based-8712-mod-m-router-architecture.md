@@ -1,0 +1,56 @@
+---
+published: false
+date: '2025-05-03 12:26 +0530'
+title: Cisco Silicon One™ based 8712-MOD-M Router Architecture
+---
+|Ram Mohan A.M., Technical Leader, Technical Marketing Engineering (raam@cisco.com)|  
+{% include toc icon="table" title="Cisco Silicon One™ based 8712-MOD-M Router Architecture White Paper" %}
+
+
+
+## Introduction
+The Cisco 8000 Series combines the revolutionary Cisco Silicon One™, IOS XR® software, and a set of clean sheet chassis to deliver a breakthrough in high-performance routers. 
+High-performance networking systems have historically been divided into routing or switching classes, with distinct hardware and software. But, as the necessity for reliable networks proliferates, it is imperative that traditional networks shift to a new architecture to address exponential bandwidth needs, ubiquitous connectivity, security, better quality of service, low latency coupled with high reliability, availability, and serviceability of the infrastructure. The Cisco® 8000 Series portfolio completes this journey with the Cisco 8700 products.
+The Cisco 8700 series is an addition to [the Cisco 8000 Series Routers](https://www.cisco.com/site/us/en/products/networking/routers/8000-series/index.html) powered by [Cisco Silicon One](https://www.cisco.com/site/us/en/products/networking/silicon-one/index.html)™  ASICs.  8700 products embody this cutting-edge innovation of the 8000 portfolio, offering advanced features engineered for seamless integration and scalability. Whether enhancing existing infrastructure or enabling new capabilities, the 8700 series products empower organizations to achieve their goals with unmatched efficiency and effectiveness. 
+
+## Cisco 8711-32FH-M Overview  
+Cisco 8711-32FH-M is a 1RU 12.8T fixed system based on a single Silicon One P100 ASIC. With 16 ports of QSFP-DD800 and 16 ports of QSFP56-DD on the faceplate, Cisco 8711-32FH-M uses only 4 of the 6 slices of the P100, optimizing for higher scale and a broader L2 feature set than is currently capable on Q200 based fixed systems.  
+  
+  
+
+
+## Video  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v13LpoQGXdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+
+  
+  
+Cisco 8711-32FH-M addresses scaled requirements for spine/leaf and collapsed core, Aggregation, Peering, DC Core, 3rd party colocation, and RON use cases.  
+
+![Figure1.png]({{site.baseurl}}/images/Figure1.png)
+Figure 1. Front view of the Cisco 8711-32FH-M  
+{: .text-center}  
+
+![Figure2.png]({{site.baseurl}}/images/Figure2.png)
+Figure 2. Rear view of the Cisco 8711-32FH-M  
+{: .text-center}   
+
+The key features of the Cisco 8711-32FH-M are summarized below.     
+
+| Items                | Descriptions                                                                                                                                                                                                          |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data Plane           | Single 12.8T Cisco Silicon One P100 (7nm)<br> 72 MB fully shared packet buffer & 8 GB HBM packet buffer                                                                                                                   |
+| Control Plane        | Intel 6 Core x86 CPU<br> 64 GB DRAM / 480 GB SSD                                                                                                                                                                          |
+| Port Configuration   | 16x QSFP-DD800 + 16x QSFP56-DD                                                                                                                                                                                        |
+| Management Ports     | RS-232 console, 10 GbE Control Plane expansion, 10/100/1000Mbps Management,<br> 1x USB 3.0, GPS (ToD, 10MHz, 1PPS), GNSS                                                                                                  |
+| Product Capabilities | 800G (QDD-2X400G-FR4, QDD-8X100G-FR)<br> Line-rate MACsec(XR support) encryption at all ports<br> Class C timing<br> 400G RON ready (Supports DCO optics)                                                         |
+| Fans and PSU         | 6x Fan Trays 5+1 Redundancy<br> 2x PSUs 1+1 Redundancy<br> Port side intake airflow, Port side Exhaust airflow<br> 2kW AC & 2kW DC PSUs PSU and Fan Trays<br> Field Replaceable Unit                                                  |
+| Software             | Supports Cisco IOS XR Software Release 24.3.1 and later<br> Enhanced Automation for onboarding, service provisioning and monitoring<br> Programmable infrastructure with segment routing (SR, SRv6) and Multi-homing EVPN  |
+| Typical Power        | 740W w/o Optics                                                                                                                                                                                                       |
+| Dimension            | 1RU, (H) 1.73 x (W) 17.3 x (D) 23.6 in. (4.40 x 43.9 x 60 cm)<br> 35.4 lbs (16.07 kg)                                                                                                                                     |
+| Use Case             | Core, Aggregation, Peering, DC Core                                                                                                                                                                                   |  
+
+Table 1. Cisco 8711-32FH-M key components  
+{: .text-center}  
+
+
+
