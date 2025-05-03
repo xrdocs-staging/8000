@@ -82,5 +82,65 @@ Figure 1. Front view of the Cisco 8712-MOD-M
 
 
 ![fron-rear-full-chassi-view.png]({{site.baseurl}}/images/fron-rear-full-chassi-view.png)
-Figure 1. Fron & Rear Full system view of Cisco 8712-MOD-M  
+Figure 2. Fron & Rear Full system view of Cisco 8712-MOD-M  
 {: .text-center} 
+
+
+![fron-panel-mgmnt-ports.png]({{site.baseurl}}/images/fron-panel-mgmnt-ports.png)
+Figure 3. Front panel ports of Cisco 8712-MOD-M  
+{: .text-center} 
+
+
+
+## Modular Port Adaptors (MPAs)
+Cisco 8712-MOD-M system has 4 slots to provision MPAs. There are 4 MPA variants supported on this system and any combination of MPA varinats can be plugged into the MPA 4 slots. And these MPAs are Online Insertion & Removal capable and user has the flexibility to choose the MPA varinats and number of MPAs based on the capacity provisioning of the network.
+
+![mpa-bay-view.png]({{site.baseurl}}/images/mpa-bay-view.png){: .full}
+Figure 4. MPA bay view of Cisco 8712-MOD-M  
+{: .text-center}
+
+
+### 8K-MPA-4D
+
+
+
+
+### 8K-MPA-16H
+
+
+
+
+
+### 8K-MPA-16Z4D
+
+
+
+
+
+### 8K-MPA-18Z1D
+
+
+## System Architecture
+Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processing Unit(NPU), a first in class to deliver intelligent Edge services. Get a kick start with: [Cisco-8000-architecture](https://xrdocs.io/8000/blogs/Cisco-8000-QOS-architecture/)To understand the fundamentals of Cisco Silicon One™. 
+
+Cisco Silicon One™ K100 NPU features:
+
+- 6.4Tbps full duplex forwarding capacity @2.6Bpps
+	- has 2 network slices
+	- each slice has a forwarding capacity of 3.2Tbps
+	- has 128x56G SerDes
+	- 2 Interfaec Groups (IFGs) per slice
+- has crypto engine for MACsec & IPsec applications
+- has 64MB on-chip packet memory
+- has 8GB HBM deep buffering memory co-packaged with NPU
+
+
+
+
+
+
+
+
+<b> 8712-MOD-M System Block Diagram </b>
+
+![sys-blocks.png]({{site.baseurl}}/images/sys-blocks.png)
