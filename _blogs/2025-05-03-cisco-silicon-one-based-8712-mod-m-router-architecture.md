@@ -125,6 +125,9 @@ Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processi
 
 Cisco Silicon One™ K100 NPU features:
 
+![k100-blocks.png]({{site.baseurl}}/images/k100-blocks.png)
+
+
 - 6.4Tbps full duplex forwarding capacity @2.6Bpps
 	- has 2 network slices
 	- each slice has a forwarding capacity of 3.2Tbps
@@ -149,3 +152,11 @@ Cisco Silicon One™ K100 NPU features:
 <b> 8712-MOD-M System Block Diagram </b>
 
 ![sys-blocks.png]({{site.baseurl}}/images/sys-blocks.png)
+
+<b> MPA bay mapping to IFG & Slice </b>
+- 2 network slices and one slice hosts 2 MPAs
+- 2 IFGs per slice and each IFG has 32x 506G raw bandwidth
+- Each MPA get mapped to one IFG
+- Any variant of MPA can be plugged into any of the 4 bays
+
+
