@@ -101,12 +101,11 @@ Figure 4. MPA bay view of Cisco 8712-MOD-M
 
 
 ### 8K-MPA-4D
-
+![4d-arch.png]({{site.baseurl}}/images/4d-arch.png)
 
 
 
 ### 8K-MPA-16H
-
 
 
 
@@ -125,7 +124,7 @@ Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processi
 
 Cisco Silicon One™ K100 NPU features:
 
-![k100-blocks.png]({{site.baseurl}}/images/k100-blocks.png)
+
 
 
 - 6.4Tbps full duplex forwarding capacity @2.6Bpps
@@ -141,11 +140,6 @@ Cisco Silicon One™ K100 NPU features:
 - 128K VoQ (Virtual Output Queue)
 - 1M counters to facilitate statistics punching for different feature applications and built-in counters in HCAM(Hash-based TCAM)
 - 6M IPv4 or 6M IPv6 FIB qualified scale without compression
-
-
-
-
-
 
 
 
