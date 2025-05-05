@@ -102,26 +102,34 @@ Figure 4. MPA bay view of Cisco 8712-MOD-M
 
 ### 8K-MPA-4D
 
-![4d.png]({{site.baseurl}}/images/4d.png)
+![4d.png]({{site.baseurl}}/images/4d.png){: .align-center}
 
-
-
-
+![4d-a.png]({{site.baseurl}}/images/4d-a.png)
+{: .align-center}
 
 ### 8K-MPA-16H
-![16h-screen.png]({{site.baseurl}}/images/16h-screen.png)
+![16h-screen.png]({{site.baseurl}}/images/16h-screen.png){: .align-center}
+
+
+![16h-a.png]({{site.baseurl}}/images/16h-a.png){: .align-center}
+
+
 
 
 
 ### 8K-MPA-16Z4D
 
-![16z-screen.png]({{site.baseurl}}/images/16z-screen.png)
+![16z-screen.png]({{site.baseurl}}/images/16z-screen.png){: .align-center}
 
-
+![16z-arch.png]({{site.baseurl}}/images/16z-arch.png)
 
 
 
 ### 8K-MPA-18Z1D
+
+![18z-arch.png]({{site.baseurl}}/images/18z-arch.png)
+{: .align-center}
+
 
 
 ## System Architecture
