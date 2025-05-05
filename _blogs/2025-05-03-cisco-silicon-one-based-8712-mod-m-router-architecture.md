@@ -110,10 +110,7 @@ Figure 4. MPA bay view of Cisco 8712-MOD-M
 
 
 ### 8K-MPA-16H
-![16h-screen.png]({{site.baseurl}}/images/16h-screen.png)
 
-
-![Screenshot 2025-05-05 at 3.21.28 PM.png]({{site.baseurl}}/images/Screenshot 2025-05-05 at 3.21.28 PM.png)
 
 
 
