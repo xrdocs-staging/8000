@@ -101,16 +101,25 @@ Figure 4. MPA bay view of Cisco 8712-MOD-M
 
 
 ### 8K-MPA-4D
-![4d-arch.png]({{site.baseurl}}/images/4d-arch.png)
+![4d.png]({{site.baseurl}}/images/4d.png)
+
+![4d-arch-new.png]({{site.baseurl}}/images/4d-arch-new.png)
+
+
 
 
 
 ### 8K-MPA-16H
+![16h-screen.png]({{site.baseurl}}/images/16h-screen.png)
+
+
+![Screenshot 2025-05-05 at 3.21.28 PM.png]({{site.baseurl}}/images/Screenshot 2025-05-05 at 3.21.28 PM.png)
 
 
 
 
 ### 8K-MPA-16Z4D
+![16z-screen.png]({{site.baseurl}}/images/16z-screen.png)
 
 
 
@@ -123,6 +132,10 @@ Figure 4. MPA bay view of Cisco 8712-MOD-M
 Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processing Unit(NPU), a first in class to deliver intelligent Edge services. Get a kick start with: [Cisco-8000-architecture](https://xrdocs.io/8000/blogs/Cisco-8000-QOS-architecture/)To understand the fundamentals of Cisco Silicon One™. 
 
 Cisco Silicon One™ K100 NPU features:
+
+![k100-blocks.png]({{site.baseurl}}/images/k100-blocks.png){: .align-center}    
+Figure 14. Cisco Silicon One P100 Details  
+{: .text-center}
 
 
 
@@ -145,7 +158,8 @@ Cisco Silicon One™ K100 NPU features:
 
 <b> 8712-MOD-M System Block Diagram </b>
 
-![sys-blocks.png]({{site.baseurl}}/images/sys-blocks.png)
+![sys-blocks.png]({{site.baseurl}}/images/sys-blocks.png){: .align-center} 
+{: .text-center}
 
 <b> MPA bay mapping to IFG & Slice </b>
 - 2 network slices and one slice hosts 2 MPAs
