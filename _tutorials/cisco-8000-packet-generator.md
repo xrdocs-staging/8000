@@ -129,9 +129,7 @@ Fri May 16 07:20:34.230 PDT
 </pre>
 </div>
 
-Verification is done again:
-- the flow is running
-- number of packets and bytes increase
+Verification is done again: the flow is running and number of packets and bytes increase.
 
 <div class="highlighter-rouge">
 <pre class="highlight">
