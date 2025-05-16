@@ -39,7 +39,7 @@ The CLI prompts provides several examples:
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-RP/0/RP0/CPU0:t26#diagnostic packet-generator create P2P rate 100 duration infinite packet ?
+RP/0/RP0/CPU0:8000#diagnostic packet-generator create P2P rate 100 duration infinite packet ?
   packet  General:
               Packet can be a hex string or scapy script. If provided as a hex string, ensure it is a valid byte string (even length, in hexadecimal).
               Packet provided to CLI cannot go over 255 characters, for longer packets please use the "file" option.
@@ -75,7 +75,7 @@ First, the packet must be created/forged and following information are entered:
 diagnostic packet-generator create P2P rate 100 duration infinite packet Ether(src="a0:bc:6f:75:2e:14",dst="40:06:d5:05:28:60")/IPv6(src="2001:db8:1337:2604::26",dst="2001:db8:1337:2604::04",hlim=64)/Raw(load="f"*900) egress interface HundredGigE0/0/0/17 location 0/rp0/CPU0
 Fri May 16 07:16:22.347 PDT
 <mark>OK</mark>
-RP/0/RP0/CPU0:t26#
+RP/0/RP0/CPU0:8000#
 </code>
 </pre>
 </div>
@@ -86,7 +86,7 @@ After configuration, the flow can be verified:
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-RP/0/RP0/CPU0:t26#sh diagnostic packet-generator status P2P location 0/RP0/CPU0
+RP/0/RP0/CPU0:8000#sh diagnostic packet-generator status P2P location 0/RP0/CPU0
 Fri May 16 07:19:10.925 PDT
 0/RP0/CPU0:
 Name           Run_State    Type    Capture  Set_Rate(pps)  Applied_Rate(pps)  Duration(sec)  TC  Phy_Interface  NPU  Slice  IFG  Packets        Bytes
@@ -112,7 +112,7 @@ Packet Details:
 
 
 
-RP/0/RP0/CPU0:t26#
+RP/0/RP0/CPU0:8000#
 </code>
 </pre>
 </div>
@@ -122,7 +122,7 @@ Then it can be launched:
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-RP/0/RP0/CPU0:t26#diagnostic packet-generator start P2P location 0/RP0/CPU0
+RP/0/RP0/CPU0:8000#diagnostic packet-generator start P2P location 0/RP0/CPU0
 Fri May 16 07:20:34.230 PDT
 <mark>OK</mark>
 </code>
@@ -134,7 +134,7 @@ Verification is done again: the flow is running and number of packets and bytes 
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-RP/0/RP0/CPU0:t26#sh diagnostic packet-generator status P2P location 0/RP0/CPU0
+RP/0/RP0/CPU0:8000#sh diagnostic packet-generator status P2P location 0/RP0/CPU0
 Fri May 16 07:20:55.812 PDT
 0/RP0/CPU0:
 Name           Run_State    Type    Capture  Set_Rate(pps)  Applied_Rate(pps)  Duration(sec)  TC  Phy_Interface  NPU  Slice  IFG  Packets        Bytes
@@ -160,7 +160,7 @@ Packet Details:
 
 
 
-RP/0/RP0/CPU0:t26#
+RP/0/RP0/CPU0:8000#
 </code>
 </pre>
 </div>
@@ -170,7 +170,7 @@ Moreover we can observe packets are leaving the interface at the expected rate o
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-RP/0/RP0/CPU0:t26#sh int Hu0/0/0/17
+RP/0/RP0/CPU0:8000#sh int Hu0/0/0/17
 Fri May 16 07:23:58.312 PDT
 HundredGigE0/0/0/17 is up, line protocol is up
   Interface state transitions: 9
@@ -208,7 +208,7 @@ If a parameter must be changed (e.g rate), the flow must be deleted and created 
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-RP/0/RP0/CPU0:t26#diagnostic packet-generator create P2P rate max duration infinite packet Ether(src="a0:bc:6f:75:2e:14",dst="40:06:d5:05:28:60")/IPv6(src="2001:db8:1337:2604::26",dst="2$
+RP/0/RP0/CPU0:8000#diagnostic packet-generator create P2P rate max duration infinite packet Ether(src="a0:bc:6f:75:2e:14",dst="40:06:d5:05:28:60")/IPv6(src="2001:db8:1337:2604::26",dst="2$
 Fri May 16 07:24:51.154 PDT
 <mark>Operation failed, packet generator already exists.</mark>
 </code>
@@ -222,7 +222,7 @@ Here, asking the system to generate as much as traffic as possible (rate max):
 <code>
 diagnostic packet-generator create P2P rate max duration infinite packet Ether(src="a0:bc:6f:75:2e:14",dst="40:06:d5:05:28:60")/IPv6(src="2001:db8:1337:2604::26",dst="2001:db8:1337:2604::04",hlim=64)/Raw(load="f"*900) egress interface HundredGigE0/0/0/17 location 0/rp0/CPU0
 
-RP/0/RP0/CPU0:t26#sh diagnostic packet-generator status P2P location 0/RP0/CPU0
+RP/0/RP0/CPU0:8000#sh diagnostic packet-generator status P2P location 0/RP0/CPU0
 Fri May 16 07:27:27.385 PDT
 0/RP0/CPU0:
 Name           Run_State    Type    Capture  Set_Rate(pps)  Applied_Rate(pps)  Duration(sec)  TC  Phy_Interface  NPU  Slice  IFG  Packets        Bytes
@@ -248,7 +248,7 @@ Packet Details:
 
 
 
-RP/0/RP0/CPU0:t26#
+RP/0/RP0/CPU0:8000#
 </code>
 </pre>
 </div>
