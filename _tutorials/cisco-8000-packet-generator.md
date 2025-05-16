@@ -15,6 +15,8 @@ excerpt: >-
   purposes or to perform network diagnostics without the need of external
   traffic generator.
 ---
+{% include toc icon="table" title="Cisco 8000 Packet Generator" %}
+
 # Introduction
 This article aims to document Cisco 8000 and Silicon One packet generator functionality introduced with IOS XR 24.2.11. The built-in packet generator can be used for troubleshooting purposes or to perform network diagnostics without the need of external traffic generator.
 
