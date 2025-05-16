@@ -3,7 +3,7 @@ published: true
 date: '2025-05-16 16:46 +0200'
 title: Cisco 8000 Packet Generator
 author: Frederic Cuiller
-position: top
+position: hidden
 tags:
   - Cisco 8000
   - Silicon One
