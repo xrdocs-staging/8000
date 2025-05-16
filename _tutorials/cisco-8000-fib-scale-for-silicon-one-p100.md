@@ -19,10 +19,10 @@ Similarly to the work done on Cisco 8000 running Silicon One Q100 and Q200 ASIC,
 
 This article is applicable for the following products:
 
-- Cisco 8711-32FH-M: 1RU, 12.8Tbps, with MACsec
-- Cisco 8212-48FH-M: 2RU, 19.2Tbps, with MACsec
+- Cisco 8711-32FH-M: 12.8Tbps router, with MACsec
+- Cisco 8212-48FH-M: 19.2Tbps router, with MACsec
 - Cisco 88-LC1-36EH: 28.8Tbps LC, without MACsec
-- Cisco 88-LC1-12TH24FH-E:12Tbps LC, without MACsec
+- Cisco 88-LC1-12TH24FH-E: 12Tbps LC, without MACsec
 - Cisco 88-LC1-52Y8H-EM: 3.7Tbps LC, with MACsec
 
 # Silicon One P100 FIB
