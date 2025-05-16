@@ -16,6 +16,9 @@ position: top
 ---
 {% include toc icon="table" title="Cisco 8000 Disk Encryption" %}
 
+**Note:** Disk encryption is now enable by default on Cisco 8000 routers since IOS-XR 25.2.1, without possibility to disable it.
+{: .notice--info}
+
 # Introduction
 This article aims to describe the disk encryption feature on Cisco 8000 routers.  
 This functionality creates an encrypted partition where sensitive data such as configuration, certificates and keys are stored. This encrypted partition can be decrypted only using a specific key which is stored inside the Cisco 8000 Trust Anchor module (TAm) chip.
