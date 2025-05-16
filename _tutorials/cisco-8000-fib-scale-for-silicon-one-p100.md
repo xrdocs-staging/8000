@@ -29,7 +29,7 @@ This article is applicable for the following products:
 The FIB structure and implementation is similar to Silicon One Q100 and Q200 ASIC. The main difference is the LPM scale.
 
 ![p100-fib.png]({{site.baseurl}}/images/p100-fib.png)
-Courtesy CS Lee
+_Courtesy CS Lee, Cisco Live 8000 Techtorial_
 
 The maximum unidimensional numbers are 6M IPv4 routes OR 3M IPv6 routes. This of course can vary depending on the prefixes distribution. All IPv4 and IPv6 routes are installed into a hierarchical LPM (Longest Prefix Match) database, apart from IPv6 host routes (IPv6 /128) which are installed into the CEM (Central Exact Match) database.
 It's interesting to note unlike Q200, there is no hw-module profile or knob required to reach such scale.
