@@ -46,13 +46,13 @@ To make this exercise even more realistic, following customer case study is pres
 - Subscriber route profile: 1 x IPv4 /32 + 1 x IPv6 /64 + 1 x IPv6 /56 per subscriber
 
 # Internet Baseline
-Internet routes are first replayed on the DUT using routem (a Cisco internal tool to generate routes):
+Internet routes are first replayed on the DUT using routem (a Cisco internal tool to generate routes).
 
 IPv4 configuration:
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-tme@8000-TME-Jump-Server:~/routem$ cat CLMEL-2023-v4-to-8201-32FH
+tme@8000-TME-Jump-Server:~/routem$ cat customerX-v4-to-8711-32FH-M
 router bgp 65001
 bgp_id 1.63.51.21
 neighbor 1.63.51.70 remote-as 65537
@@ -69,7 +69,7 @@ IPv6 configuration:
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-tme@8000-TME-Jump-Server:~/routem$ cat CLMEL-2023-v6-to-8201-32FH
+tme@8000-TME-Jump-Server:~/routem$ cat customerX-v6-to-8711-32FH-M
 router bgp 65001
 bgp_id 1.63.51.21
 neighbor 2001:db8:1337:0:1:63:51:70 remote-as 65537
@@ -315,7 +315,7 @@ The extra 335k IPv6 routes are injected to follow a realistic Internet distribut
 <div class="highlighter-rouge">
 <pre class="highlight">
 <code>
-tme@8000-TME-Jump-Server:~/routem$ cat 2028_SpaceX-v6-to-8201-32FH
+tme@8000-TME-Jump-Server:~/routem$ cat 2029_customerX-v6-to-8201-32FH
 router bgp 65001
 bgp_id 1.63.51.21
 neighbor 2001:db8:1337:0:1:63:51:70 remote-as 65537
