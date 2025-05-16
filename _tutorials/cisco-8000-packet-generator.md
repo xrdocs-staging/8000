@@ -22,6 +22,8 @@ This article aims to document Cisco 8000 and Silicon One packet generator functi
 
 Cisco 8000 Packet Generator leverages Silicon One ASIC NPU Host. This component is typically used for OAM features (TWAMP, SRv6 IPM, BFD, CFM etc.). NPU host is built with its own Network Processor Engine (NPE) and can access all NPU slices.
 
+![silicone-one-npu-host.png]({{site.baseurl}}/images/silicone-one-npu-host.png)
+
 It provides true hardware assisted packet generation without involving device CPU. Performance are the following:
 
 - It supports a rate of 13.7Mpps
