@@ -40,7 +40,7 @@ The methodology used for this 2024-2025 run is similar to the [previous tests]({
 # Customer Case Study
 To make this exercise even more realistic, following customer case study is presented in this article and a comparison is made with previous generation of Silicon One platforms.
 
-- Customer profile: Satellite Internet services provider
+- Customer profile: Satellite Internet Service Provider
 - FIB profile: Internet routes + POD subscribers
 - Current number of subscribers per POD: 300k
 - Subscriber route profile: 1 x IPv4 /32 + 1 x IPv6 /64 + 1 x IPv6 /56 per subscriber
