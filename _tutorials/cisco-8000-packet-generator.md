@@ -26,9 +26,9 @@ Cisco 8000 Packet Generator leverages Silicon One ASIC NPU Host. This component 
 
 It provides true hardware assisted packet generation without involving device CPU. Performance are the following:
 
-- It supports a rate of 13.7Mpps and a maximum bandwidth of 66.4Gbps
-- On Silicon One Q100 and Q200, maximum supported packet size is 608B allowing to generate 66.5 Gbps of traffic per NPU
-- On Silicon One K100 nd P100, maximum supported packet size is 4000B allowing to generate 438Gbps per NPU
+- It supports a rate of 13.7Mpps and a maximum bandwidth of 66.4Gbps per NPU
+- On Silicon One Q100 and Q200, maximum supported packet size is 608B
+- On Silicon One K100 nd P100, maximum supported packet size is 4000B
 
 # Configuration and Verification
 The CCO [configuration](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/system-monitoring/25xx/configuration/guide/b-system-monitoring-cg-cisco8k-25xx/m-configuring-built-in-traffic-generator.html) and [command reference](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/system-monitoring/b-system-monitoring-cr-cisco8k/tgen-commands.html#diagnostic-packet-generator-create) guides list the multiple options available and how to configure them.
