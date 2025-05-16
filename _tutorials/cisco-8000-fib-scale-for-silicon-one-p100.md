@@ -60,7 +60,7 @@ neighbor 1.63.51.70 update-source 1.63.51.21
 capability ipv4 unicast
 capability refresh
 capability 4bytes-as
-replay file route-view-v4.cfg.198.58.198.252_AS1403_4byte ascii
+<mark>replay file route-view-v4.cfg.198.58.198.252_AS1403_4byte ascii</mark>
 </code>
 </pre>
 </div>
@@ -77,7 +77,7 @@ neighbor 2001:db8:1337:0:1:63:51:70 update-source 2001:db8:1337:0:1:63:51:21
 capability ipv6 unicast
 capability refresh
 capability 4bytes-as
-replay file route-view-v6.cfg.2606:6d00:eb0::252_AS1403_4byte ascii
+<mark>replay file route-view-v6.cfg.2606:6d00:eb0::252_AS1403_4byte ascii</mark>
 tme@8000-TME-Jump-Server:~/routem$
 </code>
 </pre>
@@ -98,7 +98,7 @@ IP CEF with switching (Table Version 0) for node0_RP0_CPU0
   Load balancing: L4
   Tableid 0xe0000000 (0x9affeae8), Vrfid 0x60000000, Vrid 0x20000000, Flags 0x1019
   Vrfname default, Refcount 951072
-  951032 routes, 0 protected, 0 reresolve, 2 unresolved (2 old, 0 new), 205423344 bytes
+  <mark>951032 routes</mark>, 0 protected, 0 reresolve, 2 unresolved (2 old, 0 new), 205423344 bytes
     951005 rib, 0 lsd, 22 aib, 0 internal, 2 interface, 4 special, 1 default routes
     Prefix masklen distribution:
         unicast: 21 /32, 582514 /24, 98490 /23, 111485 /22, 51552 /21, 43442 /20
@@ -124,7 +124,7 @@ IP CEF with switching (Table Version 0) for node0_RP0_CPU0
   Load balancing: L4
   Tableid 0xe0800000 (0x9b663270), Vrfid 0x60000000, Vrid 0x20000000, Flags 0x1019
   Vrfname default, Refcount 208377
-  208360 routes, 0 protected, 0 reresolve, 0 unresolved (0 old, 0 new), 45005760 bytes
+  <mark>208360 routes</mark>, 0 protected, 0 reresolve, 0 unresolved (0 old, 0 new), 45005760 bytes
     208350 rib, 0 lsd, 3 aib, 0 internal, 0 interface, 6 special, 1 default routes
     Prefix masklen distribution:
         unicast: 4 /128, 1 /64 , 96033 /48 , 5938 /47 , 4172 /46 , 2742 /45
@@ -149,7 +149,7 @@ RP/0/RP0/CPU0:Saturn-8711-32FH-M#sh controllers npu resources lpmtcam location 0
 Fri Oct 18 14:53:04.786 UTC
 HW Resource Information
     Name                            : lpm_tcam
-    Asic Type                       : P100
+    <mark>Asic Type                       : P100</mark>
 
 NPU-0
 OOR Summary
@@ -165,7 +165,7 @@ OOR Summary
 Current Hardware Usage
     Name: lpm_tcam
         Estimated Max Entries       : 100
-        Total In-Use                : 19       (19 %)
+        <mark>Total In-Use                : 19       (19 %)</mark>
         OOR State                   : Green
         High Water Mark             : 28
         High Water Mark Time        : 2024.Oct.18 13:48:25 UTC
@@ -212,7 +212,7 @@ IP CEF with switching (Table Version 0) for node0_RP0_CPU0
   1251032 routes, 0 protected, 0 reresolve, 2 unresolved (2 old, 0 new), 270223344 bytes
     1251005 rib, 0 lsd, 22 aib, 0 internal, 2 interface, 4 special, 1 default routes
     Prefix masklen distribution:
-        unicast: 300021 /32, 582514 /24, 98490 /23, 111485 /22, 51552 /21, 43442 /20
+        unicast: <mark>300021 /32</mark>, 582514 /24, 98490 /23, 111485 /22, 51552 /21, 43442 /20
                  24282 /19, 13634 /18, 8189 /17, 13157 /16, 2058 /15, 1171 /14
                  576 /13, 295 /12, 91 /11, 36 /10, 16 /9 , 16 /8
                  1 /0
@@ -239,7 +239,7 @@ IP CEF with switching (Table Version 0) for node0_RP0_CPU0
   808360 routes, 0 protected, 0 reresolve, 0 unresolved (0 old, 0 new), 174605760 bytes
     808350 rib, 0 lsd, 3 aib, 0 internal, 0 interface, 6 special, 1 default routes
     Prefix masklen distribution:
-        unicast: 4 /128, 300001 /64 , 300000 /56 , 96033 /48 , 5938 /47 , 4172 /46
+        unicast: 4 /128, <mark>300001 /64 , 300000 /56</mark> , 96033 /48 , 5938 /47 , 4172 /46
                  2742 /45 , 19242 /44 , 1148 /43 , 2466 /42 , 1251 /41 , 20255 /40
                  1644 /39 , 2139 /38 , 1219 /37 , 7874 /36 , 1515 /35 , 4493 /34
                  4537 /33 , 25131 /32 , 334 /31 , 613 /30 , 5336 /29 , 150 /28
@@ -274,7 +274,7 @@ OOR Summary
 Current Hardware Usage
     Name: lpm_tcam
         Estimated Max Entries       : 100
-        Total In-Use                : 30       (30 %)
+        <mark>Total In-Use                : 30       (30 %)</mark>
         OOR State                   : Green
         High Water Mark             : 30
         High Water Mark Time        : 2024.Oct.18 14:57:55 UTC
@@ -324,18 +324,18 @@ capability ipv6 unicast
 capability refresh
 capability 4bytes-as
 replay file IPv6-2023.2406:840:feed:2::1_AS3.12698_4byte ascii
-network 1 2406:2d40::/64 300000
+<mark>network 1 2406:2d40::/64 300000
 network 2 2a0d:3344::/56 300000
 network 3 2001:8c00::/48 180000
 network 4 2001:8d00::/32 49350
 network 5 2001:8e00::/44 26320
 network 6 2001:8f00::/40 23030
-network 7 2001:9f00::/36 75000
+network 7 2001:9f00::/36 75000</mark>
 </code>
 </pre>
 </div>
 
-What this test gives is the 5Y Internet growth, but still with 300k subscribers: 35%
+What this test gives is the 5Y Internet table, still with 300k subscribers: LPM utilization is 35%.
 
 <div class="highlighter-rouge">
 <pre class="highlight">
@@ -360,7 +360,7 @@ OOR Summary
 Current Hardware Usage
     Name: lpm_tcam
         Estimated Max Entries       : 100
-        Total In-Use                : 35       (35 %)
+        <mark>Total In-Use                : 35       (35 %)</mark>
         OOR State                   : Green
         High Water Mark             : 35
         High Water Mark Time        : 2024.Oct.18 15:02:25 UTC
@@ -421,21 +421,21 @@ OOR Summary
 Current Hardware Usage
     Name: lpm_tcam
         Estimated Max Entries       : 100
-        Total In-Use                : 87       (87 %)
+        <mark>Total In-Use                : 87       (87 %)</mark>
         OOR State                   : Yellow
         OOR State Change Time       : 2024.Oct.18 15:29:27 UTC
         High Water Mark             : 87
         High Water Mark Time        : 2024.Oct.18 15:32:55 UTC
 
 
-       Name: v4_lpm
-           Total In-Use                : 2462049
+       <mark>Name: v4_lpm
+           Total In-Use                : 2462049</mark>
            High Water Mark             : 2462049
            High Water Mark Time        : 2024.Oct.18 15:33:25 UTC
 
 
-       Name: v6_lpm
-           Total In-Use                : 3562054
+       <mark>Name: v6_lpm
+           Total In-Use                : 3562054</mark>
            High Water Mark             : 3562054
            High Water Mark Time        : 2024.Oct.18 15:29:55 UTC
 
