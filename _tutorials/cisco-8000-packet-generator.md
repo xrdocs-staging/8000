@@ -18,7 +18,7 @@ excerpt: >-
 {% include toc icon="table" title="Cisco 8000 Packet Generator" %}
 
 # Introduction
-This article aims to document Cisco 8000 and Silicon One packet generator functionality introduced with IOS XR 24.2.11. The built-in packet generator can be used for troubleshooting purposes or to perform network diagnostics without the need of external traffic generator.
+This article aims to document Cisco 8000 and Silicon One packet generator functionality introduced in IOS XR 24.2.11. The built-in packet generator can be used for troubleshooting purposes or to perform network diagnostics without the need of external traffic generator.
 
 # Implementation
 
@@ -28,13 +28,13 @@ Cisco 8000 Packet Generator leverages Silicon One ASIC NPU Host. This component 
 
 It provides true hardware assisted packet generation without involving device CPU. Performance are the following:
 
-- It supports a rate of 13.7Mpps and a maximum bandwidth of 66.4Gbps per NPU
+- It supports a rate of 13.7 Mpps and a maximum bandwidth of 66.4 Gbps per NPU
 - On Silicon One Q100 and Q200, maximum supported packet size is 608B
 - On Silicon One K100 nd P100, maximum supported packet size is 4000B
 
 # Configuration and Verification
 The CCO [configuration](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/system-monitoring/25xx/configuration/guide/b-system-monitoring-cg-cisco8k-25xx/m-configuring-built-in-traffic-generator.html) and [command reference](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/system-monitoring/b-system-monitoring-cr-cisco8k/tgen-commands.html#diagnostic-packet-generator-create) guides list the multiple options available and how to configure them.
-For this article demo, a simple unidirectional traffic flow is generated between 2 routers using IPv6 traffic for an infinite period of time.
+For this article demo, a simple unidirectional traffic flow is generated using IPv6 traffic for an infinite period of time at a rate of 100 pps.
 
 The CLI prompts provides several examples:
 
@@ -82,7 +82,7 @@ RP/0/RP0/CPU0:8000#
 </pre>
 </div>
 
-System returns ‘OK’ is the Scapy expression is correct. If not, an error is returned (Invalid Scapy expression).  
+System returns ‘OK’ if the Scapy expression is correct. If not, an error is returned (Invalid Scapy expression) and syntax must be corrected.  
 
 After configuration, the flow can be verified:
 <div class="highlighter-rouge">
@@ -119,7 +119,7 @@ RP/0/RP0/CPU0:8000#
 </pre>
 </div>
 
-Then it can be launched:
+Then it can be started:
 
 <div class="highlighter-rouge">
 <pre class="highlight">
@@ -131,7 +131,7 @@ Fri May 16 07:20:34.230 PDT
 </pre>
 </div>
 
-Verification is done again: the flow is running and number of packets and bytes increase.
+Verification is done again: the flow is running and number of packets and bytes increase:
 
 <div class="highlighter-rouge">
 <pre class="highlight">
@@ -167,7 +167,7 @@ RP/0/RP0/CPU0:8000#
 </pre>
 </div>
 
-Moreover we can observe packets are leaving the interface at the expected rate of 100pps checking interface statistics:
+Moreover, by checking interface statistics, it can observed packets are leaving the interface at the expected rate of 100 pps:
 
 <div class="highlighter-rouge">
 <pre class="highlight">
@@ -259,5 +259,5 @@ RP/0/RP0/CPU0:8000#
 {: .notice--info}
 
 # Conclusion & Use cases
-This feature has been recently used inside one customer network during Early Field Trial. This customer was testing 800G ZR+ optics and wanted to validate the long-distance link between 2 x Cisco 8000 routers. It was not possible to reroute customer traffic nor interconnecting a regular traffic generator. Cisco 8000 embedded traffic generator functionality was leveraged to validate correct long distance transmission across the 2 endpoints. Other customers are using this feature during their provisionning routing to validate massive ECMP fabrics and make sure links are error-free before going into production. Another use case is to craft specific packets to test Segment Routing policies. Unlimited possibilities! 
+This feature has been recently used inside one customer network during Early Field Trial. This customer was testing 800G ZR+ optics and wanted to validate the long-distance link between 2 x Cisco 8000 routers. It was not possible to reroute customer traffic nor interconnecting a regular traffic generator. Cisco 8000 embedded traffic generator functionality was leveraged to validate correct long distance transmission across the 2 endpoints. Other customers are using this feature during their provisionning routine to validate massive ECMP fabrics and make sure all links are error-free before going into production. Another use case is to craft specific packets to test Segment Routing policies. Unlimited possibilities! 
 
