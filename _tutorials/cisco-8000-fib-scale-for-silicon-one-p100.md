@@ -12,6 +12,8 @@ excerpt: >-
   This article aims to document and demonstrate FIB scale and capabilities for
   Cisco 8000 routers running Silicon One P100 ASIC.
 ---
+{% include toc icon="table" title="Cisco 8000 FIB Scale for Silicon One P100" %}
+
 # Introduction
 Similarly to the work done on Cisco 8000 running Silicon One Q100 and Q200 ASIC, this article aims to document and demonstrate FIB scale and capabilities for Cisco 8000 routers running Silicon One P100 ASIC.
 
@@ -456,8 +458,3 @@ The last graph shows how many subscribers can be attached without reaching a cri
 
 # Conclusion
 This article demonstrated the FIB scale capabilities of Cisco 8000 platforms based on Silicon One P100 ASIC. The results confirm the platform is future proof to accomodate not only Internet growth but also customers organic growth. Last, it covered a real-life use case and showed improvement made over previous generations of silicon.
-
-
-
-
-
