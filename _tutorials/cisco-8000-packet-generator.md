@@ -67,7 +67,7 @@ First, the packet must be created/forged and following information are entered:
 - Egress mode: skips RxPP lookups and TxPP encaps, sends the packet as-it-is on egress slice and interface
 - Injected from a fixed system (i.e single NPU, location 0/RP0/CPU0)
 
-[Scapy expression](https://scapy.readthedocs.io/en/latest/usage.html) is used to forge/built the packet. If the packet description is too complex (i.e too many parameters to enter inside the CLI), user must instead use a file (pcap file with .pcap suffix or a text file with scapy script or hex string).
+[Scapy expression](https://scapy.readthedocs.io/en/latest/usage.html) is used to forge/build the packet. If the packet description is too complex (i.e too many parameters to enter inside the CLI), user must instead use a file (pcap file with .pcap suffix or a text file with scapy script or hex string).
 
 <div class="highlighter-rouge">
 <pre class="highlight">
