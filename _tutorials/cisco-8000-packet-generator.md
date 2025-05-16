@@ -253,6 +253,9 @@ RP/0/RP0/CPU0:8000#
 </pre>
 </div>
 
+**Note:** At this time there is no YANG model available to configure or monitor packet generator  feature.
+{: .notice--info}
+
 # Conclusion & Use cases
 This feature has been recently used inside one customer network during Early Field Trial. This customer was testing 800G ZR+ optics and wanted to validate the long-distance link between 2 x Cisco 8000 routers. It was not possible to reroute customer traffic nor interconnecting a regular traffic generator. Cisco 8000 embedded traffic generator functionality was leveraged to validate correct long distance transmission across the 2 endpoints. Other customers are using this feature during their provisionning routing to validate massive ECMP fabrics and make sure links are error-free before going into production. Another use case is to craft specific packets to test Segment Routing policies. Unlimited possibilities! 
 
