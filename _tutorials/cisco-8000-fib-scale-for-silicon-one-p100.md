@@ -35,7 +35,7 @@ The maximum unidimensional numbers are 6M IPv4 routes OR 3M IPv6 routes. This of
 It's interesting to note unlike Q200, there is no hw-module profile or knob required to reach such scale.
 
 # FIB Scale Testing Methodology
-The methodology used for this 2024-2025 run is similar to the [previous tests]({{site.baseurl}}/tutorials/cisco-8000-fib-scale/) executed. An up-to date BGP routing table is used from the [RouteViews](https://www.routeviews.org/routeviews/) project. Latest BGP growth predictions from [APNIC](https://blog.apnic.net/2025/01/06/bgp-in-2024/) are also used to simulate 5-6Y FIB utilization. 
+The methodology used for this 2024-2025 run is similar to the [previous tests]({{site.baseurl}}/tutorials/cisco-8000-fib-scale/) executed. An up-to date BGP routing table is used from the [RouteViews](https://www.routeviews.org/routeviews/) project. Latest forecast from [APNIC](https://blog.apnic.net/2025/01/06/bgp-in-2024/) are also used to simulate BGP growth. 
 
 # Customer Case Study
 To make this exercise even more realistic, following customer case study is presented in this article and a comparison is made with previous generation of Silicon One platforms.
