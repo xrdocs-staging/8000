@@ -15,7 +15,7 @@ excerpt: >-
 {% include toc icon="table" title="Cisco 8000 FIB Scale for Silicon One P100" %}
 
 # Introduction
-Similarly to the work done on Cisco 8000 running Silicon One Q100 and Q200 ASIC, this article aims to document and demonstrate FIB scale and capabilities for Cisco 8000 routers running Silicon One P100 ASIC.
+Similarly to the [work done]({{site.baseurl}}/tutorials/cisco-8000-fib-scale/) on Cisco 8000 running Silicon One Q100 and Q200 ASIC, this article aims to document and demonstrate FIB scale and capabilities for Cisco 8000 routers running Silicon One P100 ASIC.
 
 This article is applicable to the following products:
 
