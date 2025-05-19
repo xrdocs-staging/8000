@@ -23,6 +23,9 @@ Cisco 8000 routers have been widely adopted and deployed by service provider and
 
 This article will document how Silicon One Q100 and Q200 based systems can support current and future BGP scale. Based on projected growth, tests will demonstrate they are also future proof. Last, a new feature introduced to increase FIB scale on Q200 will be demonstrated. Telemetry data will also be used to illustrate system capabilities.
 
+**Note:** You can find Silicon One P100 FIB scale test [here]({{site.baseurl}}/tutorials/cisco-8000-fib-scale-for-silicon-one-p100)
+{: .notice--info}
+
 ## What’s The FIB Scale
 
 Forwarding  Information Base was defined in [RFC1812](https://datatracker.ietf.org/doc/html/rfc1812#page-146). This is what Fred Baker wrote in 1995:
