@@ -17,7 +17,7 @@ excerpt: >-
 # Introduction
 Similarly to the work done on Cisco 8000 running Silicon One Q100 and Q200 ASIC, this article aims to document and demonstrate FIB scale and capabilities for Cisco 8000 routers running Silicon One P100 ASIC.
 
-This article is applicable for the following products:
+This article is applicable to the following products:
 
 - Cisco 8711-32FH-M: 12.8Tbps router, with MACsec
 - Cisco 8212-48FH-M: 19.2Tbps router, with MACsec
@@ -33,6 +33,9 @@ _Courtesy CS Lee, Cisco Live 8000 Techtorial_
 
 The maximum unidimensional numbers are 6M IPv4 routes OR 3M IPv6 routes. This of course can vary depending on the prefixes distribution. All IPv4 and IPv6 routes are installed into a hierarchical LPM (Longest Prefix Match) database, apart from IPv6 host routes (IPv6 /128) which are installed into the CEM (Central Exact Match) database.
 It's interesting to note unlike Q200, there is no hw-module profile or knob required to reach such scale.
+
+**Info** The numbers provided and tested are without FIB compression and are raw LPM scale capabilities.
+{: .notice--info}
 
 # FIB Scale Testing Methodology
 The methodology used for this 2024-2025 run is similar to the [previous tests]({{site.baseurl}}/tutorials/cisco-8000-fib-scale/) executed. An up-to date BGP routing table is used from the [RouteViews](https://www.routeviews.org/routeviews/) project. Latest forecast from [APNIC](https://blog.apnic.net/2025/01/06/bgp-in-2024/) are also used to simulate BGP growth. 
@@ -192,7 +195,7 @@ Current Hardware Usage
 
 Extra routes associated to the 300k subscribers are advertised, meaning:
 - 300k extra IPv4 /32 are advertised.
-- 300k extra IPv8 /64 and /56 are advertised.
+- 300k extra IPv6 /64 and /56 are advertised.
 
 Giving following distribution:
 
@@ -446,15 +449,21 @@ Current Hardware Usage
 </pre>
 </div>
 
+At 87% LPM utilization, the multi dimensional FIB scale is 2.5M IPv4 + 3.5M IPv6 prefixes.
+
 # Silicon One Q200 and P100 comparison
 
 To conclude this article, test was also executed on Cisco 8000 Q200 based platforms (with FIB expansion knob) to compare the improvement made between the 2 generations:
 
 ![q200-p100-comparison.png]({{site.baseurl}}/images/q200-p100-comparison.png)
 
+For a similar number of subscribers (900k) and with Internet 2029 profile, Silicon One P100 consumes 31% less LPM resources compared to Q200.
+
 The last graph shows how many subscribers can be attached without reaching a critical LPM utilization threshold (85%):
 
 ![q200-p100-max-subs.png]({{site.baseurl}}/images/q200-p100-max-subs.png)
+
+For the same LPM utilization, Silicon One P100 can achieve 1.75x more subscribers compared to Silicon One Q200. 
 
 # Conclusion
 This article demonstrated the FIB scale capabilities of Cisco 8000 platforms based on Silicon One P100 ASIC. The results confirm the platform is future proof to accomodate not only Internet growth but also customers organic growth. Last, it covered a real-life use case and showed improvement made over previous generations of silicon.
