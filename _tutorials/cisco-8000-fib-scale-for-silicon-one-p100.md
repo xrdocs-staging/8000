@@ -34,7 +34,7 @@ _Courtesy CS Lee, Cisco Live 8000 Techtorial_
 The maximum unidimensional numbers are 6M IPv4 routes OR 3M IPv6 routes. This of course can vary depending on the prefixes distribution. All IPv4 and IPv6 routes are installed into a hierarchical LPM (Longest Prefix Match) database, apart from IPv6 host routes (IPv6 /128) which are installed into the CEM (Central Exact Match) database.
 It's interesting to note unlike Q200, there is no hw-module profile or knob required to reach such scale.
 
-**Info** The numbers provided and tested are without FIB compression and are raw LPM scale capabilities.
+**Info:** The numbers provided and tested are without FIB compression and are raw LPM scale capabilities.
 {: .notice--info}
 
 # FIB Scale Testing Methodology
