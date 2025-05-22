@@ -567,7 +567,7 @@ Also you can find the first part of this post here: [Cisco 8000 Port assignment 
 
 | Version | Data     | Author(s)     | Comments            |
 |---------|----------|---------------|---------------------|
-| 1       | September-26 | Chang Soo Lee | Initial Publication for P100 based platforms |  
-| 2       | December-20 | Chang Soo Lee | Updated Cisco 8712-MOD-M |  
-| 3       | May-22 | Chang Soo Lee | Updated Cisco 8011-4G24Y4H-I |  
+| 1       | September 26, 2024 | Chang Soo Lee | Initial Publication for P100 based platforms |  
+| 2       | December 20, 2024 | Chang Soo Lee | Updated Cisco 8712-MOD-M |  
+| 3       | May 22, 2025 | Chang Soo Lee | Updated Cisco 8011-4G24Y4H-I |  
 
