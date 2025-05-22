@@ -2,8 +2,8 @@
 published: true
 date: '2024-09-26 10:43 -0700'
 title: >-
-  Port Assignments on Cisco 8010/8200, Cisco 8700, Cisco 8608, and Cisco 8800
-  Platforms (Part 2)
+  Port Assignments on Cisco 8010/8100/8200, Cisco 8700, Cisco 8608, and Cisco
+  8800 Platforms (Part 2)
 author: Chang Soo Lee
 excerpt: >-
   This article will highlight how ports are allocated to IFG/Slice/NPU for each
