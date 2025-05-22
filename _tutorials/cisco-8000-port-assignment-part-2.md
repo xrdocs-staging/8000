@@ -474,9 +474,9 @@ Cisco 8700 products embody this cutting-edge innovation of the 8000 portfolio, o
 ### Cisco 8011-4G24Y4H-I    
 The Cisco 8011-4G24Y4H-I is made of a single A100 NPU. This system can support 4x QSFP28 40/100GE, 24x SFP28 1/10/25GE, and 4x 1GE RJ45 10/100/1000ME. It supports MACsec on all ports. All ports support PTP timing at Class C performance.  
 
+![Screenshot 2025-05-22 at 3.02.06 PM.png]({{site.baseurl}}/images/Screenshot 2025-05-22 at 3.02.06 PM.png){: .full}  
 
-
-
+![Screenshot 2025-05-22 at 3.02.20 PM.png]({{site.baseurl}}/images/Screenshot 2025-05-22 at 3.02.20 PM.png){: .full}  
 
 | Interface | NPU/Slice/IFG | Interface  | NPU/Slice/IFG | Interface  | NPU/Slice/IFG | Interface  | NPU/Slice/IFG |
 |-----------|---------------|------------|---------------|------------|---------------|------------|---------------|
@@ -568,4 +568,6 @@ Also you can find the first part of this post here: [Cisco 8000 Port assignment 
 | Version | Data     | Author(s)     | Comments            |
 |---------|----------|---------------|---------------------|
 | 1       | September-26 | Chang Soo Lee | Initial Publication for P100 based platforms |  
-| 2       | December-20 | Chang Soo Lee | Updated Cisco 8712-MOD-M |
+| 2       | December-20 | Chang Soo Lee | Updated Cisco 8712-MOD-M |  
+| 3       | May-22 | Chang Soo Lee | Updated Cisco 8011-4G24Y4H-I |  
+
