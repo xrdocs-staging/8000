@@ -23,7 +23,7 @@ position: top
 The Cisco 8000 Series routers are built around network processors from the Cisco Silicon One family. To continue increasing performance, these network processors (NPUs) have an internal architecture that uses multiple hardware engines to process packets in parallel. The term we use for these internal engine groupings is “slices”. Note: don’t be confused with other platforms where an entire NPU is also called a “slice”. As semiconductor processes allow greater integration, we’ve seen systems like the Cisco 12000, where it took multiple large ASICs on a single linecard to implement the forwarding path. On the Cisco CRS-1, we moved from a few large ASICs to just a couple, to having multiple highly integrated NPUs on a single linecard. The ASR9k continued this integration with multiple NPUs on a card – here each NPU complex was referred to as a “slice”. On the Cisco 8000, each NPU has now integrated multiple forwarding engines onto a single chip along with the fabric interface as well. Better integration means fewer total chips in the forwarding path, with higher performance and lower power.
 The majority of users will never need to know or care exactly how the front panel ports are mapped to these individual NPUs or which forwarding engines are used for a given interface. That said, understanding the port assignments can be useful in analyzing traffic flows, facilitating troubleshooting, and performance analysis. Let's review here how ports are allocated on each of the Cisco 8000 systems.
 
-This second article explores port/IFG/Slice/NPU in P100/K100 based platforms.  
+This second article explores port/IFG/Slice/NPU in P100/K100/A100 based platforms.  
 
 The following CLI command can be used on any Cisco 8000 system to display the assignments of physical ports to their corresponding NPU, slice, and IFG. (“IFG” stands for “interface group”, this is just another internal sub-block of the chip. There are two IFGs for each forwarding slice.  
 
@@ -156,7 +156,6 @@ FH0/0/0/2    78000238   0   3    1    36    840      0        local    400G     
 <code>  
 
 RP/0/RP0/CPU0:8712-MOD-M#<span style="background-color: #A0CFEC">show controllers npu voq-usage interface all instance all location 0/rp0/cpu0</span>   
-
 ----------------------------------------------------------------------------------------
 Node ID: 0/RP0/CPU0
 Intf         Intf     <mark>NPU Slice IFG</mark>  Sys   VOQ   Flow       VOQ      Port       Global 
@@ -175,6 +174,56 @@ Hu0/0/0/3    780000ec   0   0    0    11    600      0        local    100G     
 </code>
 </pre>
 </div>
+
+<div class="highlighter-rouge">
+<pre class="highlight">
+<code>  
+
+RP/0/RP0/CPU0:8011-4G24Y4H-I#<span style="background-color: #A0CFEC">show controllers npu voq-usage interface all instance all location 0/rp0/cpu0</span>   
+
+----------------------------------------------------------------------------------------
+Node ID: 0/RP0/CPU0
+Intf         Intf     <mark>NPU Slice IFG</mark>  Sys   VOQ   Flow       VOQ      Port       Global 
+name         handle    <mark>#    #    #</mark>   Port  base  base       port     speed      IFG #
+             (hex)                                          type                
+----------------------------------------------------------------------------------------  
+Hu0/0/0/0    78000110   0   0    0     4    384      0        local    100G      0
+Hu0/0/0/3    78000118   0   0    0     5    392      0        local    100G      0
+Hu0/0/0/2    78000120   0   0    0     6    400      0        local    100G      0
+Hu0/0/0/1    78000128   0   0    0     7    408      0        local    100G      0
+Te0/0/0/4    78000130   0   0    0     8    416      0        local     10G      0
+Te0/0/0/22   78000138   0   0    0     9    424      0        local     10G      0
+Te0/0/0/26   78000140   0   0    0    10    432      0        local     10G      0
+Te0/0/0/11   78000148   0   0    0    11    440      0        local     10G      0
+Te0/0/0/14   78000150   0   0    0    12    448      0        local     10G      0
+Te0/0/0/16   78000158   0   0    0    13    456      0        local     10G      0
+TF0/0/0/5    78000160   0   0    0    14    464      0        local     25G      0
+TF0/0/0/20   78000168   0   0    0    15    472      0        local     25G      0
+TF0/0/0/21   78000170   0   0    0    16    480      0        local     25G      0
+TF0/0/0/27   78000178   0   0    0    17    488      0        local     25G      0
+TF0/0/0/8    78000180   0   0    0    18    496      0        local     25G      0
+TF0/0/0/12   78000188   0   0    0    19    504      0        local     25G      0
+TF0/0/0/19   78000190   0   0    0    20    512      0        local     25G      0
+Gi0/0/0/6    78000198   0   0    0    21    520      0        local      1G      0
+Gi0/0/0/13   780001a0   0   0    0    22    528      0        local      1G      0
+Gi0/0/0/15   780001a8   0   0    0    23    536      0        local      1G      0
+Gi0/0/0/17   780001b0   0   0    0    24    544      0        local      1G      0
+Gi0/0/0/18   780001b8   0   0    0    25    552      0        local      1G      0
+Gi0/0/0/23   780001c0   0   0    0    26    560      0        local      1G      0
+Gi0/0/0/24   780001c8   0   0    0    27    568      0        local      1G      0
+Gi0/0/0/25   780001d0   0   0    0    28    576      0        local      1G      0
+Gi0/0/0/28   780001d8   0   0    0    29    584      0        local      1G      0
+Gi0/0/0/29   780001e0   0   0    0    30    592      0        local      1G      0
+Gi0/0/0/30   780001e8   0   0    0    31    600      0        local      1G      0
+Gi0/0/0/31   780001f0   0   0    0    32    608      0        local      1G      0
+Gi0/0/0/10   780001f8   0   0    0    33    616      0        local      1G      0
+Gi0/0/0/9    78000200   0   0    0    34    624      0        local      1G      0
+Gi0/0/0/7    78000208   0   0    0    35    632      0        local      1G      0  
+</code>
+</pre>
+</div>   
+
+
 
 <div class="highlighter-rouge">
 <pre class="highlight">
@@ -361,14 +410,15 @@ Hu0/7/0/9    1c0007b8   0   0    0    35  33424      0   etm_global    100G     
 </div>  
 
 - NPU #: NPU number  
--- NPU number should be 0 for 8200/8700 (8000 fixed & centralized systems)      
+-- NPU number should be 0 for 8010/8200/8700 (8000 fixed & centralized systems)      
 -- NPU number should be should be 0, 1 for 88-LC1-52Y8H-EM line card (not shown above)  
 -- NPU number should be should be 0, 1, 2, 3 for 88-LC1-36EH/88-LC1-12TH24FH-E line card  
 
 - NPU core: Slice number  
 -- Slice number should be between 0 and 5 for 8212-48FH-M (8000 fixed systems)  
 -- Slice number should be between 0 and 3 for 8711-32FH-M (8000 fixed systems)   
--- Slice number should be between 0 and 1 for 8712-MOD-M (8000 fixed systems)   
+-- Slice number should be between 0 and 1 for 8712-MOD-M (8000 fixed systems)
+-- Slice number should be between 0 and 1 for 8011-4G24Y4H-I (8010 fixed systems)  
 -- Slice number shoulbe be 0,1, 2 for 8800 Line cards     
 - PP port: IFG number, should be 0 or 1 within slice    
 {: .notice}  
@@ -420,6 +470,26 @@ Cisco 8700 products embody this cutting-edge innovation of the 8000 portfolio, o
 | FH0/0/0/5 | 0/3/0         | FH0/0/0/13 | 0/2/0         | FH0/0/0/21 | 0/1/0         | FH0/0/0/29 | 0/0/0         |
 | FH0/0/0/6 | 0/3/0         | FH0/0/0/14 | 0/2/0         | FH0/0/0/22 | 0/1/0         | FH0/0/0/30 | 0/0/0         |
 | FH0/0/0/7 | 0/3/0         | FH0/0/0/15 | 0/2/0         | FH0/0/0/23 | 0/1/0         | FH0/0/0/31 | 0/0/0         |    
+
+### Cisco 8011-4G24Y4H-I    
+The Cisco 8011-4G24Y4H-I is made of a single A100 NPU. This system can support 4x QSFP28 40/100GE, 24x SFP28 1/10/25GE, and 4x 1GE RJ45 10/100/1000ME. It supports MACsec on all ports. All ports support PTP timing at Class C performance.  
+
+
+
+
+
+| Interface | NPU/Slice/IFG | Interface  | NPU/Slice/IFG | Interface  | NPU/Slice/IFG | Interface  | NPU/Slice/IFG |
+|-----------|---------------|------------|---------------|------------|---------------|------------|---------------|
+| Hu0/0/0/0 | 0/0/0         | TF0/0/0/8  | 0/0/0         | Te0/0/0/16 | 0/0/0         | Gi0/0/0/24 | 0/0/0         |
+| Hu0/0/0/1 | 0/0/0         | Gi0/0/0/9  | 0/0/0         | Gi0/0/0/17 | 0/0/0         | Gi0/0/0/25 | 0/0/0         |
+| Hu0/0/0/2 | 0/0/0         | Gi0/0/0/10 | 0/0/0         | Gi0/0/0/18 | 0/0/0         | Te0/0/0/26 | 0/0/0         |
+| FH0/0/0/3 | 0/0/0         | Te0/0/0/11 | 0/0/0         | TF0/0/0/19 | 0/0/0         | TF0/0/0/27 | 0/0/0         |
+| Te0/0/0/4 | 0/0/0         | TF0/0/0/12 | 0/0/0         | TF0/0/0/20 | 0/0/0         | Gi0/0/0/28 | 0/0/0         |
+| TF0/0/0/5 | 0/0/0         | Gi0/0/0/13 | 0/0/0         | TF0/0/0/21 | 0/0/0         | Gi0/0/0/29 | 0/0/0         |
+| Gi0/0/0/6 | 0/0/0         | Te0/0/0/14 | 0/0/0         | Te0/0/0/22 | 0/0/0         | Gi0/0/0/30 | 0/0/0         |
+| Gi0/0/0/7 | 0/0/0         | Gi0/0/0/15 | 0/0/0         | Gi0/0/0/23 | 0/0/0         | Gi0/0/0/31 | 0/0/0         |  
+
+
 
 ### Cisco 8712-MOD-M  
 The Cisco 8712-MOD-M is made of a single K100 NPU. This system can support  up to 16 ports of QSFP56-DD. It supports MACsec on all ports. All ports support PTP timing at Class C performance.
@@ -498,4 +568,4 @@ Also you can find the first part of this post here: [Cisco 8000 Port assignment 
 | Version | Data     | Author(s)     | Comments            |
 |---------|----------|---------------|---------------------|
 | 1       | September-26 | Chang Soo Lee | Initial Publication for P100 based platforms |  
-| 2       | December-20 | Chang Soo Lee | Updated Cisco 8712-MOD-M |  
+| 2       | December-20 | Chang Soo Lee | Updated Cisco 8712-MOD-M |
