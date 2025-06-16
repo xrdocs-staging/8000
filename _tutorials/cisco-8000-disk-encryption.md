@@ -16,7 +16,7 @@ position: top
 ---
 {% include toc icon="table" title="Cisco 8000 Disk Encryption" %}
 
-**Note:** Disk encryption is now enable by default on Cisco 8000 routers since IOS-XR 25.2.1, without possibility to disable it.
+**Note:** Disk encryption is now enabled by default on all Cisco 8000 routers since IOS-XR 25.2.1, without possibility to disable it.
 {: .notice--info}
 
 # Introduction
