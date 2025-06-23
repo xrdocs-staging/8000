@@ -19,28 +19,25 @@ position: top
 **Note:** Disk encryption is now enabled by default on all Cisco 8000 routers since IOS-XR 25.2.1, without possibility to disable it. While the technical content of the article below remains valid, the procedure described only applies for pre IOS-XR 25.2.1 releases. Starting IOS-XR 25.2.1 and onward, there is no more configuration needed to enable disk encryption.
 {: .notice--info}
 
-# post IOS-XR 25.2.1
-
-Starting IOS-XR 25.2.1, disk encryption is enabled by default, cannot be disabled, and encrypts all partitions.
--  <code>disk-encryption</code> command is not available anymore
-- there is no longer seperate <code>/var/xr/enc</code> partition anymore
-- instead, all partitions are now encrypted (rootfs, disk0, docker, harddisk, log etc)
-
-Refer to [Cisco 8000 documentation](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/b-setup-and-upgrade-cisco8k/upgrade-software.html#disk-encryption) for upgrade workflows.
-
-
-# pre IOS-XR 25.2.1
-
-## Introduction
+# Introduction
 This article aims to describe the disk encryption feature on Cisco 8000 routers.  
-This functionality creates an encrypted partition where sensitive data such as configuration, certificates and keys are stored. This encrypted partition can be decrypted only using a specific key which is stored inside the Cisco 8000 Trust Anchor module (TAm) chip.
+Before IOS-XR 25.2.1, this functionality creates an encrypted partition where sensitive data such as configuration, certificates and keys are stored. This encrypted partition can be decrypted only using a specific key which is stored inside the Cisco 8000 Trust Anchor module (TAm) chip. Starting IOS-XR 25.2.1, the feature provides full disk encryption meaning all partitions are encrypted.
 
-## How Does it Work?
+# How Does it Work?
 Based on a Linux kernel, Cisco IOS XR leverages Linux dm-crypt infrastructure and additional components such Logical Volume Manager (LVM), Device-Mapper (DM), cryptsetup, Linux Unified Key Setup (LUKS); to transparently encrypt and decrypt data stored on the hard disk.
 
 ![8000-disk-encryption.png]({{site.baseurl}}/images/8000-disk-encryption.png)
 
-The feature provides 150MB of secured storage which Cisco IOS XR applications can use at <code>/var/xr/enc</code>
+# post IOS-XR 25.2.1
+
+Starting IOS-XR 25.2.1, disk encryption is enabled by default, cannot be disabled, and encrypts all partitions:
+-  <code>disk-encryption</code> command is not available anymore
+- There is no longer seperate <code>/var/xr/enc</code> partition
+- Instead, all partitions are now encrypted (rootfs, disk0, docker, harddisk, log etc)
+
+Refer to [Cisco 8000 documentation](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/b-setup-and-upgrade-cisco8k/upgrade-software.html#disk-encryption) for upgrade workflows.
+
+# pre IOS-XR 25.2.1
 
 ## Disk Encryption Configuration
 
