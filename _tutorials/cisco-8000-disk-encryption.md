@@ -19,18 +19,28 @@ position: top
 **Note:** Disk encryption is now enabled by default on all Cisco 8000 routers since IOS-XR 25.2.1, without possibility to disable it. While the technical content of the article below remains valid, the procedure described only applies for pre IOS-XR 25.2.1 releases. Starting IOS-XR 25.2.1 and onward, there is no more configuration needed to enable disk encryption.
 {: .notice--info}
 
-# Introduction
+# post IOS-XR 25.2.1
+
+Starting IOS-XR 25.2.1, disk encryption is enabled by default, cannot be disabled, and encrypts all partitions.
+-  <code>disk-encryption</code> command is not available anymore
+- there is no longer seperate <code>/var/xr/enc</code> partition anymore
+- instead, all partitions are now encrypted (rootfs, disk0, docker, harddisk, log etc)
+
+
+# pre IOS-XR 25.2.1
+
+## Introduction
 This article aims to describe the disk encryption feature on Cisco 8000 routers.  
 This functionality creates an encrypted partition where sensitive data such as configuration, certificates and keys are stored. This encrypted partition can be decrypted only using a specific key which is stored inside the Cisco 8000 Trust Anchor module (TAm) chip.
 
-# How Does it Work?
+## How Does it Work?
 Based on a Linux kernel, Cisco IOS XR leverages Linux dm-crypt infrastructure and additional components such Logical Volume Manager (LVM), Device-Mapper (DM), cryptsetup, Linux Unified Key Setup (LUKS); to transparently encrypt and decrypt data stored on the hard disk.
 
 ![8000-disk-encryption.png]({{site.baseurl}}/images/8000-disk-encryption.png)
 
 The feature provides 150MB of secured storage which Cisco IOS XR applications can use at <code>/var/xr/enc</code>
 
-# Disk Encryption Configuration - pre IOS-XR 25.2.1
+## Disk Encryption Configuration
 
 By default, disk encryption feature is disabled. This can be confirmed with following output:
 
@@ -175,7 +185,7 @@ SYSTEM CONFIGURATION COMPLETED
 </pre>
 </div>
 
-# Disk Encryption Verification - pre IOS-XR 25.2.1
+## Disk Encryption Verification
 
 Once the router has rebooted, disk encryption status can be seen as active:
 
@@ -212,7 +222,7 @@ log:                                 4.5G     463M      11%     3.8G
 </pre>
 </div>
 
-# The Case of Dual RP - pre IOS-XR 25.2.1
+## The Case of Dual RP
 The disk encryption feature must be enabled on a node-by-node basis. This means both Route Processor (RP) must be encrypted for Cisco 8800 distributed systems or 8600 centralized systems running with redundant RPs.  
 
 When using the ‘all’ keyword, both RP will be encrypted and reload, trigerring a chassis reboot:
@@ -258,7 +268,7 @@ RP/0/RP1/CPU0:8812-2#
 **Note:** In case of RP RMA, disk encryption must be launched again on the newly inserted RP.
 {: .notice--info}
 
-# Programmability
+## Programmability
 <code>Cisco-IOS-XR-linux-security-showenc-oper:disk-encryption</code> YANG path can be used to monitor encryption status:
 
 <div class="highlighter-rouge">
@@ -294,8 +304,8 @@ RP/0/RP1/CPU0:8812-2#
 </div>
 
 # Conclusion
-This article demonstrated how to activate disk encryption feature on Cisco 8000 routers running IOS-XR releases. This functionality helps operating Cisco 8000 routers with the highest level of security.  
-Full disk encryption is now available since IOS-XR 25.2.1. It is enabled by default, cannot be disabled, and encrypts all partitions.
+This article demonstrated how to activate disk encryption feature on Cisco 8000 routers pre IOS-XR 25.2.1. This functionality helps operating Cisco 8000 routers with the highest level of security.  
+Starting IOS-XR 25.2.1, disk encryption is enabled by default, cannot be disabled, and encrypts all partitions.
 
 # Acknowledgement
 I’d like to thanks Rakesh Kandula & Dan Krezo for their review and feedback.
