@@ -26,6 +26,8 @@ Starting IOS-XR 25.2.1, disk encryption is enabled by default, cannot be disable
 - there is no longer seperate <code>/var/xr/enc</code> partition anymore
 - instead, all partitions are now encrypted (rootfs, disk0, docker, harddisk, log etc)
 
+Refer to [Cisco 8000 documentation](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/b-setup-and-upgrade-cisco8k/upgrade-software.html#disk-encryption) for upgrade workflows.
+
 
 # pre IOS-XR 25.2.1
 
