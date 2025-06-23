@@ -38,7 +38,7 @@ Starting IOS-XR 25.2.1, disk encryption is enabled by default, cannot be disable
 
 There are still few partitions which are not encrypted: EFI, Disaster Recovery and Boot partitions. This is because they need to be readable by GRUB.
 
-Refer to [Cisco 8000 documentation](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/b-setup-and-upgrade-cisco8k/upgrade-software.html#disk-encryption) for upgrade workflows.
+Refer to [Cisco 8000 documentation](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/b-setup-and-upgrade-cisco8k/upgrade-software.html#disk-encryption) for upgrade workflows and caveats.
 
 # pre IOS-XR 25.2.1
 
