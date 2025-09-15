@@ -26,6 +26,8 @@ Operation is a 2-part process:
 **Info:** Configuration will be erased. Content of harddisk: partition will not be erased during this operation. USB boot is different than factory-reset operation.
 {: .notice--primary}
 
+This procedure applies to all Cisco 8000 Series routers (8010, 8200, 8400, 8600, 8700, 8800) running IOS-XR , independently their Silicon One ASIC model. 
+
 ## USB Drive Preparation
 A bootable USB drive is created by copying a compressed boot file into a USB drive. The USB drive becomes bootable once the content of the compressed file is extracted.
 
