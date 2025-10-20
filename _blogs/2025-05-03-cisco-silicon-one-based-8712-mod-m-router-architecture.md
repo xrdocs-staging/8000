@@ -38,7 +38,7 @@ Common view of traditional service provider network is as following, different s
 ### Aggregation, Core, Peering and DC Core with RON(Routed Optical Networking)       
 ![use-case.png]({{site.baseurl}}/images/use-case.png)  
 
-**As user applications become more dynamic, differentiated user experiences are required, and network resources need to be optimized in terms of power and real estate. Cisco 8712-MOD-M has been designed to cater to the market requirement for total system bandwidth, port diversity, and MACsec encryption. These new capabilities far exceed what could be accomplished with a single P100 NPU. Specifically, Cisco 8712-MOD-M supports 12.8 Tbps of forwarding capacity, as well as 32 ports of high speed 400G, 128 ports of 100G, or 128 ports of low speed 10G or 25G.  
+**As user applications become more dynamic, differentiated user experiences are required, and network resources need to be optimized in terms of power and real estate. Cisco 8712-MOD-M has been designed to cater to the market requirement for total system bandwidth, port diversity, and MACsec encryption. K100 SiOne is well positioned to cater service edge and service aggregation roels in service provider domain.  
 
 Moreover, Cisco’s [Converged SDN Transport Solution](https://blogs.cisco.com/sp/routed-optical-networking-its-about-the-architecture), is a simplified single layer architecture that delivers efficient network utilization, reduced network complexity, faster time-to-market, automation empowerment, and differentiated service offering. This solutions works by merging IP and Optimal onto a single layer where all the switching is done. Routers are connected with standardized [400G ZR/ZR+/Bright(0dBm) ZR+ coherent pluggable optics](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/Interfaces/710x/b-interfaces-config-guide-cisco8k-r710x/m-zr-zrp-cisco-8000.html). With a single service layer based upon IP, flexible management tools can leverage [telemetry](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/telemetry/710x/configuration/guide/b-telemetry-cg-8000-710x.html) and [model-driven programmability](https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/programmability/710x/b-programmability-cg-8000-710x.html) to streamline lifecycle operations.  
 
@@ -73,8 +73,47 @@ Backhauling remote branch sites is critical to the success of many commercial, e
 
 
 
+## System Architecture
+Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processing Unit(NPU), a first in class to deliver intelligent Edge services. Get a kick start with: [Cisco-8000-architecture](https://xrdocs.io/8000/blogs/Cisco-8000-QOS-architecture/)To understand the fundamentals of Cisco Silicon One™. 
+
+
+
+![k100-blocks.png]({{site.baseurl}}/images/k100-blocks.png){: .align-center}    
+Figure 14. Cisco Silicon One K100 Details  
+{: .text-center}
+
+
+
+Cisco Silicon One™ K100 NPU features:
+- 6.4Tbps full duplex forwarding capacity @2.6Bpps
+	- has 2 network slices
+	- each slice has a forwarding capacity of 3.2Tbps
+	- has 128x56G SerDes
+	- 2 Interfaec Groups (IFGs) per slice
+    - has 64MB on-chip packet memory
+	- has 8GB HBM deep buffering memory co-packaged with NPU
+- On-chip crypto engine for MACsec & IPsec applications
+- Multiple embedded ARC processors for CPU offloading
+- 128K VoQ (Virtual Output Queue)
+- 1M counters to facilitate statistics punching for different feature applications and built-in counters in HCAM(Hash-based TCAM)
+- 6M IPv4 or 6M IPv6 FIB scaling capacity
+
+
+### 8712-MOD-M System Block Diagram
+
+Let us check how 8712-MOD-M system is architected with K100 Silicon One™ NPU,
+
+![sys-blocks.png]({{site.baseurl}}/images/sys-blocks.png){: .align-center}
+{: .text-center}
+
+- 2 network slices with 2 IFGs per slice 
+- Each IFG has 32x 56G raw bandwidth throughput
+- Each IFG hosts one MPA with a throughput capacity of 1.6Tbps
+- Each MPA is serviced by one IFG
+- Any variant of MPA can be plugged into any of the 4 bays
+
 ## Platform Description
-Cisco 8712-MOD-M is a Cisco Silicon One™ based 2RU fixed router belonging to Cisco 8700 family of products, a first in class device to play interlligent Edge roles across Service Provider, Enterprise WAN , Data Center Interconnect, DC gateway network applications.
+Cisco 8712-MOD-M is a Cisco Silicon One™ based 2RU fixed router belonging to Cisco 8700 family of products, a first in class device to play intelligent Edge roles across Service Provider, Enterprise WAN , Data Center Interconnect, DC gateway network applications.
 
 ![fron-view.png]({{site.baseurl}}/images/fron-view.png)
 Figure 1. Front view of the Cisco 8712-MOD-M  
@@ -102,10 +141,16 @@ Figure 4. MPA bay view of Cisco 8712-MOD-M
 
 ### 8K-MPA-4D
 
+This MPA can power uplink capacity provisioning for edge/aggregation network segments. And also does its best to power digital coherent optics (DCO) networking between metro cities.
+
 ![4d.png]({{site.baseurl}}/images/4d.png){: .align-center}
 
 ![4d-a.png]({{site.baseurl}}/images/4d-a.png)
 {: .align-center}
+
+- This MPA host four QSFPDD ports
+- All four ports can be operated in breakout mode
+- All four ports supports 4x10G or 4x25G or 4x100G breakout mode
 
 ### 8K-MPA-16H
 ![16h-screen.png]({{site.baseurl}}/images/16h-screen.png){: .align-center}
@@ -129,46 +174,5 @@ Figure 4. MPA bay view of Cisco 8712-MOD-M
 
 ![18z-arch.png]({{site.baseurl}}/images/18z-arch.png)
 {: .align-center}
-
-
-
-## System Architecture
-Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processing Unit(NPU), a first in class to deliver intelligent Edge services. Get a kick start with: [Cisco-8000-architecture](https://xrdocs.io/8000/blogs/Cisco-8000-QOS-architecture/)To understand the fundamentals of Cisco Silicon One™. 
-
-Cisco Silicon One™ K100 NPU features:
-
-![k100-blocks.png]({{site.baseurl}}/images/k100-blocks.png){: .align-center}    
-Figure 14. Cisco Silicon One P100 Details  
-{: .text-center}
-
-
-
-
-- 6.4Tbps full duplex forwarding capacity @2.6Bpps
-	- has 2 network slices
-	- each slice has a forwarding capacity of 3.2Tbps
-	- has 128x56G SerDes
-	- 2 Interfaec Groups (IFGs) per slice
-    - has 64MB on-chip packet memory
-	- has 8GB HBM deep buffering memory co-packaged with NPU
-
-- On-chip crypto engine for MACsec & IPsec applications
-- Multiple embedded ARC processors for CPU offloading
-- 128K VoQ (Virtual Output Queue)
-- 1M counters to facilitate statistics punching for different feature applications and built-in counters in HCAM(Hash-based TCAM)
-- 6M IPv4 or 6M IPv6 FIB qualified scale without compression
-
-
-
-<b> 8712-MOD-M System Block Diagram </b>
-
-![sys-blocks.png]({{site.baseurl}}/images/sys-blocks.png){: .align-center} 
-{: .text-center}
-
-<b> MPA bay mapping to IFG & Slice </b>
-- 2 network slices and one slice hosts 2 MPAs
-- 2 IFGs per slice and each IFG has 32x 506G raw bandwidth
-- Each MPA get mapped to one IFG
-- Any variant of MPA can be plugged into any of the 4 bays
 
 
