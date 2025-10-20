@@ -119,10 +119,23 @@ Cisco 8712-MOD-M is a Cisco Silicon One™ based 2RU fixed router belonging to C
 Figure 1. Front view of the Cisco 8712-MOD-M  
 {: .text-center}  
 
+MPA bays can be populated with any combination of MPA types
 
 ![fron-rear-full-chassi-view.png]({{site.baseurl}}/images/fron-rear-full-chassi-view.png)
-Figure 2. Fron & Rear Full system view of Cisco 8712-MOD-M  
+Figure 2. Front & Rear view of Cisco 8712-MOD-M  
 {: .text-center} 
+
+8712-MOD-M system is powered by,
+
+- Two 2KW Power Distribution Units
+- Supports both AC & DC power units
+- Separate power unit models for Port-side air intake(PI) & Port-side air exhaust(PE) air flows
+- Systems supprots 1+1 Redundancy
+
+3+1 Redundancy
+Separate PID for PI & PE Air flows
+FAN-PI-V3 / FAN-PE-V3
+
 
 
 ![fron-panel-mgmnt-ports.png]({{site.baseurl}}/images/fron-panel-mgmnt-ports.png)
