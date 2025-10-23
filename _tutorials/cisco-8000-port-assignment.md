@@ -507,7 +507,7 @@ There are two Q200 NPUs on these line cards.
 **Note**: x is slot number in Cisco 8800 router  
 
  
-You can find the second part of this post here: [Cisco 8000 Port assignment (Part 2)](https://xrdocs.io/8000/tutorials/cisco-8000-port-assignment-part-2/)  
+You can find the second part of this post here: [Cisco 8000 Port assignment (Part 2)]({{site.url}}/8000/tutorials/cisco-8000-port-assignment-part-2/)  
 
 
 ## Modification History  

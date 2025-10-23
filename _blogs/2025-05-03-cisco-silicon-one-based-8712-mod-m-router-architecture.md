@@ -74,7 +74,7 @@ Backhauling remote branch sites is critical to the success of many commercial, e
 
 
 ## System Architecture
-Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processing Unit(NPU), a first in class to deliver intelligent Edge services. Get a kick start with: [Cisco-8000-architecture](https://xrdocs.io/8000/blogs/Cisco-8000-QOS-architecture/)To understand the fundamentals of Cisco Silicon One™. 
+Cisco 8712-MOD-M system is powered by Cisco Silicon One™ K100 Network Processing Unit(NPU), a first in class to deliver intelligent Edge services. Get a kick start with: [Cisco-8000-architecture]({{site.url}}/8000/blogs/Cisco-8000-QOS-architecture/)To understand the fundamentals of Cisco Silicon One™. 
 
 
 

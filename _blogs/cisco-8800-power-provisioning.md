@@ -13,7 +13,7 @@ excerpt: >-
   the amount of power that must be connected. This saves money and frees up
   facility resources for other uses.
 ---
-In an earlier [post](https://xrdocs.io/8000/blogs/8000-router-power-consumption-part-1/), I discussed the importance of system power when assessing environmental impact and power costs. This article will explore another critical aspect – power provisioning. 
+In an earlier [post]({{site.url}}/8000/blogs/8000-router-power-consumption-part-1/), I discussed the importance of system power when assessing environmental impact and power costs. This article will explore another critical aspect – power provisioning. 
 
 Provisioned power can be viewed as the wattage the operating system requests for the installed hardware (software provisioning) or the number and capacity of power supplies that must be installed based on the OS requirements (facility provisioning).
 
