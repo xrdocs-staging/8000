@@ -12,7 +12,7 @@ title_short              : "Cisco 8000"
 title_separator          : "|"
 name                     : &name "Cisco Systems Inc"
 description              : &description "Documentation, Blogs and Tutorials on Cisco 8000"
-url                      : "https://xrdocs.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://d101lr0mb7xh5s.cloudfront.net"
 baseurl                  : "/8000" # the subpath of your site, e.g. "/blog"
 gh_repo                  : "https://github.com/xrdocs/8000"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -286,8 +286,8 @@ tags:
 
 
 prose:
-  siteurl: 'https://xrdocs.github.io/8000/'
-  relativeLinks: 'https://xrdocs.github.io/8000/links.jsonp'
+  siteurl: 'https://d101lr0mb7xh5s.cloudfront.net/8000/'
+  relativeLinks: 'https://d101lr0mb7xh5s.cloudfront.net/8000/links.jsonp'
   media: 'images'
   ignore:
     - index.md
